@@ -1,3 +1,4 @@
+#Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
 
 import argparse
 import json
