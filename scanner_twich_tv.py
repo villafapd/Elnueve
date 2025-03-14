@@ -270,10 +270,10 @@ def main(url,file):
 if __name__ == "__main__":
 	
 # Programar la funcion para que se ejecute cada 6 horas
-	schedule.every().day.at("07:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("07:02").do(partial(main,"https://canalshowsport.com.ar/","showsports.log"))
-	schedule.every().day.at("07:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("07:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("02:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
+	schedule.every().day.at("02:02").do(partial(main,"https://canalshowsport.com.ar/","showsports.log"))
+	schedule.every().day.at("02:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
+	schedule.every().day.at("02:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 # schedule.clear()  # Limpia la programacion actual
 # schedule.every(8).hours.do(mi_funcion)
