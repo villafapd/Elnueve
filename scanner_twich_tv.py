@@ -1,7 +1,8 @@
 #Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
 #Se requiere de Firefox 
 #Se requiere addons "Alternate player for twichtv" link:https://addons.mozilla.org/en-US/firefox/addon/twitch_5/
-
+# se debe configurar en firefox ---> about:config
+# media.geckoview.autoplay.request = True
 
 import argparse
 import json
