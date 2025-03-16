@@ -271,15 +271,15 @@ def main(url,file):
 if __name__ == "__main__":
 	
 # Programar la funcion para que se ejecute cada 6 horas
-	schedule.every().day.at("10:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("10:02").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
-	schedule.every().day.at("10:04").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("10:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("12:10").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
+	schedule.every().day.at("12:11").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
+	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
+	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 
-	schedule.every().day.at("23:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("23:02").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
-	schedule.every().day.at("23:04").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("23:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("00:10").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
+	schedule.every().day.at("00:11").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
+	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
+	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 
 
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
