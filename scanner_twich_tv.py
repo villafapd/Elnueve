@@ -271,20 +271,27 @@ def main(url,file):
 if __name__ == "__main__":
 	
 # Programar la funcion para que se ejecute cada 6 horas
-	schedule.every().day.at("02:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("02:02").do(partial(main,"https://canalshowsport.com.ar/","showsports.log"))
-	schedule.every().day.at("02:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("02:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("10:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
+	schedule.every().day.at("10:02").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
+	schedule.every().day.at("10:04").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
+	schedule.every().day.at("10:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+
+	schedule.every().day.at("23:00").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
+	schedule.every().day.at("23:02").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
+	schedule.every().day.at("23:04").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
+	schedule.every().day.at("23:05").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+
+
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 # schedule.clear()  # Limpia la programacion actual
 # schedule.every(8).hours.do(mi_funcion)
 	print("Escaneando El Nueve")
-	main("https://www.twitch.tv/elnueveok","elnueve.log")
+	#main("https://www.twitch.tv/elnueveok","elnueve.log")
 	time.sleep(5)
 	print("Escaneand Show Sports")
-	main("https://www.twitch.tv/canalshowsport","showsports.log")
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20)
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53)
+	#main("https://www.twitch.tv/canalshowsport","showsports.log")
+	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20)
+	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53)
 	try:
 		while True:
 			schedule.run_pending()
