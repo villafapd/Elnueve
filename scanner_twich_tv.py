@@ -286,12 +286,12 @@ if __name__ == "__main__":
 # schedule.clear()  # Limpia la programacion actual
 # schedule.every(8).hours.do(mi_funcion)
 	print("Escaneando El Nueve")
-	#main("https://www.twitch.tv/elnueveok","elnueve.log")
+	main("https://www.twitch.tv/elnueveok","elnueve.log")
 	time.sleep(5)
 	print("Escaneand Show Sports")
-	#main("https://www.twitch.tv/canalshowsport","showsports.log")
-	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20)
-	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53)
+	main("https://www.twitch.tv/canalshowsport","showsports.log")
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20)
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53)
 	try:
 		while True:
 			schedule.run_pending()
