@@ -36,6 +36,9 @@ import setproctitle
 
 setproctitle.setproctitle("ScanTwichTv")
 Path_ListaTv_DomoCasa = "/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u" 
+GECKORDP.DEBUG = 1
+GECKORDP.DEBUG_REQUEST = 1
+GECKORDP.DEBUG_RESPONSE = 1
 
 def buscar_url(archivo_log):
 	# Leer el contenido del archivo
@@ -72,9 +75,7 @@ def update_lista(Path_log_geckordp,linea):
 			print(f"Error al guardar el archivo: {e}")  
 
 def main(url,file):
-	GECKORDP.DEBUG = 1
-	GECKORDP.DEBUG_REQUEST = 1
-	GECKORDP.DEBUG_RESPONSE = 1
+
 	GECKORDP.LOG_FILE = file #: enabled
     
 	try:

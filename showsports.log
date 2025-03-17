@@ -1,12 +1,12 @@
-2025-03-16 19:21:14,733 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
-2025-03-16 19:21:30,159 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
-2025-03-16 19:22:00,306 [DEBUG] [rdp_client.py:345 in connect] - 
-2025-03-16 19:22:00,346 [DEBUG] [rdp_client.py:366 in __connect] - Queue read task
-2025-03-16 19:22:00,347 [DEBUG] [rdp_client.py:370 in __connect] - Run IO loop
-2025-03-16 19:22:00,352 [DEBUG] [rdp_client.py:380 in __open_connection] - Try to open connection
-2025-03-16 19:22:00,415 [DEBUG] [rdp_client.py:395 in __open_connection] - Start listening
-2025-03-16 19:22:00,841 [DEBUG] [rdp_client.py:675 in __read] - message complete (226 == 226)
-2025-03-16 19:22:00,865 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:52:58,746 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
+2025-03-17 09:53:14,220 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
+2025-03-17 09:53:44,344 [DEBUG] [rdp_client.py:345 in connect] - 
+2025-03-17 09:53:44,355 [DEBUG] [rdp_client.py:366 in __connect] - Queue read task
+2025-03-17 09:53:44,371 [DEBUG] [rdp_client.py:370 in __connect] - Run IO loop
+2025-03-17 09:53:44,374 [DEBUG] [rdp_client.py:380 in __open_connection] - Try to open connection
+2025-03-17 09:53:44,393 [DEBUG] [rdp_client.py:395 in __open_connection] - Start listening
+2025-03-17 09:53:44,718 [DEBUG] [rdp_client.py:675 in __read] - message complete (226 == 226)
+2025-03-17 09:53:44,732 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "root",
   "applicationType": "browser",
@@ -19,15 +19,15 @@
     "workerConsoleApiMessagesDispatchedToMainThread": true
   }
 }
-2025-03-16 19:22:00,874 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:00,882 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:00,887 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:44,749 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:44,754 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:44,761 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "getRoot"
 }
-2025-03-16 19:22:00,931 [DEBUG] [rdp_client.py:675 in __read] - message complete (374 == 374)
-2025-03-16 19:22:00,939 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:44,803 [DEBUG] [rdp_client.py:675 in __read] - message complete (374 == 374)
+2025-03-17 09:53:44,808 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "preferenceActor": "server1.conn0.preferenceActor1",
   "addonsActor": "server1.conn0.addonsActor2",
@@ -38,15 +38,15 @@
   "screenshotActor": "server1.conn0.screenshotActor7",
   "from": "root"
 }
-2025-03-16 19:22:00,958 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:00,982 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:00,994 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:44,814 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:44,817 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:44,827 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listProcesses"
 }
-2025-03-16 19:22:01,319 [DEBUG] [rdp_client.py:675 in __read] - message complete (829 == 829)
-2025-03-16 19:22:01,343 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:44,927 [DEBUG] [rdp_client.py:675 in __read] - message complete (833 == 833)
+2025-03-17 09:53:44,959 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "processes": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor9",
-      "id": 945872,
+      "id": 1152316,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -71,7 +71,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor10",
-      "id": 945951,
+      "id": 1152376,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -81,7 +81,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor11",
-      "id": 945954,
+      "id": 1152445,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -91,7 +91,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor12",
-      "id": 945985,
+      "id": 1152449,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -102,20 +102,20 @@
   ],
   "from": "root"
 }
-2025-03-16 19:22:01,361 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:01,373 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:01,403 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:44,968 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:44,982 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:45,009 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor8",
   "type": "getTarget"
 }
-2025-03-16 19:22:02,239 [DEBUG] [rdp_client.py:675 in __read] - message complete (1463 == 1463)
-2025-03-16 19:22:02,286 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:45,704 [DEBUG] [rdp_client.py:675 in __read] - message complete (1464 == 1464)
+2025-03-17 09:53:45,719 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.parentProcessTarget14",
     "browsingContextID": 1,
-    "processID": 945635,
+    "processID": 1151969,
     "innerWindowId": 2,
     "topInnerWindowId": 2,
     "isTopLevelTarget": true,
@@ -153,9 +153,9 @@
   },
   "from": "server1.conn0.processDescriptor8"
 }
-2025-03-16 19:22:02,304 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:02,329 [DEBUG] [rdp_client.py:675 in __read] - message complete (389 == 389)
-2025-03-16 19:22:02,347 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:45,733 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:45,738 [DEBUG] [rdp_client.py:675 in __read] - message complete (389 == 389)
+2025-03-17 09:53:45,746 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -181,10 +181,10 @@
   ],
   "from": "server1.conn0.parentProcessTarget14"
 }
-2025-03-16 19:22:02,354 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:02,333 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:02,361 [DEBUG] [rdp_client.py:675 in __read] - message complete (389 == 389)
-2025-03-16 19:22:02,399 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:45,763 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:45,765 [DEBUG] [rdp_client.py:675 in __read] - message complete (389 == 389)
+2025-03-17 09:53:45,739 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:45,769 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -210,19 +210,19 @@
   ],
   "from": "server1.conn0.parentProcessTarget14"
 }
-2025-03-16 19:22:02,402 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:02,406 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:45,807 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:45,809 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor9",
   "type": "getTarget"
 }
-2025-03-16 19:22:03,849 [DEBUG] [rdp_client.py:675 in __read] - message complete (483 == 483)
-2025-03-16 19:22:03,851 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:46,763 [DEBUG] [rdp_client.py:675 in __read] - message complete (484 == 484)
+2025-03-17 09:53:46,770 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process31/contentProcessTarget1",
     "isXpcShellTarget": false,
-    "processID": 945872,
+    "processID": 1152316,
     "remoteType": "extension",
     "consoleActor": "server1.conn0.content-process31/console2",
     "memoryActor": "server1.conn0.content-process31/memory4",
@@ -235,20 +235,20 @@
   },
   "from": "server1.conn0.processDescriptor9"
 }
-2025-03-16 19:22:03,868 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:03,876 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:03,878 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:46,791 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:46,808 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:46,833 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor10",
   "type": "getTarget"
 }
-2025-03-16 19:22:04,656 [DEBUG] [rdp_client.py:675 in __read] - message complete (483 == 483)
-2025-03-16 19:22:04,667 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:48,133 [DEBUG] [rdp_client.py:675 in __read] - message complete (484 == 484)
+2025-03-17 09:53:48,133 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process32/contentProcessTarget1",
     "isXpcShellTarget": false,
-    "processID": 945951,
+    "processID": 1152376,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process32/console2",
     "memoryActor": "server1.conn0.content-process32/memory4",
@@ -261,20 +261,20 @@
   },
   "from": "server1.conn0.processDescriptor10"
 }
-2025-03-16 19:22:04,693 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:04,721 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:04,723 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:48,136 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:48,143 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:48,144 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor11",
   "type": "getTarget"
 }
-2025-03-16 19:22:05,650 [DEBUG] [rdp_client.py:675 in __read] - message complete (483 == 483)
-2025-03-16 19:22:05,661 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:49,206 [DEBUG] [rdp_client.py:675 in __read] - message complete (484 == 484)
+2025-03-17 09:53:49,210 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process33/contentProcessTarget1",
     "isXpcShellTarget": false,
-    "processID": 945954,
+    "processID": 1152445,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process33/console2",
     "memoryActor": "server1.conn0.content-process33/memory4",
@@ -287,20 +287,20 @@
   },
   "from": "server1.conn0.processDescriptor11"
 }
-2025-03-16 19:22:05,669 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:05,670 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:05,685 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:49,212 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:49,215 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:49,217 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor12",
   "type": "getTarget"
 }
-2025-03-16 19:22:06,144 [DEBUG] [rdp_client.py:675 in __read] - message complete (483 == 483)
-2025-03-16 19:22:06,180 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:49,776 [DEBUG] [rdp_client.py:675 in __read] - message complete (484 == 484)
+2025-03-17 09:53:49,777 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process34/contentProcessTarget1",
     "isXpcShellTarget": false,
-    "processID": 945985,
+    "processID": 1152449,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process34/console2",
     "memoryActor": "server1.conn0.content-process34/memory4",
@@ -313,15 +313,15 @@
   },
   "from": "server1.conn0.processDescriptor12"
 }
-2025-03-16 19:22:06,181 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:06,186 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:06,202 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:49,778 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:49,784 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:49,785 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listTabs"
 }
-2025-03-16 19:22:06,274 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
-2025-03-16 19:22:06,293 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:49,819 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
+2025-03-17 09:53:49,821 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "tabs": [
     {
@@ -341,20 +341,20 @@
   ],
   "from": "root"
 }
-2025-03-16 19:22:06,294 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:06,299 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:06,301 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:49,822 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:49,822 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:49,824 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.tabDescriptor35",
   "type": "getTarget"
 }
-2025-03-16 19:22:07,334 [DEBUG] [rdp_client.py:675 in __read] - message complete (1641 == 1641)
-2025-03-16 19:22:07,338 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:50,150 [DEBUG] [rdp_client.py:675 in __read] - message complete (1642 == 1642)
+2025-03-17 09:53:50,155 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "frame": {
     "actor": "server1.conn0.child36/windowGlobalTarget2",
     "browsingContextID": 11,
-    "processID": 945872,
+    "processID": 1152316,
     "innerWindowId": 8589934599,
     "topInnerWindowId": 8589934599,
     "isTopLevelTarget": true,
@@ -392,15 +392,10 @@
   },
   "from": "server1.conn0.tabDescriptor35"
 }
-2025-03-16 19:22:07,344 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:07,354 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:07,365 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.parentAccessibilityActor6",
-  "type": "bootstrap"
-}
-2025-03-16 19:22:07,367 [DEBUG] [rdp_client.py:675 in __read] - message complete (266 == 266)
-2025-03-16 19:22:07,375 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:50,159 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:50,167 [DEBUG] [rdp_client.py:675 in __read] - message complete (266 == 266)
+2025-03-17 09:53:50,170 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:50,174 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -413,9 +408,29 @@
   ],
   "from": "server1.conn0.child36/windowGlobalTarget2"
 }
-2025-03-16 19:22:07,383 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:07,446 [DEBUG] [rdp_client.py:675 in __read] - message complete (101 == 101)
-2025-03-16 19:22:07,449 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:50,185 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:50,192 [DEBUG] [rdp_client.py:675 in __read] - message complete (266 == 266)
+2025-03-17 09:53:50,198 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 23,
+      "isTopLevel": true,
+      "url": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+      "title": "canalshowsport - Alternate Player for Twitch.tv"
+    }
+  ],
+  "from": "server1.conn0.child36/windowGlobalTarget2"
+}
+2025-03-17 09:53:50,201 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:50,217 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.parentAccessibilityActor6",
+  "type": "bootstrap"
+}
+2025-03-17 09:53:50,683 [DEBUG] [rdp_client.py:675 in __read] - message complete (101 == 101)
+2025-03-17 09:53:50,690 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "state": {
     "canBeDisabled": true,
@@ -423,58 +438,43 @@
   },
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-03-16 19:22:07,450 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:07,453 [DEBUG] [rdp_client.py:675 in __read] - message complete (266 == 266)
-2025-03-16 19:22:07,456 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "frameUpdate",
-  "frames": [
-    {
-      "id": 23,
-      "isTopLevel": true,
-      "url": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-      "title": "canalshowsport - Alternate Player for Twitch.tv"
-    }
-  ],
-  "from": "server1.conn0.child36/windowGlobalTarget2"
-}
-2025-03-16 19:22:07,466 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:07,457 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:07,489 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:50,696 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:50,717 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:50,718 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.parentAccessibilityActor6",
   "type": "enable"
 }
-2025-03-16 19:22:07,609 [DEBUG] [rdp_client.py:675 in __read] - message complete (100 == 100)
-2025-03-16 19:22:07,646 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:50,874 [DEBUG] [rdp_client.py:675 in __read] - message complete (100 == 100)
+2025-03-17 09:53:50,877 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "canBeDisabledChange",
   "canBeDisabled": true,
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-03-16 19:22:07,653 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:07,657 [DEBUG] [rdp_client.py:675 in __read] - message complete (50 == 50)
-2025-03-16 19:22:07,661 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:50,883 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:50,886 [DEBUG] [rdp_client.py:675 in __read] - message complete (50 == 50)
+2025-03-17 09:53:50,928 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-03-16 19:22:07,666 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:07,685 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:07,692 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:50,929 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:50,933 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:50,941 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child36/consoleActor3",
   "type": "startListeners",
   "listeners": []
 }
-2025-03-16 19:22:07,901 [DEBUG] [rdp_client.py:675 in __read] - message complete (68 == 68)
-2025-03-16 19:22:07,915 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:51,130 [DEBUG] [rdp_client.py:675 in __read] - message complete (68 == 68)
+2025-03-17 09:53:51,132 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "startedListeners": [],
   "from": "server1.conn0.child36/consoleActor3"
 }
-2025-03-16 19:22:07,921 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:07,928 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:07,939 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:51,134 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:51,149 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:51,153 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child36/thread1",
   "type": "attach",
@@ -491,22 +491,22 @@
     "eventBreakpoints": []
   }
 }
-2025-03-16 19:22:08,025 [DEBUG] [rdp_client.py:675 in __read] - message complete (40 == 40)
-2025-03-16 19:22:08,028 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:51,216 [DEBUG] [rdp_client.py:675 in __read] - message complete (40 == 40)
+2025-03-17 09:53:51,219 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.child36/thread1"
 }
-2025-03-16 19:22:08,031 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:08,041 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:08,047 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:51,222 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:51,228 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:51,250 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.tabDescriptor35",
   "type": "getWatcher",
   "isServerTargetSwitchingEnabled": true,
   "isPopupDebuggingEnabled": false
 }
-2025-03-16 19:22:08,431 [DEBUG] [rdp_client.py:675 in __read] - message complete (720 == 720)
-2025-03-16 19:22:08,477 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:51,517 [DEBUG] [rdp_client.py:675 in __read] - message complete (720 == 720)
+2025-03-17 09:53:51,527 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "actor": "server1.conn0.watcher38",
   "traits": {
@@ -545,9 +545,9 @@
   },
   "from": "server1.conn0.tabDescriptor35"
 }
-2025-03-16 19:22:08,479 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:08,498 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:08,505 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:51,533 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:51,553 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:51,556 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher38",
   "type": "watchResources",
@@ -557,62 +557,23 @@
     "document-event"
   ]
 }
-2025-03-16 19:22:09,459 [DEBUG] [rdp_client.py:675 in __read] - message complete (1548 == 1548)
-2025-03-16 19:22:09,476 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent40",
-          "resourceId": 8589934641,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934641,
-          "startedDateTime": "2025-03-16T22:22:09.378Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163729378,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowDArdJN-jiW1ZWLNLIUj3jsGbi8IciXGr17e7DWNMtL1aESKJz8f4wT3eVDwzAxXN8BFodbAI3LDTSXndGBYJojGN0T_pqfPBYwEjy8Ta74oGW372nAGsVC6X62R3BuuL7B9JHrWh-y5pEjaxDEpTAP2e4khBlsLy0PW_Bm1s2q-max5bAR1L_nwG1Dd4w3MDASfZxbVBrRUuRIYqw25SBMPfvtnF93Qo1vVY1C5cRQNXjFfmStljzG-Can1sfy9pqQNNyQGZ5t-xHRsA-Uf2T06kOUV61fm7cOhWvAijTU9evFYnHdCY8n-TgGW_Xi-iEK5VkqdjX-LbrHutdrvYk8JcDDiKsoCW4QeoD2L7qX6_Rh1q16ErcFT4LTRkzj2nn_fDZsU48CvnH8ATW5jp_-pNnv8P42fWwcE3SoSbu4CdfCdUcIbCO4TxZdFVyPqBs7eXprMK_0vsZwBHoUkWVl6HtFXFdQLfG5awWuGlffhE9KE9u9rwkFahv6MCTbFOz1cbp2z_wqGP11FxLGgzOXEOlKCy_zl10Bj8gASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:09,480 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:09,486 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-03-16 19:22:09,488 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,137 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-03-17 09:53:52,146 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:09,492 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:09,502 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:09,507 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:52,166 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:52,174 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:52,176 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher38",
   "type": "getTargetConfigurationActor"
 }
-2025-03-16 19:22:09,556 [DEBUG] [rdp_client.py:675 in __read] - message complete (639 == 639)
-2025-03-16 19:22:09,567 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,289 [DEBUG] [rdp_client.py:675 in __read] - message complete (639 == 639)
+2025-03-17 09:53:52,294 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "configuration": {
-    "actor": "server1.conn0.target-configuration41",
+    "actor": "server1.conn0.target-configuration39",
     "configuration": {},
     "traits": {
       "supportedOptions": {
@@ -639,37 +600,37 @@
   },
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:09,572 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:09,594 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:09,624 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:52,305 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:52,312 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:52,315 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher38",
   "type": "getThreadConfigurationActor"
 }
-2025-03-16 19:22:09,690 [DEBUG] [rdp_client.py:675 in __read] - message complete (99 == 99)
-2025-03-16 19:22:09,720 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,405 [DEBUG] [rdp_client.py:675 in __read] - message complete (99 == 99)
+2025-03-17 09:53:52,414 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "configuration": {
-    "actor": "server1.conn0.thread-configuration42"
+    "actor": "server1.conn0.thread-configuration40"
   },
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:09,725 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:09,753 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:09,766 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:52,420 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:52,424 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:52,425 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher38",
   "type": "watchTargets",
   "targetType": "frame"
 }
-2025-03-16 19:22:10,237 [DEBUG] [rdp_client.py:675 in __read] - message complete (1941 == 1941)
-2025-03-16 19:22:10,283 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,585 [DEBUG] [rdp_client.py:675 in __read] - message complete (1942 == 1942)
+2025-03-17 09:53:52,594 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "target-available-form",
   "target": {
     "actor": "server1.conn0.watcher37.process4//windowGlobalTarget2",
     "browsingContextID": 11,
-    "processID": 945872,
+    "processID": 1152316,
     "followWindowGlobalLifeCycle": true,
     "innerWindowId": 8589934599,
     "topInnerWindowId": 8589934599,
@@ -709,9 +670,9 @@
   },
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:10,307 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][target-available-form] handled
-2025-03-16 19:22:10,332 [DEBUG] [rdp_client.py:675 in __read] - message complete (311 == 311)
-2025-03-16 19:22:10,351 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,603 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][target-available-form] handled
+2025-03-17 09:53:52,650 [DEBUG] [rdp_client.py:675 in __read] - message complete (311 == 311)
+2025-03-17 09:53:52,653 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -720,7 +681,7 @@
       [
         {
           "name": "dom-loading",
-          "time": 1742163702074,
+          "time": 1742216020433,
           "url": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
           "newURI": null,
           "hasNativeConsoleAPI": null
@@ -730,9 +691,9 @@
   ],
   "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
 }
-2025-03-16 19:22:10,391 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:10,428 [DEBUG] [rdp_client.py:675 in __read] - message complete (459 == 459)
-2025-03-16 19:22:10,474 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,662 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:52,701 [DEBUG] [rdp_client.py:675 in __read] - message complete (459 == 459)
+2025-03-17 09:53:52,712 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -741,7 +702,7 @@
       [
         {
           "name": "dom-interactive",
-          "time": 1742163703569,
+          "time": 1742216021562,
           "title": "canalshowsport - Alternate Player for Twitch.tv",
           "url": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
           "newURI": null,
@@ -749,7 +710,7 @@
         },
         {
           "name": "dom-complete",
-          "time": 1742163703844,
+          "time": 1742216021902,
           "newURI": null,
           "hasNativeConsoleAPI": true
         }
@@ -758,40 +719,9 @@
   ],
   "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
 }
-2025-03-16 19:22:10,507 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:10,514 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:10,574 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934642,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:10,607 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:10,617 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-03-16 19:22:10,627 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:10,639 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:10,658 [DEBUG] [rdp_client.py:675 in __read] - message complete (278 == 278)
-2025-03-16 19:22:10,686 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,720 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:52,754 [DEBUG] [rdp_client.py:675 in __read] - message complete (278 == 278)
+2025-03-17 09:53:52,769 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -804,9 +734,39 @@
   ],
   "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
 }
-2025-03-16 19:22:10,698 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:10,733 [DEBUG] [rdp_client.py:675 in __read] - message complete (1790 == 1790)
-2025-03-16 19:22:10,769 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:52,769 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:52,783 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-03-17 09:53:52,783 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:52,791 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:52,889 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:52,890 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934627,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:53,125 [DEBUG] [rdp_client.py:675 in __read] - message complete (1790 == 1790)
+2025-03-17 09:53:53,136 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -814,8 +774,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent43",
-          "resourceId": 8589934642,
+          "actor": "server1.conn0.netEvent42",
+          "resourceId": 8589934627,
           "resourceType": "network-event",
           "browsingContextID": 11,
           "cause": {
@@ -831,32 +791,32 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934642,
-          "startedDateTime": "2025-03-16T22:22:10.574Z",
+          "stacktraceResourceId": 8589934627,
+          "startedDateTime": "2025-03-17T12:53:53.053Z",
           "securityFlags": 144,
-          "timeStamp": 1742163730574,
+          "timeStamp": 1742216033053,
           "timings": {},
-          "url": "https://sae12.playlist.ttvnw.net/v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8"
+          "url": "https://sae11.playlist.ttvnw.net/v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:10,851 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:10,854 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:10,892 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:53,140 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:53,146 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:53,152 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent43",
+  "to": "server1.conn0.netEvent42",
   "type": "getRequestHeaders"
 }
-2025-03-16 19:22:13,248 [DEBUG] [rdp_client.py:675 in __read] - message complete (3424 == 3424)
-2025-03-16 19:22:13,292 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:53,211 [DEBUG] [rdp_client.py:675 in __read] - message complete (3457 == 3457)
+2025-03-17 09:53:53,223 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
       "name": "Host",
-      "value": "sae12.playlist.ttvnw.net"
+      "value": "sae11.playlist.ttvnw.net"
     },
     {
       "name": "User-Agent",
@@ -880,512 +840,7 @@
     },
     {
       "name": "Cookie",
-      "value": "AWSALBTG=DB7sRsuecZkCFhDTYTM/AyfS9xDb8uXIotdWVg9o1nwmVK0zHUilw5otvWdIBCRqfd6k/00uagKOxEJzmRubX7t4/ERLBbB2tat1ycOdhv02i+CBfneq+QYQ28Xak+CQgKnrynd7VFws9MT1Ao4zpclcFyH9yEQEZYZWF7H0hVEF; AWSALBTGCORS=DB7sRsuecZkCFhDTYTM/AyfS9xDb8uXIotdWVg9o1nwmVK0zHUilw5otvWdIBCRqfd6k/00uagKOxEJzmRubX7t4/ERLBbB2tat1ycOdhv02i+CBfneq+QYQ28Xak+CQgKnrynd7VFws9MT1Ao4zpclcFyH9yEQEZYZWF7H0hVEF; AWSALB=Vt4TAyoHmOIXlB0enTOBdkzIWQ8s/ulaetZL6AEYfy07PbGqchQU6WREIYaIbpIhAITB5u+QAr1slCJ6Z92LaU8HlwaKvaZ5VMbz7aBldnK7L3NpOaVOsSmuEpNO; AWSALBCORS=Vt4TAyoHmOIXlB0enTOBdkzIWQ8s/ulaetZL6AEYfy07PbGqchQU6WREIYaIbpIhAITB5u+QAr1slCJ6Z92LaU8HlwaKvaZ5VMbz7aBldnK7L3NpOaVOsSmuEpNO"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 2072,
-  "rawHeaders": "GET /v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae12.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=DB7sRsuecZkCFhDTYTM/AyfS9xDb8uXIotdWVg9o1nwmVK0zHUilw5otvWdIBCRqfd6k/00uagKOxEJzmRubX7t4/ERLBbB2tat1ycOdhv02i+CBfneq+QYQ28Xak+CQgKnrynd7VFws9MT1Ao4zpclcFyH9yEQEZYZWF7H0hVEF; AWSALBTGCORS=DB7sRsuecZkCFhDTYTM/AyfS9xDb8uXIotdWVg9o1nwmVK0zHUilw5otvWdIBCRqfd6k/00uagKOxEJzmRubX7t4/ERLBbB2tat1ycOdhv02i+CBfneq+QYQ28Xak+CQgKnrynd7VFws9MT1Ao4zpclcFyH9yEQEZYZWF7H0hVEF; AWSALB=Vt4TAyoHmOIXlB0enTOBdkzIWQ8s/ulaetZL6AEYfy07PbGqchQU6WREIYaIbpIhAITB5u+QAr1slCJ6Z92LaU8HlwaKvaZ5VMbz7aBldnK7L3NpOaVOsSmuEpNO; AWSALBCORS=Vt4TAyoHmOIXlB0enTOBdkzIWQ8s/ulaetZL6AEYfy07PbGqchQU6WREIYaIbpIhAITB5u+QAr1slCJ6Z92LaU8HlwaKvaZ5VMbz7aBldnK7L3NpOaVOsSmuEpNO\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent43"
-}
-2025-03-16 19:22:13,329 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:13,367 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:13,402 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934643,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:13,441 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:13,450 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934644,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:13,469 [DEBUG] [rdp_client.py:675 in __read] - message complete (768 == 768)
-2025-03-16 19:22:13,509 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934642,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/2",
-            "status": "200",
-            "statusText": "",
-            "earlyHintsStatus": "",
-            "remoteAddress": "54.207.173.175",
-            "remotePort": 443,
-            "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 96,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "totalTime": 105,
-            "eventTimingsAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "contentSize": 15396,
-            "transferredSize": 9208,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:13,525 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:13,551 [DEBUG] [rdp_client.py:675 in __read] - message complete (1548 == 1548)
-2025-03-16 19:22:13,583 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent58",
-          "resourceId": 8589934643,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934643,
-          "startedDateTime": "2025-03-16T22:22:13.308Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163733308,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowDulnteO5U6lP_M9fXYQsgzG3M7cKFqJuNiCYHDC857XsnJtm9O-_HAw6UAYUUD96YTRrXXp2IC6xUkxS1l7CTBvd8-FIaze5WJyD5V9Hp0cAVYtIoB1mv8upqpeF8mdIhqy_xp7adYK6PY4CGLsTnXUScbpN9reTBmjWbw6uOwpk4F-tp3duYy8trlM7gy1LneK2j8gbmGKMSOIy-OiPs6tyk3gv1RSYxowho5zQ1aFaOjp-GFX1AmFYY8FkEAumLjssmWVZzMvBbEpYuHWkCH54Dx2dQnnPBUg-SpZFROMaMTpRxHBIPhMQtcfFBRN4jhQbmRPo-s6fo9noL7UL-yAwMdmthKCoVkse09h2iABS-zx7a8qHe_nUJb3g3Z9IrSYMO_AKrAVv4Z5zh8mL5QJFBLPSp_rtdsztv4Bz9S2AE8nNsxFmMiJakPV0DNiMIFxPhmI1XC2YHYVth4W1S662o8639sYNZX_bII0IsxfuCxkoAFrupOu8GfGOOENuGQxah8w3BBp2djzxjGgymNj-2FxlK9_zi4fcgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:13,675 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:13,650 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:13,717 [DEBUG] [rdp_client.py:675 in __read] - message complete (1548 == 1548)
-2025-03-16 19:22:13,747 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent59",
-          "resourceId": 8589934644,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934644,
-          "startedDateTime": "2025-03-16T22:22:13.444Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163733444,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowDgccs0RN0EVgEpFi8TKk_nG6pg71WMjqgluPxJRA-i6qxII2ElNHE2d7k35q4oDYn1Atmm3gMiHg0ZDp7mzwEFWAIPM8Xu880EpDQUI-gMUVFBphwiavEOKPWFWYUy8p0mTU47vNm25nCM9Hv5OQcyD-7GVOKPu9IN8-DXHaZiAMTYuGEPHrQxcsihidv_XdP3k8hk1SFY7DB7_0MiQ_ux3jZ4wTBl3ErgRjSZKm8DSVzWoHbNIzajMfGB1waGibS9PpXCuaQcPaa9QCOnCyCHG4VpJtmzt8Nm1VPolXDNPgQrrexDg8LTN9y2MMxls9CVlKFKrKhdU85kLe8AT2z8lsQcgKi1jz9LpW5X4hRSb7TqaxxE_aC2tj2mQtqWov5wUx2cypD7NwmpAmWWs7QeHVykfLO2TswAioCKOU1OuZLFp0tRTvDkQHxQgnIyrRJl5GF1m0p5ciK6ia81_5DYep7bHSunbncsj3UhSM1llMNWfp7kHAPf64P09j0UtJeUEhT2wIOHj-6ri4hGgz1IPbs5u_PatKp5xYgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:13,849 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:13,853 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent58",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:14,800 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:14,806 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934645,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:15,130 [DEBUG] [rdp_client.py:675 in __read] - message complete (1880 == 1880)
-2025-03-16 19:22:15,134 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 1182,
-  "rawHeaders": "GET /v1/segment/CowDulnteO5U6lP_M9fXYQsgzG3M7cKFqJuNiCYHDC857XsnJtm9O-_HAw6UAYUUD96YTRrXXp2IC6xUkxS1l7CTBvd8-FIaze5WJyD5V9Hp0cAVYtIoB1mv8upqpeF8mdIhqy_xp7adYK6PY4CGLsTnXUScbpN9reTBmjWbw6uOwpk4F-tp3duYy8trlM7gy1LneK2j8gbmGKMSOIy-OiPs6tyk3gv1RSYxowho5zQ1aFaOjp-GFX1AmFYY8FkEAumLjssmWVZzMvBbEpYuHWkCH54Dx2dQnnPBUg-SpZFROMaMTpRxHBIPhMQtcfFBRN4jhQbmRPo-s6fo9noL7UL-yAwMdmthKCoVkse09h2iABS-zx7a8qHe_nUJb3g3Z9IrSYMO_AKrAVv4Z5zh8mL5QJFBLPSp_rtdsztv4Bz9S2AE8nNsxFmMiJakPV0DNiMIFxPhmI1XC2YHYVth4W1S662o8639sYNZX_bII0IsxfuCxkoAFrupOu8GfGOOENuGQxah8w3BBp2djzxjGgymNj-2FxlK9_zi4fcgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent58"
-}
-2025-03-16 19:22:15,136 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:15,141 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:15,159 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934643,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/1.1",
-            "status": "200",
-            "statusText": "OK",
-            "earlyHintsStatus": "",
-            "remoteAddress": "3.160.119.125",
-            "remotePort": 443,
-            "mimeType": "application/octet-stream",
-            "waitingTime": 82,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "totalTime": 351,
-            "eventTimingsAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "contentSize": 691840,
-            "transferredSize": 692239,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:15,159 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:15,169 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:15,182 [DEBUG] [rdp_client.py:675 in __read] - message complete (1790 == 1790)
-2025-03-16 19:22:15,198 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent73",
-          "resourceId": 8589934645,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934645,
-          "startedDateTime": "2025-03-16T22:22:14.996Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163734996,
-          "timings": {},
-          "url": "https://sae12.playlist.ttvnw.net/v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:15,201 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:15,206 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent59",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:15,211 [DEBUG] [rdp_client.py:675 in __read] - message complete (770 == 770)
-2025-03-16 19:22:15,224 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934644,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/1.1",
-            "status": "200",
-            "statusText": "OK",
-            "earlyHintsStatus": "",
-            "remoteAddress": "3.160.119.125",
-            "remotePort": 443,
-            "mimeType": "application/octet-stream",
-            "waitingTime": 312,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "totalTime": 416,
-            "eventTimingsAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "contentSize": 693344,
-            "transferredSize": 693743,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:15,226 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:15,238 [DEBUG] [rdp_client.py:675 in __read] - message complete (1880 == 1880)
-2025-03-16 19:22:15,243 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 1182,
-  "rawHeaders": "GET /v1/segment/CowDgccs0RN0EVgEpFi8TKk_nG6pg71WMjqgluPxJRA-i6qxII2ElNHE2d7k35q4oDYn1Atmm3gMiHg0ZDp7mzwEFWAIPM8Xu880EpDQUI-gMUVFBphwiavEOKPWFWYUy8p0mTU47vNm25nCM9Hv5OQcyD-7GVOKPu9IN8-DXHaZiAMTYuGEPHrQxcsihidv_XdP3k8hk1SFY7DB7_0MiQ_ux3jZ4wTBl3ErgRjSZKm8DSVzWoHbNIzajMfGB1waGibS9PpXCuaQcPaa9QCOnCyCHG4VpJtmzt8Nm1VPolXDNPgQrrexDg8LTN9y2MMxls9CVlKFKrKhdU85kLe8AT2z8lsQcgKi1jz9LpW5X4hRSb7TqaxxE_aC2tj2mQtqWov5wUx2cypD7NwmpAmWWs7QeHVykfLO2TswAioCKOU1OuZLFp0tRTvDkQHxQgnIyrRJl5GF1m0p5ciK6ia81_5DYep7bHSunbncsj3UhSM1llMNWfp7kHAPf64P09j0UtJeUEhT2wIOHj-6ri4hGgz1IPbs5u_PatKp5xYgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent59"
-}
-2025-03-16 19:22:15,245 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:15,256 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:15,265 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent73",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:15,383 [DEBUG] [rdp_client.py:675 in __read] - message complete (3457 == 3457)
-2025-03-16 19:22:15,399 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "sae12.playlist.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Cookie",
-      "value": "AWSALBTG=OqxnZ6HgJSv32eurLn/Q/aka6xluacnm6ispdYmFQwBYPCPtrusY+xofubtexiW0J3Nj27EvwA2fz+pCWQVrJYEaPx67D48a8O3kpu9FYpVtIDPczYVhcJsccMPUGSXW4QK6HYjDUV3Ne3DHnZKFmQHCI6hrkrqSsgk2sV+a3bKK; AWSALBTGCORS=OqxnZ6HgJSv32eurLn/Q/aka6xluacnm6ispdYmFQwBYPCPtrusY+xofubtexiW0J3Nj27EvwA2fz+pCWQVrJYEaPx67D48a8O3kpu9FYpVtIDPczYVhcJsccMPUGSXW4QK6HYjDUV3Ne3DHnZKFmQHCI6hrkrqSsgk2sV+a3bKK; AWSALB=3xeEym3/x4pLGxs2x9UfwZQBVacPeKoy3AEunHIiVbf3TXfW6jtHIDRfHnb68u8lux4L6rU6ZS+0SnOIBdZNJDgLn8FOUe2e3EwyAyjAe8fR+Dxof8VS+8wujmbi; AWSALBCORS=3xeEym3/x4pLGxs2x9UfwZQBVacPeKoy3AEunHIiVbf3TXfW6jtHIDRfHnb68u8lux4L6rU6ZS+0SnOIBdZNJDgLn8FOUe2e3EwyAyjAe8fR+Dxof8VS+8wujmbi"
+      "value": "AWSALBTG=b09Lffr75SF4V6DUbGaGdSvHchfSGP0dxVuZG7IGEHxecIy+IWu3LX/caxQjSwWo47NymAJ9n3OPn+c7qmJSyPdF6oeeE1PjOgdAQHOoZQGNcIvAzIz/Y7aCs1zahZiwk85cSBZ/fAJ9JNQQDbPe2nhUIUnn4IZ8h8QWbwL41rC4; AWSALBTGCORS=b09Lffr75SF4V6DUbGaGdSvHchfSGP0dxVuZG7IGEHxecIy+IWu3LX/caxQjSwWo47NymAJ9n3OPn+c7qmJSyPdF6oeeE1PjOgdAQHOoZQGNcIvAzIz/Y7aCs1zahZiwk85cSBZ/fAJ9JNQQDbPe2nhUIUnn4IZ8h8QWbwL41rC4; AWSALB=7Ok9SR6L1xE5tP6VMSxHF7+BrIzKq5jntWSrooYMDt7C5Y5y29AgaX0s8Vrh85XHMGN+ukHYQj0T9mD0bP5ClvgOhJYOvdABO07f1QHafGChHeyYDaNeNyrnE36g; AWSALBCORS=7Ok9SR6L1xE5tP6VMSxHF7+BrIzKq5jntWSrooYMDt7C5Y5y29AgaX0s8Vrh85XHMGN+ukHYQj0T9mD0bP5ClvgOhJYOvdABO07f1QHafGChHeyYDaNeNyrnE36g"
     },
     {
       "name": "Sec-Fetch-Dest",
@@ -1413,60 +868,12 @@
     }
   ],
   "headersSize": 2072,
-  "rawHeaders": "GET /v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae12.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=OqxnZ6HgJSv32eurLn/Q/aka6xluacnm6ispdYmFQwBYPCPtrusY+xofubtexiW0J3Nj27EvwA2fz+pCWQVrJYEaPx67D48a8O3kpu9FYpVtIDPczYVhcJsccMPUGSXW4QK6HYjDUV3Ne3DHnZKFmQHCI6hrkrqSsgk2sV+a3bKK; AWSALBTGCORS=OqxnZ6HgJSv32eurLn/Q/aka6xluacnm6ispdYmFQwBYPCPtrusY+xofubtexiW0J3Nj27EvwA2fz+pCWQVrJYEaPx67D48a8O3kpu9FYpVtIDPczYVhcJsccMPUGSXW4QK6HYjDUV3Ne3DHnZKFmQHCI6hrkrqSsgk2sV+a3bKK; AWSALB=3xeEym3/x4pLGxs2x9UfwZQBVacPeKoy3AEunHIiVbf3TXfW6jtHIDRfHnb68u8lux4L6rU6ZS+0SnOIBdZNJDgLn8FOUe2e3EwyAyjAe8fR+Dxof8VS+8wujmbi; AWSALBCORS=3xeEym3/x4pLGxs2x9UfwZQBVacPeKoy3AEunHIiVbf3TXfW6jtHIDRfHnb68u8lux4L6rU6ZS+0SnOIBdZNJDgLn8FOUe2e3EwyAyjAe8fR+Dxof8VS+8wujmbi\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent73"
+  "rawHeaders": "GET /v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae11.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=b09Lffr75SF4V6DUbGaGdSvHchfSGP0dxVuZG7IGEHxecIy+IWu3LX/caxQjSwWo47NymAJ9n3OPn+c7qmJSyPdF6oeeE1PjOgdAQHOoZQGNcIvAzIz/Y7aCs1zahZiwk85cSBZ/fAJ9JNQQDbPe2nhUIUnn4IZ8h8QWbwL41rC4; AWSALBTGCORS=b09Lffr75SF4V6DUbGaGdSvHchfSGP0dxVuZG7IGEHxecIy+IWu3LX/caxQjSwWo47NymAJ9n3OPn+c7qmJSyPdF6oeeE1PjOgdAQHOoZQGNcIvAzIz/Y7aCs1zahZiwk85cSBZ/fAJ9JNQQDbPe2nhUIUnn4IZ8h8QWbwL41rC4; AWSALB=7Ok9SR6L1xE5tP6VMSxHF7+BrIzKq5jntWSrooYMDt7C5Y5y29AgaX0s8Vrh85XHMGN+ukHYQj0T9mD0bP5ClvgOhJYOvdABO07f1QHafGChHeyYDaNeNyrnE36g; AWSALBCORS=7Ok9SR6L1xE5tP6VMSxHF7+BrIzKq5jntWSrooYMDt7C5Y5y29AgaX0s8Vrh85XHMGN+ukHYQj0T9mD0bP5ClvgOhJYOvdABO07f1QHafGChHeyYDaNeNyrnE36g\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent42"
 }
-2025-03-16 19:22:15,410 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:15,473 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:15,482 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934646,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:15,494 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:15,498 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934647,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:15,507 [DEBUG] [rdp_client.py:675 in __read] - message complete (767 == 767)
-2025-03-16 19:22:15,523 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:53,225 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:54,333 [DEBUG] [rdp_client.py:675 in __read] - message complete (765 == 765)
+2025-03-17 09:53:54,339 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -1474,7 +881,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934645,
+          "resourceId": 8589934627,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -1482,21 +889,21 @@
             "status": "200",
             "statusText": "",
             "earlyHintsStatus": "",
-            "remoteAddress": "54.207.173.175",
+            "remoteAddress": "52.67.74.126",
             "remotePort": 443,
             "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 99,
+            "waitingTime": 84,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
+            "totalTime": 84,
+            "eventTimingsAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "totalTime": 99,
-            "eventTimingsAvailable": true,
-            "contentSize": 15396,
-            "transferredSize": 9172,
+            "contentSize": 15360,
+            "transferredSize": 9024,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
@@ -1508,9 +915,33 @@
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:15,526 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:15,596 [DEBUG] [rdp_client.py:675 in __read] - message complete (1549 == 1549)
-2025-03-16 19:22:15,609 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:54,341 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:54,395 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:54,401 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934628,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:54,495 [DEBUG] [rdp_client.py:675 in __read] - message complete (1546 == 1546)
+2025-03-17 09:53:54,500 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1518,8 +949,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent102",
-          "resourceId": 8589934646,
+          "actor": "server1.conn0.netEvent58",
+          "resourceId": 8589934628,
           "resourceType": "network-event",
           "browsingContextID": 11,
           "cause": {
@@ -1535,66 +966,27 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934646,
-          "startedDateTime": "2025-03-16T22:22:15.558Z",
+          "stacktraceResourceId": 8589934628,
+          "startedDateTime": "2025-03-17T12:53:54.463Z",
           "securityFlags": 144,
-          "timeStamp": 1742163735558,
+          "timeStamp": 1742216034463,
           "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowD4S8Fqb3EkxtQs67pDKswlvh0D0y48Uf5pL1INKrQ4M3yo8tC_IYFRnQyEOeAGo0ru5ieLEQfynu1dhGdk09ic2qwtuJVOmvEt2iaxXPYO0Vb5D8VJAiudjBUrwuuaW23fVxPNqJUts2Xve8CzqGpi7_TMrzzytaJYqYnT3IhlNtX9JthzHGPeCVTNLqd1Jq2Ef4PnCR8lTKmetceDNVukgUU_dTF1CxS0VDXsAr2KBB4tyJmDvaO_JCkI8aC3myXzP943-S72wYj8T1NfxRcJM4ik-A_8j8S4Nph7Joh6FhfZgUamX7SoDKu4Dps9KX1ytpYmeVrh0Hkt4eQLQSOcpZK28Cz4tIpyFsw8onv7W-90SGstZb4rVLguQCbyrKgNvS4bGrN_pE76WomAFtjFHNC4glTotbYw8r4tHjX_AWoKzmAApWCBQrclXfNovBBc1r6VPlE_zePMDjGeLwGpidO6GS6jpP2FF2RhTAMY-6bG6vjuDHr8I3vpBLVnX9SvueyUlQ3znBkFilJGgyjWhTDbkGakHvoiF8gASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
+          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CooDzln6PlgYZWlw2THHR276HEuYrMOv9dT3p3baK-nHMYwSeYFHzkduuAqn81ZBn0SfES1Od1VR7C2Eg2wIe4WPsxdAttLr6RfgLH6rh_iXWXsH4BaMXmFORYkM9N3kuEpmeNAy4x1MZw5VCibZa-_zw6ndlq2xjOD-_2nflLGj-AEFhooyAEAXx_NMn3IbUOopKchqcXHzd3hlV2MIANgfoYfXRzg5prwgKqF-W0WZuW3epvypfy6e5iOY_0SAPw_M7ANw92QHxJkAXWUkYElrgIZArG2vealgIIile_NS1Kgormuc_8lWVsa-xj0bkZBt08u_YrBFvd4-GT3XkSnqMjsSAUBdnjmyX-V3qm_0AaaCE4E6JswNLZ0G-5obw-jPSgXGQAUXbQLyalZBUGMTK_r2bI4sjmesNCRkcPoylNr60XIMRMLyqjK2aQTbhY1ZvVe9s9NmICnvj2nLlAlC9s4uLyG9m4tbhlfDMKZrY95Ev1F--dQKXFPaC8jR9T7rFCmg986aUZR3YRoMfEmO-pkfwh8Ok2MiIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:15,616 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:15,624 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:15,626 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:54,515 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:54,516 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:54,528 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent102",
+  "to": "server1.conn0.netEvent58",
   "type": "getRequestHeaders"
 }
-2025-03-16 19:22:15,721 [DEBUG] [rdp_client.py:675 in __read] - message complete (1549 == 1549)
-2025-03-16 19:22:15,731 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent103",
-          "resourceId": 8589934647,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934647,
-          "startedDateTime": "2025-03-16T22:22:15.631Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163735631,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowDDWWUl-TLY0Bw8m0zviRb-MXD4VGj4KKd8Qj0_9QZ_HlIi4MonebS3nnBcnvUbYJ7VtjOMORNfiGecHFZ2VmK9LhLrrTU1pFnxdB0HqxdKG43I47vHbmOzC1O7VbI2eRmZk9jyjsCgZ5YawMtoyryRz5w0wsZ-SF_HBJJXe7U5ikXzReW5ea_Ol0R8rcPvLY0unMRzF0p-VCuTMdeyQjh2C1eWb09kMkM417tJwbyzHIFtvKDOo277gM_5O0I0dlpQVGDZcTLUmT0Uk6_3O1ZsxiU78p-9pu6oOxCbXagVPBNc_Xr-KCo4t-MxpJ_FTxG3lStv0TyOpGWkxLnavqN7_ylpNUs21FLooXuinLRESroMm6fmW8006f2KLtKeqEzrPkjF8-cvJ8kUbUHWitIN_fczytS7YykkGwJiOc6HrZCUvnK1q26yVxibFwqi8WXCiwl7Nm_5GP-egYY4lzI-WbqibN9__cm0rB0x7QVpHenK2MhCjIVyJwf2Gq7-xBvsNQBfg4UXjVDCRzKGgwpk9gr8rKVt67C1nYgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:15,755 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:15,823 [DEBUG] [rdp_client.py:675 in __read] - message complete (552 == 552)
-2025-03-16 19:22:15,853 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:54,617 [DEBUG] [rdp_client.py:675 in __read] - message complete (551 == 551)
+2025-03-17 09:53:54,632 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -1635,17 +1027,11 @@
     }
   ],
   "headersSize": 0,
-  "from": "server1.conn0.netEvent102"
+  "from": "server1.conn0.netEvent58"
 }
-2025-03-16 19:22:15,869 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:15,885 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:15,907 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent103",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:16,092 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:16,110 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:54,642 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:55,400 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:55,402 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1653,7 +1039,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934648,
+          "resourceId": 8589934629,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
@@ -1668,47 +1054,8 @@
   ],
   "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
 }
-2025-03-16 19:22:16,122 [DEBUG] [rdp_client.py:675 in __read] - message complete (1791 == 1791)
-2025-03-16 19:22:16,185 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent113",
-          "resourceId": 8589934648,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934648,
-          "startedDateTime": "2025-03-16T22:22:15.962Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163735962,
-          "timings": {},
-          "url": "https://sae12.playlist.ttvnw.net/v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:16,198 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:16,241 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:16,246 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:55,465 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
+2025-03-17 09:53:55,471 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -1716,7 +1063,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934646,
+          "resourceId": 8589934628,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -1732,13 +1079,160 @@
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
+            "totalTime": 220,
+            "eventTimingsAvailable": true,
+            "contentSize": 715528,
+            "transferredSize": 715927,
+            "blockedReason": 0,
+            "responseContentAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true
+          },
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:55,474 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:55,475 [DEBUG] [rdp_client.py:675 in __read] - message complete (1790 == 1790)
+2025-03-17 09:53:55,476 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent69",
+          "resourceId": 8589934629,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934629,
+          "startedDateTime": "2025-03-17T12:53:55.450Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216035450,
+          "timings": {},
+          "url": "https://sae11.playlist.ttvnw.net/v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:55,477 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:55,486 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:55,491 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent69",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:53:55,528 [DEBUG] [rdp_client.py:675 in __read] - message complete (3424 == 3424)
+2025-03-17 09:53:55,530 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "sae11.playlist.ttvnw.net"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Cookie",
+      "value": "AWSALBTG=myxo+2lZ7oeNI/hLH+QD12n51NffjZpa8Jkv1vWrqn7rRklmeANsjgAfv7VzLppjRHu8uyqBwoovSygYyM7emtFweX1JoY+t5mGkW/Ea3oCbjRqOk37wZu7CgxkLQw01eFV/Q0nUFVRNtEdljhsGNdqEMV07B5u7FfHdHzBIvlQQ; AWSALBTGCORS=myxo+2lZ7oeNI/hLH+QD12n51NffjZpa8Jkv1vWrqn7rRklmeANsjgAfv7VzLppjRHu8uyqBwoovSygYyM7emtFweX1JoY+t5mGkW/Ea3oCbjRqOk37wZu7CgxkLQw01eFV/Q0nUFVRNtEdljhsGNdqEMV07B5u7FfHdHzBIvlQQ; AWSALB=fQ7n8I8WZ073FWLNa2hvn/UchwjuBjFtOB8JtvLE9JDbNe0DNJ2sGkupQb8wPd8D6iSOMe8xLbHLGyJuKXpp7ONJa7MDbJSUtsm1Ms2SWuB+M3qlx9JtT0R1yNAd; AWSALBCORS=fQ7n8I8WZ073FWLNa2hvn/UchwjuBjFtOB8JtvLE9JDbNe0DNJ2sGkupQb8wPd8D6iSOMe8xLbHLGyJuKXpp7ONJa7MDbJSUtsm1Ms2SWuB+M3qlx9JtT0R1yNAd"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "Origin",
+      "value": "https://www.twitch.tv"
+    },
+    {
+      "name": "Referer",
+      "value": "https://www.twitch.tv/"
+    }
+  ],
+  "headersSize": 2072,
+  "rawHeaders": "GET /v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae11.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=myxo+2lZ7oeNI/hLH+QD12n51NffjZpa8Jkv1vWrqn7rRklmeANsjgAfv7VzLppjRHu8uyqBwoovSygYyM7emtFweX1JoY+t5mGkW/Ea3oCbjRqOk37wZu7CgxkLQw01eFV/Q0nUFVRNtEdljhsGNdqEMV07B5u7FfHdHzBIvlQQ; AWSALBTGCORS=myxo+2lZ7oeNI/hLH+QD12n51NffjZpa8Jkv1vWrqn7rRklmeANsjgAfv7VzLppjRHu8uyqBwoovSygYyM7emtFweX1JoY+t5mGkW/Ea3oCbjRqOk37wZu7CgxkLQw01eFV/Q0nUFVRNtEdljhsGNdqEMV07B5u7FfHdHzBIvlQQ; AWSALB=fQ7n8I8WZ073FWLNa2hvn/UchwjuBjFtOB8JtvLE9JDbNe0DNJ2sGkupQb8wPd8D6iSOMe8xLbHLGyJuKXpp7ONJa7MDbJSUtsm1Ms2SWuB+M3qlx9JtT0R1yNAd; AWSALBCORS=fQ7n8I8WZ073FWLNa2hvn/UchwjuBjFtOB8JtvLE9JDbNe0DNJ2sGkupQb8wPd8D6iSOMe8xLbHLGyJuKXpp7ONJa7MDbJSUtsm1Ms2SWuB+M3qlx9JtT0R1yNAd\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent69"
+}
+2025-03-17 09:53:55,536 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:55,766 [DEBUG] [rdp_client.py:675 in __read] - message complete (765 == 765)
+2025-03-17 09:53:55,772 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 8589934629,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "52.67.74.126",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 77,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "totalTime": 335,
+            "totalTime": 80,
             "eventTimingsAvailable": true,
-            "contentSize": 691464,
-            "transferredSize": 691863,
+            "contentSize": 15360,
+            "transferredSize": 9023,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
@@ -1750,9 +1244,78 @@
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:16,248 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:16,502 [DEBUG] [rdp_client.py:675 in __read] - message complete (1881 == 1881)
-2025-03-16 19:22:16,518 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:55,798 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:55,799 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:55,815 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934630,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:55,912 [DEBUG] [rdp_client.py:675 in __read] - message complete (1546 == 1546)
+2025-03-17 09:53:55,913 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent84",
+          "resourceId": 8589934630,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934630,
+          "startedDateTime": "2025-03-17T12:53:55.873Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216035873,
+          "timings": {},
+          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CooDS5GyosEH1jdqJgRJN_9HBOLENQVIi736Fb3jlTSiI9EgzBQzQmW1Yt_bqqc2hJpBUhv0-eGNEn9zYxHLT6sKyNQwwfkmAUg_eQBY3aLXR5_71aa7AK1AO743KxPntkp3pBQPqBSktp_Xc--cvqhH22FRmmrifa1KE5Kj0vgWGzqzzmUemgtvIZYTi7rsLsFm_w4JBcqdLAOgWSldOLnvNeaR1sWatvPPxqgds8nCpDtM50k0I74Gv830yz-YdmeXwWjWmsqp06-kAhC7NnROHalAJdG_T8GtsCNyF-vr3hhREKb2uHD8z7ZOjhvV_q1HgF7LIxQvL_dzrufLUrJ5UiLfFB-vOr5gbcyKS5m4ul97_DjyMVwBEleS5SAYD1ZEqiDdZkLYZ6cr3V0iwHyPRRZj2VbP28vQRQz3kZwsJDtkCGRQVhHXSa7PUm-c7wy0ocbmz16udOfZpOGcKhRMhWtBfx9WP86Bv5mavJHIOdW0pLbyQvKtDkcluRQ3tVl6brM4SgURUtg0NBoMxY93dRMvl9LjLcLOIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:55,914 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:55,914 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:55,932 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent84",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:53:56,017 [DEBUG] [rdp_client.py:675 in __read] - message complete (1878 == 1878)
+2025-03-17 09:53:56,033 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -1800,14 +1363,13 @@
       "value": "https://www.twitch.tv/"
     }
   ],
-  "headersSize": 1182,
-  "rawHeaders": "GET /v1/segment/CowDDWWUl-TLY0Bw8m0zviRb-MXD4VGj4KKd8Qj0_9QZ_HlIi4MonebS3nnBcnvUbYJ7VtjOMORNfiGecHFZ2VmK9LhLrrTU1pFnxdB0HqxdKG43I47vHbmOzC1O7VbI2eRmZk9jyjsCgZ5YawMtoyryRz5w0wsZ-SF_HBJJXe7U5ikXzReW5ea_Ol0R8rcPvLY0unMRzF0p-VCuTMdeyQjh2C1eWb09kMkM417tJwbyzHIFtvKDOo277gM_5O0I0dlpQVGDZcTLUmT0Uk6_3O1ZsxiU78p-9pu6oOxCbXagVPBNc_Xr-KCo4t-MxpJ_FTxG3lStv0TyOpGWkxLnavqN7_ylpNUs21FLooXuinLRESroMm6fmW8006f2KLtKeqEzrPkjF8-cvJ8kUbUHWitIN_fczytS7YykkGwJiOc6HrZCUvnK1q26yVxibFwqi8WXCiwl7Nm_5GP-egYY4lzI-WbqibN9__cm0rB0x7QVpHenK2MhCjIVyJwf2Gq7-xBvsNQBfg4UXjVDCRzKGgwpk9gr8rKVt67C1nYgASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent103"
+  "headersSize": 1180,
+  "rawHeaders": "GET /v1/segment/CooDS5GyosEH1jdqJgRJN_9HBOLENQVIi736Fb3jlTSiI9EgzBQzQmW1Yt_bqqc2hJpBUhv0-eGNEn9zYxHLT6sKyNQwwfkmAUg_eQBY3aLXR5_71aa7AK1AO743KxPntkp3pBQPqBSktp_Xc--cvqhH22FRmmrifa1KE5Kj0vgWGzqzzmUemgtvIZYTi7rsLsFm_w4JBcqdLAOgWSldOLnvNeaR1sWatvPPxqgds8nCpDtM50k0I74Gv830yz-YdmeXwWjWmsqp06-kAhC7NnROHalAJdG_T8GtsCNyF-vr3hhREKb2uHD8z7ZOjhvV_q1HgF7LIxQvL_dzrufLUrJ5UiLfFB-vOr5gbcyKS5m4ul97_DjyMVwBEleS5SAYD1ZEqiDdZkLYZ6cr3V0iwHyPRRZj2VbP28vQRQz3kZwsJDtkCGRQVhHXSa7PUm-c7wy0ocbmz16udOfZpOGcKhRMhWtBfx9WP86Bv5mavJHIOdW0pLbyQvKtDkcluRQ3tVl6brM4SgURUtg0NBoMxY93dRMvl9LjLcLOIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent84"
 }
-2025-03-16 19:22:16,537 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:16,565 [DEBUG] [rdp_client.py:675 in __read] - message complete (770 == 770)
-2025-03-16 19:22:16,584 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:16,625 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:56,037 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:56,632 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
+2025-03-17 09:53:56,642 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -1815,7 +1377,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934647,
+          "resourceId": 8589934630,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -1826,7 +1388,7 @@
             "remoteAddress": "3.160.119.125",
             "remotePort": 443,
             "mimeType": "application/octet-stream",
-            "waitingTime": 308,
+            "waitingTime": 96,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
@@ -1834,10 +1396,10 @@
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "totalTime": 371,
+            "totalTime": 413,
             "eventTimingsAvailable": true,
-            "contentSize": 691652,
-            "transferredSize": 692051,
+            "contentSize": 752188,
+            "transferredSize": 752587,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
@@ -1849,87 +1411,254 @@
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:16,646 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:16,666 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-03-17 09:53:56,653 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:56,896 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:56,900 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934631,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:57,029 [DEBUG] [rdp_client.py:675 in __read] - message complete (1790 == 1790)
+2025-03-17 09:53:57,045 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent98",
+          "resourceId": 8589934631,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934631,
+          "startedDateTime": "2025-03-17T12:53:56.926Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216036926,
+          "timings": {},
+          "url": "https://sae11.playlist.ttvnw.net/v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:57,052 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:57,056 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:57,062 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent98",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:53:57,153 [DEBUG] [rdp_client.py:675 in __read] - message complete (3424 == 3424)
+2025-03-17 09:53:57,199 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "sae11.playlist.ttvnw.net"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Cookie",
+      "value": "AWSALBTG=3U54aqy6o9u5sjahHxFva0GuzgLBVfSeRzUGQL+LUUp/tcpTOibOo6WAifHfOWCBVCazifNqros+vW2skkUawmMjlGQ+FVT/UkPaJcVo3YtO0QGAPdAUcC0BsZECp/7e7n3XVGfXiy1B5axWxukWMv2b/tG+llF6pdwhjytg0cw2; AWSALBTGCORS=3U54aqy6o9u5sjahHxFva0GuzgLBVfSeRzUGQL+LUUp/tcpTOibOo6WAifHfOWCBVCazifNqros+vW2skkUawmMjlGQ+FVT/UkPaJcVo3YtO0QGAPdAUcC0BsZECp/7e7n3XVGfXiy1B5axWxukWMv2b/tG+llF6pdwhjytg0cw2; AWSALB=qGpQP3Gq5a68wi8NkuaZgRbpFs7/5Xrd2z4FSPVEasokrL6JtlufUD/AjacBRLGgQz37OTIVPhpmsDjB8mKhQQW4J/Ht4eoD4rbRAYe4xRHoRyI32MT5Jaoj12Ei; AWSALBCORS=qGpQP3Gq5a68wi8NkuaZgRbpFs7/5Xrd2z4FSPVEasokrL6JtlufUD/AjacBRLGgQz37OTIVPhpmsDjB8mKhQQW4J/Ht4eoD4rbRAYe4xRHoRyI32MT5Jaoj12Ei"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "Origin",
+      "value": "https://www.twitch.tv"
+    },
+    {
+      "name": "Referer",
+      "value": "https://www.twitch.tv/"
+    }
+  ],
+  "headersSize": 2072,
+  "rawHeaders": "GET /v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae11.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=3U54aqy6o9u5sjahHxFva0GuzgLBVfSeRzUGQL+LUUp/tcpTOibOo6WAifHfOWCBVCazifNqros+vW2skkUawmMjlGQ+FVT/UkPaJcVo3YtO0QGAPdAUcC0BsZECp/7e7n3XVGfXiy1B5axWxukWMv2b/tG+llF6pdwhjytg0cw2; AWSALBTGCORS=3U54aqy6o9u5sjahHxFva0GuzgLBVfSeRzUGQL+LUUp/tcpTOibOo6WAifHfOWCBVCazifNqros+vW2skkUawmMjlGQ+FVT/UkPaJcVo3YtO0QGAPdAUcC0BsZECp/7e7n3XVGfXiy1B5axWxukWMv2b/tG+llF6pdwhjytg0cw2; AWSALB=qGpQP3Gq5a68wi8NkuaZgRbpFs7/5Xrd2z4FSPVEasokrL6JtlufUD/AjacBRLGgQz37OTIVPhpmsDjB8mKhQQW4J/Ht4eoD4rbRAYe4xRHoRyI32MT5Jaoj12Ei; AWSALBCORS=qGpQP3Gq5a68wi8NkuaZgRbpFs7/5Xrd2z4FSPVEasokrL6JtlufUD/AjacBRLGgQz37OTIVPhpmsDjB8mKhQQW4J/Ht4eoD4rbRAYe4xRHoRyI32MT5Jaoj12Ei\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent98"
+}
+2025-03-17 09:53:57,200 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:57,497 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:57,498 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934632,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:57,515 [DEBUG] [rdp_client.py:675 in __read] - message complete (766 == 766)
+2025-03-17 09:53:57,516 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 8589934631,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "52.67.74.126",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 89,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 142,
+            "eventTimingsAvailable": true,
+            "contentSize": 15360,
+            "transferredSize": 9029,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:57,519 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:57,601 [DEBUG] [rdp_client.py:675 in __read] - message complete (1547 == 1547)
+2025-03-17 09:53:57,602 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent113",
+          "resourceId": 8589934632,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934632,
+          "startedDateTime": "2025-03-17T12:53:57.545Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216037545,
+          "timings": {},
+          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CooDSrX_5N4N5YBPSYQ4N4JQW5dnDpthjSzSrlnQ5A8k-7fIYilGGI73qV7JStgWmoUMFm12JubBI9OR4KiAHRqfdp5KwfemvqvwVw5_YvZoG8x5otcGVc0rFYpeDKt2F3PiSmwP7bZCcc_bDU6zV2GVgcF2pT1sjsDON-mYsQ4Dd0kbv6xnC7ueyFPE_h8JgYro14tilYgqL41uaZT-Dqp19l8Fbx1YwEpoLlP8tvlONl2OX_Qfb_iLt5wXwva8EC0XUWXl637rdYoS5gigjyhBL6KKq1qo6zLjVhjIRWHOIBOq_nFUzGpcnsmUIfhCicVsZ8VuAHy96VYpiKl6jOx7tDOz8AuvdTi8-8Fbx1wPVSRJ0wVJyustpirsLpL_YtwxdZIRJBZlEO0QHypoGcaYyTwoVFUNc4ol8JZqif4YAU8mof3sx1ikPrhgu_mJfMrivRSE9hj4DcLSqWfMI1NIBEDHyk8TB7xG2nG860FEpCrHjG46Np2D5mMulRodjRoeAXwHOBjQ9rtoJBoMFAB_E3q93iODsThhIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:57,611 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:57,611 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:57,616 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.netEvent113",
   "type": "getRequestHeaders"
 }
-2025-03-16 19:22:16,685 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:16,706 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934648,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/2",
-            "status": "200",
-            "statusText": "",
-            "earlyHintsStatus": "",
-            "remoteAddress": "54.207.173.175",
-            "remotePort": 443,
-            "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 141,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "totalTime": 194,
-            "eventTimingsAvailable": true,
-            "contentSize": 15396,
-            "transferredSize": 9166,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:16,715 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:16,786 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:16,791 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934649,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:17,229 [DEBUG] [rdp_client.py:675 in __read] - message complete (3425 == 3425)
-2025-03-16 19:22:17,258 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:57,627 [DEBUG] [rdp_client.py:675 in __read] - message complete (1879 == 1879)
+2025-03-17 09:53:57,637 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
       "name": "Host",
-      "value": "sae12.playlist.ttvnw.net"
+      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
     },
     {
       "name": "User-Agent",
@@ -1952,10 +1681,6 @@
       "value": "keep-alive"
     },
     {
-      "name": "Cookie",
-      "value": "AWSALBTG=LrDx5Gaeo2YA/7LPHm6YGhiJ9OOuhdiF4w772id7i2kDpiSC34btyBNZcyGrRhdaaK5dMtEKXLTHKoEqjqCW5EzyegK0iezcUtHetOGYAkU2oj7Sgcd4YEGNYGJK1irjVQzlBDnEr+ykjtKdRM09WZ2OhFkomvQrd5V6kwF4RWAj; AWSALBTGCORS=LrDx5Gaeo2YA/7LPHm6YGhiJ9OOuhdiF4w772id7i2kDpiSC34btyBNZcyGrRhdaaK5dMtEKXLTHKoEqjqCW5EzyegK0iezcUtHetOGYAkU2oj7Sgcd4YEGNYGJK1irjVQzlBDnEr+ykjtKdRM09WZ2OhFkomvQrd5V6kwF4RWAj; AWSALB=Sq6cC2JGR3ZLVOLa9gwr0axJYSxa926xm0xTX0t+yrlx0qJHE63Rx/uM27IfZQu1+MDagSDCZgdN9AhxnRXKtuUPUt80R70l8pkN06e//h5nN7Dlhxu+xvO6yBsL; AWSALBCORS=Sq6cC2JGR3ZLVOLa9gwr0axJYSxa926xm0xTX0t+yrlx0qJHE63Rx/uM27IfZQu1+MDagSDCZgdN9AhxnRXKtuUPUt80R70l8pkN06e//h5nN7Dlhxu+xvO6yBsL"
-    },
-    {
       "name": "Sec-Fetch-Dest",
       "value": "empty"
     },
@@ -1976,58 +1701,57 @@
       "value": "https://www.twitch.tv/"
     }
   ],
-  "headersSize": 2072,
-  "rawHeaders": "GET /v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae12.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=LrDx5Gaeo2YA/7LPHm6YGhiJ9OOuhdiF4w772id7i2kDpiSC34btyBNZcyGrRhdaaK5dMtEKXLTHKoEqjqCW5EzyegK0iezcUtHetOGYAkU2oj7Sgcd4YEGNYGJK1irjVQzlBDnEr+ykjtKdRM09WZ2OhFkomvQrd5V6kwF4RWAj; AWSALBTGCORS=LrDx5Gaeo2YA/7LPHm6YGhiJ9OOuhdiF4w772id7i2kDpiSC34btyBNZcyGrRhdaaK5dMtEKXLTHKoEqjqCW5EzyegK0iezcUtHetOGYAkU2oj7Sgcd4YEGNYGJK1irjVQzlBDnEr+ykjtKdRM09WZ2OhFkomvQrd5V6kwF4RWAj; AWSALB=Sq6cC2JGR3ZLVOLa9gwr0axJYSxa926xm0xTX0t+yrlx0qJHE63Rx/uM27IfZQu1+MDagSDCZgdN9AhxnRXKtuUPUt80R70l8pkN06e//h5nN7Dlhxu+xvO6yBsL; AWSALBCORS=Sq6cC2JGR3ZLVOLa9gwr0axJYSxa926xm0xTX0t+yrlx0qJHE63Rx/uM27IfZQu1+MDagSDCZgdN9AhxnRXKtuUPUt80R70l8pkN06e//h5nN7Dlhxu+xvO6yBsL\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "headersSize": 1180,
+  "rawHeaders": "GET /v1/segment/CooDSrX_5N4N5YBPSYQ4N4JQW5dnDpthjSzSrlnQ5A8k-7fIYilGGI73qV7JStgWmoUMFm12JubBI9OR4KiAHRqfdp5KwfemvqvwVw5_YvZoG8x5otcGVc0rFYpeDKt2F3PiSmwP7bZCcc_bDU6zV2GVgcF2pT1sjsDON-mYsQ4Dd0kbv6xnC7ueyFPE_h8JgYro14tilYgqL41uaZT-Dqp19l8Fbx1YwEpoLlP8tvlONl2OX_Qfb_iLt5wXwva8EC0XUWXl637rdYoS5gigjyhBL6KKq1qo6zLjVhjIRWHOIBOq_nFUzGpcnsmUIfhCicVsZ8VuAHy96VYpiKl6jOx7tDOz8AuvdTi8-8Fbx1wPVSRJ0wVJyustpirsLpL_YtwxdZIRJBZlEO0QHypoGcaYyTwoVFUNc4ol8JZqif4YAU8mof3sx1ikPrhgu_mJfMrivRSE9hj4DcLSqWfMI1NIBEDHyk8TB7xG2nG860FEpCrHjG46Np2D5mMulRodjRoeAXwHOBjQ9rtoJBoMFAB_E3q93iODsThhIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
   "from": "server1.conn0.netEvent113"
 }
-2025-03-16 19:22:17,287 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:17,333 [DEBUG] [rdp_client.py:675 in __read] - message complete (1549 == 1549)
-2025-03-16 19:22:17,347 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:57,648 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:58,297 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
+2025-03-17 09:53:58,298 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
-  "type": "resources-available-array",
+  "type": "resources-updated-array",
   "array": [
     [
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent142",
-          "resourceId": 8589934649,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
+          "resourceId": 8589934632,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/1.1",
+            "status": "200",
+            "statusText": "OK",
+            "earlyHintsStatus": "",
+            "remoteAddress": "3.160.119.125",
+            "remotePort": 443,
+            "mimeType": "application/octet-stream",
+            "waitingTime": 88,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 271,
+            "eventTimingsAvailable": true,
+            "contentSize": 739592,
+            "transferredSize": 739987,
+            "blockedReason": 0,
+            "responseContentAvailable": true
           },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934649,
-          "startedDateTime": "2025-03-16T22:22:17.083Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163737083,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowDw2gvxY8VxXmLMxLU_xoQjBN0ugZe0i9UCiUR_UOCiHpdwhNZWoyVh7koC1whzJY4EiuNwyoNxvBaKZoSM8g42hJBSgxAFLv6g4P2j192ap8uT5Y-bJnWFdWHSPFmY2UfzOWMWSi2QN7_ZWafbMa9vrnjhPxY_F9bfevoQoK2vIp-Jd0B-E0PbotBmMNc1EuNqhFHDbhb4qJhDYC-9uoR655p1YEJQpVXccrtmm2Tiy_AkjrSln3dWf11esLnGptC4IJVsU1WKbh5VsPoqw6OqOw4buUT8Wrd4g-EpR-xLomvRje3JjxbPZBrs8n3_GI1PaqPuleGLTJss9X_4D-lcnEcA3h8OJcv7topYZVU1P0TYPFe9NhOOHlZxfIiVxzEISwcgkcIOL27GJtEQRuKrhV2yeDvOCRMcnW2MiYPvG19P54YWotZgdwQvOt2wNhHfjntMxXo9rcwKqy3ahWNCGodOWmyE16pznj23aUdVVttGxPEjaG0Sw9ArjSSZIbYbY036RrH_93QfRs_GgwPrEu529JfLN0C6-0gASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:17,387 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:17,414 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:17,450 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent142",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:18,118 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:18,159 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:58,306 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:58,876 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:58,893 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2035,7 +1759,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934650,
+          "resourceId": 8589934633,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
@@ -2050,8 +1774,8 @@
   ],
   "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
 }
-2025-03-16 19:22:18,227 [DEBUG] [rdp_client.py:675 in __read] - message complete (1791 == 1791)
-2025-03-16 19:22:18,292 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:58,997 [DEBUG] [rdp_client.py:675 in __read] - message complete (1791 == 1791)
+2025-03-17 09:53:59,019 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2059,8 +1783,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent143",
-          "resourceId": 8589934650,
+          "actor": "server1.conn0.netEvent127",
+          "resourceId": 8589934633,
           "resourceType": "network-event",
           "browsingContextID": 11,
           "cause": {
@@ -2076,281 +1800,32 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934650,
-          "startedDateTime": "2025-03-16T22:22:17.939Z",
+          "stacktraceResourceId": 8589934633,
+          "startedDateTime": "2025-03-17T12:53:58.941Z",
           "securityFlags": 144,
-          "timeStamp": 1742163737939,
+          "timeStamp": 1742216038941,
           "timings": {},
-          "url": "https://sae12.playlist.ttvnw.net/v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8"
+          "url": "https://sae11.playlist.ttvnw.net/v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:18,319 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:18,321 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:18,364 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:59,039 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:59,042 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:59,061 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934649,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/1.1",
-            "status": "200",
-            "statusText": "OK",
-            "earlyHintsStatus": "",
-            "remoteAddress": "3.160.119.125",
-            "remotePort": 443,
-            "mimeType": "application/octet-stream",
-            "waitingTime": 71,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "totalTime": 636,
-            "eventTimingsAvailable": true,
-            "contentSize": 739216,
-            "transferredSize": 739615,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:18,380 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:18,382 [DEBUG] [rdp_client.py:675 in __read] - message complete (1881 == 1881)
-2025-03-16 19:22:18,425 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 1182,
-  "rawHeaders": "GET /v1/segment/CowDw2gvxY8VxXmLMxLU_xoQjBN0ugZe0i9UCiUR_UOCiHpdwhNZWoyVh7koC1whzJY4EiuNwyoNxvBaKZoSM8g42hJBSgxAFLv6g4P2j192ap8uT5Y-bJnWFdWHSPFmY2UfzOWMWSi2QN7_ZWafbMa9vrnjhPxY_F9bfevoQoK2vIp-Jd0B-E0PbotBmMNc1EuNqhFHDbhb4qJhDYC-9uoR655p1YEJQpVXccrtmm2Tiy_AkjrSln3dWf11esLnGptC4IJVsU1WKbh5VsPoqw6OqOw4buUT8Wrd4g-EpR-xLomvRje3JjxbPZBrs8n3_GI1PaqPuleGLTJss9X_4D-lcnEcA3h8OJcv7topYZVU1P0TYPFe9NhOOHlZxfIiVxzEISwcgkcIOL27GJtEQRuKrhV2yeDvOCRMcnW2MiYPvG19P54YWotZgdwQvOt2wNhHfjntMxXo9rcwKqy3ahWNCGodOWmyE16pznj23aUdVVttGxPEjaG0Sw9ArjSSZIbYbY036RrH_93QfRs_GgwPrEu529JfLN0C6-0gASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent142"
-}
-2025-03-16 19:22:18,433 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:18,456 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:18,467 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:18,520 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934650,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/2",
-            "status": "200",
-            "statusText": "",
-            "earlyHintsStatus": "",
-            "remoteAddress": "54.207.173.175",
-            "remotePort": 443,
-            "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 110,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "totalTime": 192,
-            "eventTimingsAvailable": true,
-            "contentSize": 15396,
-            "transferredSize": 9217,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:18,546 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:18,558 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:18,593 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934651,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:18,631 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent143",
+  "to": "server1.conn0.netEvent127",
   "type": "getRequestHeaders"
 }
-2025-03-16 19:22:18,658 [DEBUG] [rdp_client.py:675 in __read] - message complete (1549 == 1549)
-2025-03-16 19:22:18,674 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent158",
-          "resourceId": 8589934651,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934651,
-          "startedDateTime": "2025-03-16T22:22:18.312Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163738312,
-          "timings": {},
-          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CowD18PIYJGQuUNqQCJTxSuxYR-RPWjmx2uIUe2jqgPt3sh2zoZO_NGRtM_-Ue47h6jxZv8yYNWx7BJFA4J3dtYiQcBcYYbUlav68zHYEV-h3AjjvOyYhyVZviQIJoAcil234MntawPtCXc6R_vhxzkVNw3o4zfqX_IFW2mrhm8QStZO3SN-L8vhbECOSmb9Xp9Huuu-MBrldLnNXFBkZ082zE2Xgu31HbXwug_-anoahpzEH75vaMxlUTAlGIuJN8sjO4Ptx8fkSvx_dH7Hnn7aN6wNX-UqUljW8SbVAYlIIqucv-Gr8AC0VbOWzInhJ-uo6pGLp0_AVonYPsYhQJxCZecbDM3b2gzW4oZLbire2c7i8tCn2SvIP1U1SsyW4WJNSRhOC7kWQczTCJrqINnBvArhV3vJ55cwrJLhW8EN6SPu0rdT5ywStrgd3h9hmYuf790mOwLgdLlV39Ztgtzlzhuo4r-BjLUX0A33srSXnqFdTFW51uvdRioDPNdWRRXHUxdGxepjviA9S8w-GgzBthdsGm-hv_zlcVggASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:18,716 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:19,017 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
-2025-03-16 19:22:19,038 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-updated-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "resourceId": 8589934651,
-          "resourceUpdates": {
-            "requestCookiesAvailable": true,
-            "requestHeadersAvailable": true,
-            "httpVersion": "HTTP/1.1",
-            "status": "200",
-            "statusText": "OK",
-            "earlyHintsStatus": "",
-            "remoteAddress": "3.160.119.125",
-            "remotePort": 443,
-            "mimeType": "application/octet-stream",
-            "waitingTime": 78,
-            "isResolvedByTRR": false,
-            "responseHeadersAvailable": true,
-            "responseCookiesAvailable": true,
-            "responseStartAvailable": true,
-            "securityState": "secure",
-            "isRacing": false,
-            "securityInfoAvailable": true,
-            "totalTime": 497,
-            "eventTimingsAvailable": true,
-            "contentSize": 713460,
-            "transferredSize": 713859,
-            "blockedReason": 0,
-            "responseContentAvailable": true
-          },
-          "browsingContextID": 11,
-          "innerWindowId": 8589934599
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:19,045 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:19,051 [DEBUG] [rdp_client.py:675 in __read] - message complete (3425 == 3425)
-2025-03-16 19:22:19,084 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:59,127 [DEBUG] [rdp_client.py:675 in __read] - message complete (3458 == 3458)
+2025-03-17 09:53:59,143 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
       "name": "Host",
-      "value": "sae12.playlist.ttvnw.net"
+      "value": "sae11.playlist.ttvnw.net"
     },
     {
       "name": "User-Agent",
@@ -2374,194 +1849,7 @@
     },
     {
       "name": "Cookie",
-      "value": "AWSALBTG=8+fnoc06YMv6COfiBvp0h4X5+AKErZXDtRqhsQG4jHv4mEt+3gMV8dkKQQXngX1KiTlQeP+mBCsIvypcbB//0cZL/cM7a5g8f08fVscxxLGX/TybaYoWgqeiohQYKl4+KYpvOEcDfXVEsksKIcvfSn+3vB0Dl0/XW3+Uf3ewwcel; AWSALBTGCORS=8+fnoc06YMv6COfiBvp0h4X5+AKErZXDtRqhsQG4jHv4mEt+3gMV8dkKQQXngX1KiTlQeP+mBCsIvypcbB//0cZL/cM7a5g8f08fVscxxLGX/TybaYoWgqeiohQYKl4+KYpvOEcDfXVEsksKIcvfSn+3vB0Dl0/XW3+Uf3ewwcel; AWSALB=JfErSlkTjr8O5x+qtsZePyIrqStkROEkHeSQ7hoMad0ET7EHDgPCpAaqA7uTrkTqbFFGN4aC6B0ycwyAyRIjpsqqctjcvweVQXvFyqQnWmEIVcu4oLwnET8HjgPf; AWSALBCORS=JfErSlkTjr8O5x+qtsZePyIrqStkROEkHeSQ7hoMad0ET7EHDgPCpAaqA7uTrkTqbFFGN4aC6B0ycwyAyRIjpsqqctjcvweVQXvFyqQnWmEIVcu4oLwnET8HjgPf"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 2072,
-  "rawHeaders": "GET /v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae12.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=8+fnoc06YMv6COfiBvp0h4X5+AKErZXDtRqhsQG4jHv4mEt+3gMV8dkKQQXngX1KiTlQeP+mBCsIvypcbB//0cZL/cM7a5g8f08fVscxxLGX/TybaYoWgqeiohQYKl4+KYpvOEcDfXVEsksKIcvfSn+3vB0Dl0/XW3+Uf3ewwcel; AWSALBTGCORS=8+fnoc06YMv6COfiBvp0h4X5+AKErZXDtRqhsQG4jHv4mEt+3gMV8dkKQQXngX1KiTlQeP+mBCsIvypcbB//0cZL/cM7a5g8f08fVscxxLGX/TybaYoWgqeiohQYKl4+KYpvOEcDfXVEsksKIcvfSn+3vB0Dl0/XW3+Uf3ewwcel; AWSALB=JfErSlkTjr8O5x+qtsZePyIrqStkROEkHeSQ7hoMad0ET7EHDgPCpAaqA7uTrkTqbFFGN4aC6B0ycwyAyRIjpsqqctjcvweVQXvFyqQnWmEIVcu4oLwnET8HjgPf; AWSALBCORS=JfErSlkTjr8O5x+qtsZePyIrqStkROEkHeSQ7hoMad0ET7EHDgPCpAaqA7uTrkTqbFFGN4aC6B0ycwyAyRIjpsqqctjcvweVQXvFyqQnWmEIVcu4oLwnET8HjgPf\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent143"
-}
-2025-03-16 19:22:19,097 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:19,132 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:19,143 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent158",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:19,176 [DEBUG] [rdp_client.py:675 in __read] - message complete (1881 == 1881)
-2025-03-16 19:22:19,218 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Sec-Fetch-Dest",
-      "value": "empty"
-    },
-    {
-      "name": "Sec-Fetch-Mode",
-      "value": "cors"
-    },
-    {
-      "name": "Sec-Fetch-Site",
-      "value": "same-origin"
-    },
-    {
-      "name": "Origin",
-      "value": "https://www.twitch.tv"
-    },
-    {
-      "name": "Referer",
-      "value": "https://www.twitch.tv/"
-    }
-  ],
-  "headersSize": 1182,
-  "rawHeaders": "GET /v1/segment/CowD18PIYJGQuUNqQCJTxSuxYR-RPWjmx2uIUe2jqgPt3sh2zoZO_NGRtM_-Ue47h6jxZv8yYNWx7BJFA4J3dtYiQcBcYYbUlav68zHYEV-h3AjjvOyYhyVZviQIJoAcil234MntawPtCXc6R_vhxzkVNw3o4zfqX_IFW2mrhm8QStZO3SN-L8vhbECOSmb9Xp9Huuu-MBrldLnNXFBkZ082zE2Xgu31HbXwug_-anoahpzEH75vaMxlUTAlGIuJN8sjO4Ptx8fkSvx_dH7Hnn7aN6wNX-UqUljW8SbVAYlIIqucv-Gr8AC0VbOWzInhJ-uo6pGLp0_AVonYPsYhQJxCZecbDM3b2gzW4oZLbire2c7i8tCn2SvIP1U1SsyW4WJNSRhOC7kWQczTCJrqINnBvArhV3vJ55cwrJLhW8EN6SPu0rdT5ywStrgd3h9hmYuf790mOwLgdLlV39Ztgtzlzhuo4r-BjLUX0A33srSXnqFdTFW51uvdRioDPNdWRRXHUxdGxepjviA9S8w-GgzBthdsGm-hv_zlcVggASoJdXMtZWFzdC0yMOcL.ts?dna=CnC2RoyexWFczXW4AieTq-i1rGX9D57eXHDk48vR3KdYEaV_iJg8mGD4dtujpg_OQdTl5dZY2MK6IFqPGjuC16dV8PFPhAuX7fKBHmSL8HG-OTweqPF-UTa53iyZcQaPwG_QR4RrdOX90G8ZK1xAVv6LGgx_4O37aNhKDyubVUQgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent158"
-}
-2025-03-16 19:22:19,229 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:20,141 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
-2025-03-16 19:22:20,176 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event-stacktrace",
-      [
-        {
-          "resourceId": 8589934652,
-          "stacktraceAvailable": true,
-          "lastFrame": {
-            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
-            "lineNumber": 5116,
-            "columnNumber": 12,
-            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
-            "asyncCause": null
-          }
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
-}
-2025-03-16 19:22:20,404 [DEBUG] [rdp_client.py:675 in __read] - message complete (1791 == 1791)
-2025-03-16 19:22:20,495 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent185",
-          "resourceId": 8589934652,
-          "resourceType": "network-event",
-          "browsingContextID": 11,
-          "cause": {
-            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934599,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934652,
-          "startedDateTime": "2025-03-16T22:22:20.223Z",
-          "securityFlags": 144,
-          "timeStamp": 1742163740223,
-          "timings": {},
-          "url": "https://sae12.playlist.ttvnw.net/v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher38"
-}
-2025-03-16 19:22:20,532 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-03-16 19:22:20,534 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
-2025-03-16 19:22:20,543 [INFO] [rdp_client.py:557 in __send] - REQUEST->
-{
-  "to": "server1.conn0.netEvent185",
-  "type": "getRequestHeaders"
-}
-2025-03-16 19:22:20,836 [DEBUG] [rdp_client.py:675 in __read] - message complete (3458 == 3458)
-2025-03-16 19:22:20,848 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "headers": [
-    {
-      "name": "Host",
-      "value": "sae12.playlist.ttvnw.net"
-    },
-    {
-      "name": "User-Agent",
-      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
-    },
-    {
-      "name": "Accept",
-      "value": "*/*"
-    },
-    {
-      "name": "Accept-Language",
-      "value": "en-US,en;q=0.5"
-    },
-    {
-      "name": "Accept-Encoding",
-      "value": "gzip, deflate, br, zstd"
-    },
-    {
-      "name": "Connection",
-      "value": "keep-alive"
-    },
-    {
-      "name": "Cookie",
-      "value": "AWSALBTG=A/juUEc3+s+s6lv9uXyKCooUTN3VKA2wvTyaBtJWSL9vDvdMx1hHbJlQmJ7n/+u1sk/KlwUFhM8yStMSp9dNP23FReVnCXViJvY6qb/UfKlVqvGSo5zRACWvexWjYeokpVKuVkEMho7cWTUSObF/XOv9rMcKq+3Qdv7/BqV4iLtX; AWSALBTGCORS=A/juUEc3+s+s6lv9uXyKCooUTN3VKA2wvTyaBtJWSL9vDvdMx1hHbJlQmJ7n/+u1sk/KlwUFhM8yStMSp9dNP23FReVnCXViJvY6qb/UfKlVqvGSo5zRACWvexWjYeokpVKuVkEMho7cWTUSObF/XOv9rMcKq+3Qdv7/BqV4iLtX; AWSALB=Ea0+NIzdyPkLw+bcYvCXir6aiQM3LiFO1QTunm1Hly2CoHq0sI7ftiHpS05A8RiUgeESuOr1zppO/PGMognsXH4EQ4v0Adt05mtswA/u3ejdtuFJP68WrMHecYmU; AWSALBCORS=Ea0+NIzdyPkLw+bcYvCXir6aiQM3LiFO1QTunm1Hly2CoHq0sI7ftiHpS05A8RiUgeESuOr1zppO/PGMognsXH4EQ4v0Adt05mtswA/u3ejdtuFJP68WrMHecYmU"
+      "value": "AWSALBTG=V5/VXDqzZwh5tauHrT9fgRUaEiGO1/TbHVqr7PfmodArTRDVkwaOF7gkwHYJMwxqu2Y2ALcbfxM9FUEc4RXuTKEN5D+/8/LI0c1Wsjh68TNwJ8TUvEPrClyDwMk5kyKgRzJMObko5srFDOBex8V0rKXOPcqjczpzRusZlEIrmR+k; AWSALBTGCORS=V5/VXDqzZwh5tauHrT9fgRUaEiGO1/TbHVqr7PfmodArTRDVkwaOF7gkwHYJMwxqu2Y2ALcbfxM9FUEc4RXuTKEN5D+/8/LI0c1Wsjh68TNwJ8TUvEPrClyDwMk5kyKgRzJMObko5srFDOBex8V0rKXOPcqjczpzRusZlEIrmR+k; AWSALB=xNRS6HICoYzpzLJNWnTT4FZfdBmtfHG63CI1HRy6iiEKB733VIBCjRSd1v+aTPGBHh880BAcyiWyf41yUPw+w71G80a4wJZKoH/mWSuok3gRhUmuN4mG0e8goG9g; AWSALBCORS=xNRS6HICoYzpzLJNWnTT4FZfdBmtfHG63CI1HRy6iiEKB733VIBCjRSd1v+aTPGBHh880BAcyiWyf41yUPw+w71G80a4wJZKoH/mWSuok3gRhUmuN4mG0e8goG9g"
     },
     {
       "name": "Sec-Fetch-Dest",
@@ -2589,12 +1877,12 @@
     }
   ],
   "headersSize": 2072,
-  "rawHeaders": "GET /v1/playlist/Ct4FuzcY35vx1B6RxishJEjYsXtv9SJ4ADEYylSId2e7pku9qqLStAqE0ygXrUEVxB_qvPDYcr3N6obEjSVbbSyRziYKq6CB5VWBR17l65Z-bteXDhuIW0ql4Y__il4bkjgCz7RhpSoxTI0IZwaEWJxshbFSdud_rrkJhUdi6RO1zqxFXEBPaOPAkgG5rJrTvkWbbqKWnTd0PKoEfNe5mB_l7qGLfx8F8HlJNL4ohcf98W9haUTvxCwi-qFpR3KF7HBVwFsMYr4-uLIwAA3DGASljFWpsBj1DbH1d3QCErHDWpwJfvlsNgPbmIEZIDJ7_ueGYN-gnq_V4WFzVjxVCELCYSOiYJsfXVi-DDmMU1hMxvVB1ugoepJKYYxCijRhrzm6QZ65l85fa8sDo0Nu-PO8jys5RJuRDjOk8EXHTyB9WaPtZSOTrqRsP-JzSLP872fsYpL6eqWwRFOudZQSbWkXmthjT3al0SZjsE8FP-PAirXNmGJThZA0Hn08Af9Ui4V4t1mk6xl-hpmfVn2kn5ZezhcrxVzohaJbpwakGLfYJ9kVMqTQXkQkKAlBoPjydoJbwUGkb246jvXPVOYWVZqwf05e1kStw82AMkcXalmNdXWWxFREFRo5jgMenCzCIduZgs_869I5NHC92x6fdwZN4EPVf0tIwDta_EZREDWDEwqfDTVBBxUN-GIVwzmXhB4ZEqEt5XpUn8ShesQfgcJsvYICeOYV4EhzMdh9na3MQm9duojObHN-qDa6oLE6GBY_EeiVgTyfhzRap_tEsfZA7KCEWtjIKhcJ_0UrcOgBT__vx9pKj140qVCpLANqT7PsS3EhJowpIo-vAehrRqFAp4OZty0MQrANu80qyxT0PNn2boD4qswmsYBZZ-8vc-AIYOHJtBDJXQn5NU1xAkObMVurSEtYlh7cSlsAN-dK_UfcgLwzkwWAtzzLOtn_EC08iRCeTjbAVIWbJSAwa3EaDP6-YRUmyAuDLOV3SSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae12.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=A/juUEc3+s+s6lv9uXyKCooUTN3VKA2wvTyaBtJWSL9vDvdMx1hHbJlQmJ7n/+u1sk/KlwUFhM8yStMSp9dNP23FReVnCXViJvY6qb/UfKlVqvGSo5zRACWvexWjYeokpVKuVkEMho7cWTUSObF/XOv9rMcKq+3Qdv7/BqV4iLtX; AWSALBTGCORS=A/juUEc3+s+s6lv9uXyKCooUTN3VKA2wvTyaBtJWSL9vDvdMx1hHbJlQmJ7n/+u1sk/KlwUFhM8yStMSp9dNP23FReVnCXViJvY6qb/UfKlVqvGSo5zRACWvexWjYeokpVKuVkEMho7cWTUSObF/XOv9rMcKq+3Qdv7/BqV4iLtX; AWSALB=Ea0+NIzdyPkLw+bcYvCXir6aiQM3LiFO1QTunm1Hly2CoHq0sI7ftiHpS05A8RiUgeESuOr1zppO/PGMognsXH4EQ4v0Adt05mtswA/u3ejdtuFJP68WrMHecYmU; AWSALBCORS=Ea0+NIzdyPkLw+bcYvCXir6aiQM3LiFO1QTunm1Hly2CoHq0sI7ftiHpS05A8RiUgeESuOr1zppO/PGMognsXH4EQ4v0Adt05mtswA/u3ejdtuFJP68WrMHecYmU\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
-  "from": "server1.conn0.netEvent185"
+  "rawHeaders": "GET /v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae11.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=V5/VXDqzZwh5tauHrT9fgRUaEiGO1/TbHVqr7PfmodArTRDVkwaOF7gkwHYJMwxqu2Y2ALcbfxM9FUEc4RXuTKEN5D+/8/LI0c1Wsjh68TNwJ8TUvEPrClyDwMk5kyKgRzJMObko5srFDOBex8V0rKXOPcqjczpzRusZlEIrmR+k; AWSALBTGCORS=V5/VXDqzZwh5tauHrT9fgRUaEiGO1/TbHVqr7PfmodArTRDVkwaOF7gkwHYJMwxqu2Y2ALcbfxM9FUEc4RXuTKEN5D+/8/LI0c1Wsjh68TNwJ8TUvEPrClyDwMk5kyKgRzJMObko5srFDOBex8V0rKXOPcqjczpzRusZlEIrmR+k; AWSALB=xNRS6HICoYzpzLJNWnTT4FZfdBmtfHG63CI1HRy6iiEKB733VIBCjRSd1v+aTPGBHh880BAcyiWyf41yUPw+w71G80a4wJZKoH/mWSuok3gRhUmuN4mG0e8goG9g; AWSALBCORS=xNRS6HICoYzpzLJNWnTT4FZfdBmtfHG63CI1HRy6iiEKB733VIBCjRSd1v+aTPGBHh880BAcyiWyf41yUPw+w71G80a4wJZKoH/mWSuok3gRhUmuN4mG0e8goG9g\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent127"
 }
-2025-03-16 19:22:20,855 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-03-16 19:22:20,858 [DEBUG] [rdp_client.py:675 in __read] - message complete (767 == 767)
-2025-03-16 19:22:20,868 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-03-17 09:53:59,160 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:53:59,294 [DEBUG] [rdp_client.py:675 in __read] - message complete (765 == 765)
+2025-03-17 09:53:59,312 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -2602,7 +1890,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934652,
+          "resourceId": 8589934633,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -2610,10 +1898,10 @@
             "status": "200",
             "statusText": "",
             "earlyHintsStatus": "",
-            "remoteAddress": "54.207.173.175",
+            "remoteAddress": "52.67.74.126",
             "remotePort": 443,
             "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 85,
+            "waitingTime": 73,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
@@ -2621,10 +1909,10 @@
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "totalTime": 86,
+            "totalTime": 74,
             "eventTimingsAvailable": true,
-            "contentSize": 15396,
-            "transferredSize": 9223,
+            "contentSize": 15360,
+            "transferredSize": 9019,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
@@ -2636,8 +1924,517 @@
   ],
   "from": "server1.conn0.watcher38"
 }
-2025-03-16 19:22:20,898 [DEBUG] [rdp_client.py:413 in disconnect] - 
-2025-03-16 19:22:20,899 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-03-16 19:22:20,923 [DEBUG] [rdp_client.py:422 in __disconnect] - True
-2025-03-16 19:22:20,954 [DEBUG] [rdp_client.py:402 in __on_close_connection] - Stop listening
-2025-03-16 19:22:20,977 [DEBUG] [rdp_client.py:377 in __connect] - Read task cancelled: asyncio
+2025-03-17 09:53:59,336 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:53:59,472 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:53:59,489 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934634,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:53:59,634 [DEBUG] [rdp_client.py:675 in __read] - message complete (1547 == 1547)
+2025-03-17 09:53:59,647 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent143",
+          "resourceId": 8589934634,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934634,
+          "startedDateTime": "2025-03-17T12:53:59.530Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216039530,
+          "timings": {},
+          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CooDVobBtWqJfKFe-Ip1EVDMeZtRoJCjYvWgAr768NsWV3mp4kf_Gz1gNJKWW0Jyt2HnrbErVyNz8xQfwfI4akCaZP_8KFhywfJvQbJ5uUr6FcTZEygYZMB_GyrEKJr8jSRGKXeovVskF38EuMw4ugn6_zoQ0bOtrjurBsH9CKY34EglLiG98lES3VHynl-_BGUa6UxT3vb0cOyvoFHSNP6FKGg00TQ2hmmIwhq5pSrvtvzmbkTkIPuTTQyIDLhOz5cZtTcBDZpCFDZxWOSQofFhWQ3fQ7P177z8_NO4xP5M2WzGgG1JA9JJzvt787jq5IWgwZ5gHpY9jbwER9Q3ouwK8MoY90wvoyoaJ4t-9PaD1M2RAq2uIB12A-FLTJHOtQj4Ro21PAg6jGgfGvtQgK3RWsaxaImlObO6xMvTEQrs0G5LigMCe4PJV2fugV3k8sCxuYqwkSqAXXNVFaK4DkzJpp5nV5BtPUbaHeyhgeS-lif2LM1z3pyJ25nOQKIfJBpnfelOhwZiE40BVRoMHpUYHxvi3u_QcIy3IAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:53:59,648 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:53:59,652 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:53:59,662 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent143",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:53:59,709 [DEBUG] [rdp_client.py:675 in __read] - message complete (1879 == 1879)
+2025-03-17 09:53:59,717 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "Origin",
+      "value": "https://www.twitch.tv"
+    },
+    {
+      "name": "Referer",
+      "value": "https://www.twitch.tv/"
+    }
+  ],
+  "headersSize": 1180,
+  "rawHeaders": "GET /v1/segment/CooDVobBtWqJfKFe-Ip1EVDMeZtRoJCjYvWgAr768NsWV3mp4kf_Gz1gNJKWW0Jyt2HnrbErVyNz8xQfwfI4akCaZP_8KFhywfJvQbJ5uUr6FcTZEygYZMB_GyrEKJr8jSRGKXeovVskF38EuMw4ugn6_zoQ0bOtrjurBsH9CKY34EglLiG98lES3VHynl-_BGUa6UxT3vb0cOyvoFHSNP6FKGg00TQ2hmmIwhq5pSrvtvzmbkTkIPuTTQyIDLhOz5cZtTcBDZpCFDZxWOSQofFhWQ3fQ7P177z8_NO4xP5M2WzGgG1JA9JJzvt787jq5IWgwZ5gHpY9jbwER9Q3ouwK8MoY90wvoyoaJ4t-9PaD1M2RAq2uIB12A-FLTJHOtQj4Ro21PAg6jGgfGvtQgK3RWsaxaImlObO6xMvTEQrs0G5LigMCe4PJV2fugV3k8sCxuYqwkSqAXXNVFaK4DkzJpp5nV5BtPUbaHeyhgeS-lif2LM1z3pyJ25nOQKIfJBpnfelOhwZiE40BVRoMHpUYHxvi3u_QcIy3IAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent143"
+}
+2025-03-17 09:53:59,728 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:54:00,949 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:54:00,955 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934635,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:54:01,275 [DEBUG] [rdp_client.py:675 in __read] - message complete (1791 == 1791)
+2025-03-17 09:54:01,294 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent156",
+          "resourceId": 8589934635,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934635,
+          "startedDateTime": "2025-03-17T12:54:01.119Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216041119,
+          "timings": {},
+          "url": "https://sae11.playlist.ttvnw.net/v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:54:01,295 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:54:01,296 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:54:01,304 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent156",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:54:01,589 [DEBUG] [rdp_client.py:675 in __read] - message complete (771 == 771)
+2025-03-17 09:54:01,599 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 8589934634,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/1.1",
+            "status": "200",
+            "statusText": "OK",
+            "earlyHintsStatus": "",
+            "remoteAddress": "3.160.119.125",
+            "remotePort": 443,
+            "mimeType": "application/octet-stream",
+            "waitingTime": 102,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 1598,
+            "eventTimingsAvailable": true,
+            "contentSize": 640516,
+            "transferredSize": 640915,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:54:01,602 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:54:01,630 [DEBUG] [rdp_client.py:675 in __read] - message complete (3458 == 3458)
+2025-03-17 09:54:01,639 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "sae11.playlist.ttvnw.net"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Cookie",
+      "value": "AWSALBTG=IY/tvmH+UU1Cikd7ehm9u7mdIgk8hw2fGsa9OYsEo9YeMiT3/69zQgsCekNcKyRu99z1YMl/4bmbVt2W7sn6/u/FqqawL5pXtEgE+AbRtkGn8v4Vlh6Zb0wC0DMx0Klhbw0ZrqPDUTOR1McKDVkTmhfd045S8FCRnvmArvpDNNoA; AWSALBTGCORS=IY/tvmH+UU1Cikd7ehm9u7mdIgk8hw2fGsa9OYsEo9YeMiT3/69zQgsCekNcKyRu99z1YMl/4bmbVt2W7sn6/u/FqqawL5pXtEgE+AbRtkGn8v4Vlh6Zb0wC0DMx0Klhbw0ZrqPDUTOR1McKDVkTmhfd045S8FCRnvmArvpDNNoA; AWSALB=ld17Vi8JVVmwxb5NUhuI/cXvtyfY+0GiqRZT+5gESzRA2TdlKzP4OYoL0TzaiKFnhfoevoecD1TI0utipFUhkvrxk7umfyoWHwY8OgGYWWMUMDeJvVjX6kj2GVdy; AWSALBCORS=ld17Vi8JVVmwxb5NUhuI/cXvtyfY+0GiqRZT+5gESzRA2TdlKzP4OYoL0TzaiKFnhfoevoecD1TI0utipFUhkvrxk7umfyoWHwY8OgGYWWMUMDeJvVjX6kj2GVdy"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "Origin",
+      "value": "https://www.twitch.tv"
+    },
+    {
+      "name": "Referer",
+      "value": "https://www.twitch.tv/"
+    },
+    {
+      "name": "TE",
+      "value": "trailers"
+    }
+  ],
+  "headersSize": 2072,
+  "rawHeaders": "GET /v1/playlist/Ct4FtxIt5HDyb72RMdnKJ0Amfl47blGLpTBAymtnSzhG_DhZT3ZbZrpVL0dz7DuQNLsuYGC0yh6E9sqvUgirp9Ayi38Okj9zB28iscQtC0DMGdMpdO5IlZ-795QCBQJgwLiOJXxGTk_z8y8CsKQkTopLPNgJmUWjb8tXJmfD1dXU9ew3ttIqJ7TyAYOBlTnwixMirkJjlgV-zl_xbABsYL8pvGtlj8rTv8E4CgTsYdKy1NFWWtq0fLigoTnp0nsD7HmXcsvRrHdjvewxdTOriHmyFpGXcrKKT8OhOsLeGhvMnn98XMq32PA_DLLzM63TaG6ebGAMEmL6AqD4lPnOwuG4iuQsuS_hSYLwe7FHLP2NX5QS8v46mQo_hEmyp7bV55w-dkdwQrbZnpzJatl8tEI7BWYfSkrrzpTJNGFBVaD2bdQUOvXuN0a8mEExQFYfydoHdQZjE879iF4HdrRGGQRFrlL9GdGxmq9blh_L2z_npA-8tRsDzyqCYDQ7lswZ5YaemJS9um6xflvhcCcLu55-_P6nf3ZOgnjJyG4kY6q-LiSZ2rqgTzsTNfviWUSBdfDgiCskbzrhhXhJfdQtU0gbOtnS0QJGh3S0On0HUK2IXUfyWA7WECYva_iyyVaU-Vfku1KFx86rigHAwmwxkCvxHwL8Fnp94M4jokLdETTwjr5xlk28ZVH68PCQSOY1suWEkcSruHJyQc4joSw_nedzytdLhhRHRj5QUutDQOCm3Qrob-fc4ueKIXFuHig70lf8RVw236WyW4x5B6xURtEOWETDuISg6hx8mw9uVZ5tc6G23n6FbqOTzeIqynUWWW-riLtK9Jia9cVLjHcd_MBrwL3DCKnxsqSr7UWu1QJkdM7FKkHtxtN70pse_y54knDZ1jAapn6_LRiRTo3ANe33KDHx6kbp4j8M8nNsX3RSAP6xh1XijfC2hipAfzY-xO01twGaYLXsIeYFVrWlgVwaDJVuNnNPqExWA4PvZSABKgl1cy1lYXN0LTIw5ws.m3u8 HTTP/1.1\r\nHost: sae11.playlist.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nCookie: AWSALBTG=IY/tvmH+UU1Cikd7ehm9u7mdIgk8hw2fGsa9OYsEo9YeMiT3/69zQgsCekNcKyRu99z1YMl/4bmbVt2W7sn6/u/FqqawL5pXtEgE+AbRtkGn8v4Vlh6Zb0wC0DMx0Klhbw0ZrqPDUTOR1McKDVkTmhfd045S8FCRnvmArvpDNNoA; AWSALBTGCORS=IY/tvmH+UU1Cikd7ehm9u7mdIgk8hw2fGsa9OYsEo9YeMiT3/69zQgsCekNcKyRu99z1YMl/4bmbVt2W7sn6/u/FqqawL5pXtEgE+AbRtkGn8v4Vlh6Zb0wC0DMx0Klhbw0ZrqPDUTOR1McKDVkTmhfd045S8FCRnvmArvpDNNoA; AWSALB=ld17Vi8JVVmwxb5NUhuI/cXvtyfY+0GiqRZT+5gESzRA2TdlKzP4OYoL0TzaiKFnhfoevoecD1TI0utipFUhkvrxk7umfyoWHwY8OgGYWWMUMDeJvVjX6kj2GVdy; AWSALBCORS=ld17Vi8JVVmwxb5NUhuI/cXvtyfY+0GiqRZT+5gESzRA2TdlKzP4OYoL0TzaiKFnhfoevoecD1TI0utipFUhkvrxk7umfyoWHwY8OgGYWWMUMDeJvVjX6kj2GVdy\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent156"
+}
+2025-03-17 09:54:01,643 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:54:01,819 [DEBUG] [rdp_client.py:675 in __read] - message complete (765 == 765)
+2025-03-17 09:54:01,825 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 8589934635,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "52.67.74.126",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 96,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 96,
+            "eventTimingsAvailable": true,
+            "contentSize": 15360,
+            "transferredSize": 9020,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:54:01,830 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:54:01,859 [DEBUG] [rdp_client.py:675 in __read] - message complete (381 == 381)
+2025-03-17 09:54:01,860 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 8589934636,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.js",
+            "lineNumber": 5116,
+            "columnNumber": 12,
+            "functionName": "\u041f\u043e\u0441\u043b\u0430\u0442\u044c\u0417\u0430\u043f\u0440\u043e\u0441",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher37.process4//windowGlobalTarget2"
+}
+2025-03-17 09:54:01,948 [DEBUG] [rdp_client.py:675 in __read] - message complete (1547 == 1547)
+2025-03-17 09:54:01,953 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent173",
+          "resourceId": 8589934636,
+          "resourceType": "network-event",
+          "browsingContextID": 11,
+          "cause": {
+            "loadingDocumentUri": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934599,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934636,
+          "startedDateTime": "2025-03-17T12:54:01.900Z",
+          "securityFlags": 144,
+          "timeStamp": 1742216041900,
+          "timings": {},
+          "url": "https://9b8458abf197.j.cloudfront.hls.ttvnw.net/v1/segment/CooDI0XcDqXvg3SNWY8DXxGGneFpGES3C3r419DMVq5O7C0ad5YYKtwXtG4R0XwxMsg7UoGwObCgkXzKNyAgnd7PhZPXnszSg9q7wOqdYWt0dZHgMwYA1XdrGo52Nw2xtDv7X-wAUhRbrZZo-ivERlqyRRXfOiNM-u2I9uIpn8YnWhWyCG-s1oiFm3DL2dRKIL8B5rHPlALaYcgVR1eQPYhI-CQbaBuadJ0-5-onokl-aQhw6ZAbLFTB-w04X1iR-1U4xMFg006m9z3IkuJD_kPWVZVu9WZ2t6bOtHj8OHSQeawi6BHkdgfszHfbmcK7IMfxDu2LyBUmZe3jNpXXTopZWgLNYRMnsTOnWxu0lYeuPZS5K5gjwtX5FBxxq3bS2xwEqRMbwgvIeaqR9B59K0UBOgsDKpmiMVcF6gGMuLpZCBgf4NC5n8M_wMFde1zDihu9QwnlGToKWZcvcjnHJdJhnKP8UYVp80OzFSsVMjzY1C8ZLap8jfZ8MZJS9SO2I9bjTTS0tH-5z26LWxoMfCaf0LA3YV79uwsVIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:54:01,955 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher38][resources-available-array] handled
+2025-03-17 09:54:01,955 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-03-17 09:54:01,960 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent173",
+  "type": "getRequestHeaders"
+}
+2025-03-17 09:54:02,028 [DEBUG] [rdp_client.py:675 in __read] - message complete (1879 == 1879)
+2025-03-17 09:54:02,033 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "9b8458abf197.j.cloudfront.hls.ttvnw.net"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "same-origin"
+    },
+    {
+      "name": "Origin",
+      "value": "https://www.twitch.tv"
+    },
+    {
+      "name": "Referer",
+      "value": "https://www.twitch.tv/"
+    }
+  ],
+  "headersSize": 1180,
+  "rawHeaders": "GET /v1/segment/CooDI0XcDqXvg3SNWY8DXxGGneFpGES3C3r419DMVq5O7C0ad5YYKtwXtG4R0XwxMsg7UoGwObCgkXzKNyAgnd7PhZPXnszSg9q7wOqdYWt0dZHgMwYA1XdrGo52Nw2xtDv7X-wAUhRbrZZo-ivERlqyRRXfOiNM-u2I9uIpn8YnWhWyCG-s1oiFm3DL2dRKIL8B5rHPlALaYcgVR1eQPYhI-CQbaBuadJ0-5-onokl-aQhw6ZAbLFTB-w04X1iR-1U4xMFg006m9z3IkuJD_kPWVZVu9WZ2t6bOtHj8OHSQeawi6BHkdgfszHfbmcK7IMfxDu2LyBUmZe3jNpXXTopZWgLNYRMnsTOnWxu0lYeuPZS5K5gjwtX5FBxxq3bS2xwEqRMbwgvIeaqR9B59K0UBOgsDKpmiMVcF6gGMuLpZCBgf4NC5n8M_wMFde1zDihu9QwnlGToKWZcvcjnHJdJhnKP8UYVp80OzFSsVMjzY1C8ZLap8jfZ8MZJS9SO2I9bjTTS0tH-5z26LWxoMfCaf0LA3YV79uwsVIAEqCXVzLWVhc3QtMjDnCw.ts?dna=CnD8F0A5nDomPYYfInntNCUmdJ06uwZ0-ZEPnudfZ58SlR-xU5rQGQScD9WPQT_UQZ02XWDbLyu3lUpglyLKDo3NkjI8TSnAiD8gZu3kzddTqePHwsZasaUVMdpvrJmeVSHE7se3SQynOw3McLp92zR4Ggx32yNz1E18pS8SMdUgASoJdXMtZWFzdC0yMOcL HTTP/1.1\r\nHost: 9b8458abf197.j.cloudfront.hls.ttvnw.net\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nConnection: keep-alive\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-origin\r\nOrigin: https://www.twitch.tv\r\nReferer: https://www.twitch.tv/\r\n\r\n",
+  "from": "server1.conn0.netEvent173"
+}
+2025-03-17 09:54:02,035 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-03-17 09:54:02,401 [DEBUG] [rdp_client.py:675 in __read] - message complete (769 == 769)
+2025-03-17 09:54:02,408 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 8589934636,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/1.1",
+            "status": "200",
+            "statusText": "OK",
+            "earlyHintsStatus": "",
+            "remoteAddress": "3.160.119.125",
+            "remotePort": 443,
+            "mimeType": "application/octet-stream",
+            "waitingTime": 69,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 238,
+            "eventTimingsAvailable": true,
+            "contentSize": 719288,
+            "transferredSize": 719687,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 11,
+          "innerWindowId": 8589934599
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher38"
+}
+2025-03-17 09:54:02,415 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-03-17 09:54:02,802 [DEBUG] [rdp_client.py:413 in disconnect] - 
+2025-03-17 09:54:02,805 [DEBUG] [rdp_client.py:422 in __disconnect] - True
+2025-03-17 09:54:02,808 [DEBUG] [rdp_client.py:402 in __on_close_connection] - Stop listening
+2025-03-17 09:54:02,817 [DEBUG] [rdp_client.py:377 in __connect] - Read task cancelled: asyncio
