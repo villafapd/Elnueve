@@ -4,11 +4,19 @@
 # se debe configurar en firefox ---> about:config
 # media.geckoview.autoplay.request = True
 
+""" This example demonstrates the initialization procedure of every available actor.
+"""
+
+# pylint: disable=unused-variable
+# pylint: disable=invalid-name
 import argparse
 import json
 from concurrent.futures import Future
+
 from geckordp.actors.accessibility.parent_accessibility import ParentAccessibilityActor
-from geckordp.actors.addon.web_extension_inspected_window import (WebExtensionInspectedWindowActor,)
+from geckordp.actors.addon.web_extension_inspected_window import (
+	WebExtensionInspectedWindowActor,
+)
 from geckordp.actors.descriptors.process import ProcessActor
 from geckordp.actors.descriptors.tab import TabActor
 from geckordp.actors.device import DeviceActor
@@ -37,9 +45,21 @@ import setproctitle
 setproctitle.setproctitle("ScanTwichTv")
 Path_ListaTv_DomoCasa = "/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u" 
 GECKORDP.DEBUG = 1
-GECKORDP.DEBUG_REQUEST = 1
+#GECKORDP.DEBUG_REQUEST = 1
 GECKORDP.DEBUG_RESPONSE = 1
 GECKORDP.LOG_FILE = "xyz.log" #: enabled
+
+def borrar_contenido_log(file_log):
+	# Abrimos el archivo en modo 'w' para sobrescribirlo con un archivo vacio
+	with open(f'/home/villafapd/Documents/PythonProjects/Elnueve/{file_log}', 'w') as f:
+		pass  # No es necesario escribir nada; simplemente abrimos y cerramos.
+
+
+def reporte_url_Log(url_capturada, file_log):	
+	f = open( f'/home/villafapd/Documents/PythonProjects/Elnueve/{file_log}', 'a') # Abrimos nuestro fichero log en modo 'Añadir'. 
+	f.write(" ".join([url_capturada, "\n"])) # Escribimos la linea de log en el fichero.
+	f.close() # Cerramos el fichero para que se guarde. 
+
 def buscar_url(archivo_log):
 	# Leer el contenido del archivo
 	with open(archivo_log, 'r') as file:
@@ -76,8 +96,8 @@ def update_lista(Path_log_geckordp,linea):
 
 def main(url,file):
 
-	GECKORDP.LOG_FILE = file #: enabled
-    
+	#GECKORDP.LOG_FILE = file #: enabled
+	borrar_contenido_log(file)
 	try:
 		parser = argparse.ArgumentParser(description="")
 		parser.add_argument(
@@ -232,6 +252,7 @@ def main(url,file):
 							actor_id = obj.get("actor", "")
 							resource_id = obj.get("resourceId", -1)
 							url = obj.get("url", "N/A")
+							reporte_url_Log(url)
 							if "netEvent" in actor_id and resource_id != -1:
 								NETWORK_EVENT = NetworkEventActor(client, actor_id)
 								request = NETWORK_EVENT.get_request_headers()
@@ -250,7 +271,6 @@ def main(url,file):
 			on_resource_available,
 		)
 
-
 		time.sleep(10)
 		#input()
 		client.disconnect()
@@ -261,8 +281,8 @@ def main(url,file):
 	except Exception as e:
 		print(e, "Reincio")
 		client.disconnect()
-		client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
-		client.remove_actor_listener(WATCHER.actor_id, on_target)
+		#client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
+		#client.remove_actor_listener(WATCHER.actor_id, on_target)
 		firefox_instance.kill()
 		exit()	
 	
@@ -272,27 +292,27 @@ def main(url,file):
 if __name__ == "__main__":
 	
 # Programar la funcion para que se ejecute cada 6 horas
-	schedule.every().day.at("12:10").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("12:11").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
+	schedule.every().day.at("12:10").do(partial(main,"https://www.twitch.tv/elnueveok","url_elnueve.log"))
+	schedule.every().day.at("12:11").do(partial(main,"https://www.twitch.tv/canalshowsport","url_showsports.log"))
 	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
 	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 
-	schedule.every().day.at("09:35").do(partial(main,"https://www.twitch.tv/elnueveok","elnueve.log"))
-	schedule.every().day.at("09:36").do(partial(main,"https://www.twitch.tv/canalshowsport","showsports.log"))
-	schedule.every().day.at("09:37").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("09:38").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("09:35").do(partial(main,"https://www.twitch.tv/elnueveok","url_elnueve.log"))
+	schedule.every().day.at("09:36").do(partial(main,"https://www.twitch.tv/canalshowsport","url_showsports.log"))
+	schedule.every().day.at("09:37").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20))
+	schedule.every().day.at("09:38").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53))
 
 
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 # schedule.clear()  # Limpia la programacion actual
 # schedule.every(8).hours.do(mi_funcion)
 	print("Escaneando El Nueve")
-	main("https://www.twitch.tv/elnueveok","elnueve.log")
+	main("https://www.twitch.tv/elnueveok","url_elnueve.log")
 	time.sleep(5)
 	print("Escaneand Show Sports")
-	main("https://www.twitch.tv/canalshowsport","showsports.log")
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20)
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53)
+	main("https://www.twitch.tv/canalshowsport","url_showsports.log")
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20)
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53)
 	try:
 		while True:
 			schedule.run_pending()
