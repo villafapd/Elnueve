@@ -39,7 +39,7 @@ Path_ListaTv_DomoCasa = "/home/villafapd/Documents/PythonProjects/MiCasaDomo/Lis
 GECKORDP.DEBUG = 1
 GECKORDP.DEBUG_REQUEST = 1
 GECKORDP.DEBUG_RESPONSE = 1
-
+GECKORDP.LOG_FILE = "xyz.log" #: enabled
 def buscar_url(archivo_log):
 	# Leer el contenido del archivo
 	with open(archivo_log, 'r') as file:
