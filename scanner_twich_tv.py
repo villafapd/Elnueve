@@ -76,7 +76,7 @@ GECKORDP.LOG_FILE = "xyz.log" #: enabled
 
 def borrar_contenido_log(file_log):
 	# Abrimos el archivo en modo 'w' para sobrescribirlo con un archivo vacio
-	with open(f'/home/villafapd/Documents/PythonProjects/Elnueve/{file_log}', 'w') as f:
+	with open(file_log, 'w') as f:
 		pass  # No es necesario escribir nada; simplemente abrimos y cerramos.
 
 
@@ -122,7 +122,7 @@ def update_lista(Path_log_geckordp,linea):
 def main(url,path_file):
 
 	#GECKORDP.LOG_FILE = file #: enabled
-	borrar_contenido_log(file)
+	borrar_contenido_log(path_file)
 	try:
 		parser = argparse.ArgumentParser(description="")
 		parser.add_argument(
