@@ -618,10 +618,10 @@ if __name__ == "__main__":
 	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
 	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 
-	schedule.every().day.at("09:35").do(partial(main,"https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("09:36").do(partial(main,"https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("09:37").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20))
-	schedule.every().day.at("09:38").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53))
+	schedule.every().day.at("00:10").do(partial(main,"https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("00:11").do(partial(main,"https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20))
+	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53))
 
 
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
