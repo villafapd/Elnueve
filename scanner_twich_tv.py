@@ -122,7 +122,8 @@ def update_lista(Path_log_geckordp,linea):
 	urls_encontradas = buscar_url(Path_log_geckordp)
 	# Mostrar las URLs encontradas
 	for url in urls_encontradas:
-		print(url)
+		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
 		# Abro el archivo de la lista de canales 
 		data = open(Path_ListaTv_DomoCasa).read()
 		# Dividimos el contenido en líneas
@@ -134,7 +135,8 @@ def update_lista(Path_log_geckordp,linea):
 		try:
 			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
 				archivo.writelines(updated_content)
-			print("Lista de canales actualizada y guardada correctamente.")
+			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			
 			break
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
