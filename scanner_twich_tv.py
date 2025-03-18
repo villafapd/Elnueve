@@ -1,6 +1,7 @@
 #Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
-#Se requiere de Firefox 
+#Se requiere de Firefox V 135
 #Se requiere addons "Alternate player for twichtv" link:https://addons.mozilla.org/en-US/firefox/addon/twitch_5/
+#Se usa "Alternate player for twichtv" porque es mas liviano para raspberry pi 4
 # se debe configurar en firefox ---> about:config
 # media.geckoview.autoplay.request = True
 
@@ -20,7 +21,7 @@ from geckordp.actors.accessibility.parent_accessibility import ParentAccessibili
 from geckordp.actors.accessibility.simulator import SimulatorActor
 from geckordp.actors.addon.addons import AddonsActor
 from geckordp.actors.addon.web_extension_inspected_window import (
-    WebExtensionInspectedWindowActor,
+	WebExtensionInspectedWindowActor,
 )
 from geckordp.actors.descriptors.process import ProcessActor
 from geckordp.actors.descriptors.tab import TabActor
@@ -42,11 +43,11 @@ from geckordp.actors.root import RootActor
 from geckordp.actors.screenshot import ScreenshotActor
 from geckordp.actors.source import SourceActor
 from geckordp.actors.storage import (
-    CacheStorageActor,
-    CookieStorageActor,
-    IndexedDBStorageActor,
-    LocalStorageActor,
-    SessionStorageActor,
+	CacheStorageActor,
+	CookieStorageActor,
+	IndexedDBStorageActor,
+	LocalStorageActor,
+	SessionStorageActor,
 )
 from geckordp.actors.string import StringActor
 from geckordp.actors.target_configuration import TargetConfigurationActor
@@ -62,6 +63,7 @@ from geckordp.profile import ProfileManager
 from geckordp.rdp_client import RDPClient
 import schedule
 import time
+from datetime import timedelta, datetime
 import re
 from functools import partial
 from geckordp.settings import GECKORDP
@@ -73,6 +75,25 @@ GECKORDP.DEBUG = 1
 GECKORDP.DEBUG_REQUEST = 1
 GECKORDP.DEBUG_RESPONSE = 1
 GECKORDP.LOG_FILE = "xyz.log" #: enabled
+
+def HoraFecha():
+	#global hora, minutos, segundos, dia, mes, ano, microsegundos, diasemana, semanaano, milliseg
+	
+	ahora = datetime.now()#.time()
+	date = datetime.now().today()
+	hora_actual = ahora.strftime("%H:%M:%S")
+	hora = ahora.hour
+	hora = f"{hora:02d}"
+	minutos = ahora.minute
+	minutos = f"{minutos:02d}"
+	segundos = ahora.second
+	segundos = f"{segundos:02d}"
+	dia = date.day
+	dia = f"{dia:02d}"
+	mes = date.month
+	mes = f"{mes:02d}"
+	ano = str(date.year)
+	return hora, minutos, segundos, dia, mes, ano
 
 def borrar_contenido_log(file_log):
 	# Abrimos el archivo en modo 'w' para sobrescribirlo con un archivo vacio
@@ -627,14 +648,17 @@ if __name__ == "__main__":
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 # schedule.clear()  # Limpia la programacion actual
 # schedule.every(8).hours.do(mi_funcion)
-	print("Escaneando El Nueve")
+	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
 	main("https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	time.sleep(5)
-	print("Escaneand Show Sports")
+	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20)
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53)
 	try:
+		
 		while True:
 			schedule.run_pending()
 			time.sleep(5)
