@@ -1,7 +1,8 @@
+#ejemplo basico para capturar la url "m3u8" del canal en vivo de twich
 #Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
 #Se requiere de Firefox V 135
 #Se requiere addons "Alternate player for twichtv" link:https://addons.mozilla.org/en-US/firefox/addon/twitch_5/
-#Se usa "Alternate player for twichtv" porque es mas liviano para raspberry pi 4
+#Se usa "Alternate player for twichtv" porque es mas liviano para raspberry pi 4 y ademas no requiere loggin de twich para ciertos canales
 # se debe configurar en firefox ---> about:config
 # media.geckoview.autoplay.request = True
 
@@ -635,14 +636,16 @@ def main(url,path_file):
 
 if __name__ == "__main__":
 	
-# Programar la funcion para que se ejecute cada 6 horas
-	schedule.every().day.at("12:10").do(partial(main,"https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("12:11").do(partial(main,"https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+# Programar la funcion para que se ejecute cada 12 horas
+#link canal original https://www.twitch.tv/elnueveok
+#link canal original https://www.twitch.tv/canalshowsport
+	schedule.every().day.at("12:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("12:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
 	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
 
-	schedule.every().day.at("00:10").do(partial(main,"https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("00:11").do(partial(main,"https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("00:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20))
 	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53))
 
@@ -652,11 +655,11 @@ if __name__ == "__main__":
 # schedule.every(8).hours.do(mi_funcion)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
-	main("https://www.twitch.tv/elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
-	main("https://www.twitch.tv/canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
+	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20)
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53)
 	try:
