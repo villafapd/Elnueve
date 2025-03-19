@@ -1,20 +1,16 @@
-#ejemplo basico para capturar la url "m3u8" del canal en vivo de twich
 #Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
-#Se requiere de Firefox V 135
+#Se requiere de Firefox V 135 (ARM64)
 #Se requiere addons "Alternate player for twichtv" link:https://addons.mozilla.org/en-US/firefox/addon/twitch_5/
 #Se usa "Alternate player for twichtv" porque es mas liviano para raspberry pi 4 y ademas no requiere loggin de twich para ciertos canales
-# se debe configurar en firefox ---> about:config
-# media.geckoview.autoplay.request = True
+#Se debe configurar en firefox ---> about:config
+# 	media.geckoview.autoplay.request = True
+# Para Carga del addons con el canal se debe usar el identificador unico del addons "Alternate Player for Twich"
+# 	about:debugging#/runtime/this-firefox
+# 		buscar "Internal UUID" en este caso "b06a910a-a14a-4f77-a09c-7a2a8c77e414" para mi navegador
 
-""" This example demonstrates the initialization procedure of every available actor.
-"""
-
-# pylint: disable=unused-variable
-# pylint: disable=invalid-name
 import argparse
 import json
 from concurrent.futures import Future
-
 from geckordp.actors.accessibility.accessibility import AccessibilityActor
 from geckordp.actors.accessibility.accessible import AccessibleActor
 from geckordp.actors.accessibility.accessible_walker import AccessibleWalkerActor
