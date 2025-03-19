@@ -626,7 +626,7 @@ def main(url,path_file):
 		print(e, "Reincio")
 		client.disconnect()
 		#client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
-		client.remove_actor_listener(WATCHER.actor_id, on_target)
+		#client.remove_actor_listener(WATCHER.actor_id, on_target)
 		firefox_instance.kill()
 		exit()	
 	
