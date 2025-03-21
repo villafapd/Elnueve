@@ -73,6 +73,43 @@ GECKORDP.DEBUG_REQUEST = 1
 GECKORDP.DEBUG_RESPONSE = 1
 GECKORDP.LOG_FILE = "xyz.log" #: enabled
 
+
+
+
+
+def enviarMensaje(mensaje):
+	import requests
+
+	# Abrir el archivo de texto en modo lectura
+	with open("/home/villafapd/Documents/ConfigEspeciales/BotTelegram.txt", "r") as archivo:
+		# Leer las líneas del archivo
+		lineas = archivo.readlines()
+
+	# Inicializar las variables
+	idBot = ""
+	idGrupo = ""
+	idmio = ""
+
+	# Procesar las lineas del archivo
+	for linea in lineas:
+		if linea.startswith("idBot"):
+			idBot = linea.split("=")[1].strip().strip("'")
+		elif linea.startswith("idGrupo"):
+			idGrupo = linea.split("=")[1].strip().strip("'")
+		elif linea.startswith("idmio"):
+			idmio = linea.split("=")[1].strip().strip("'")
+
+	url = f'https://api.telegram.org/bot{idBot}/sendMessage'
+	requests.post(url, data={'chat_id': idmio, 'text': mensaje, 'parse_mode': 'HTML'})
+	print("Mensaje de Respuesta Telegram vía url api")
+"""
+def enviarDocumento(ruta):
+	import requests
+	requests.post('https://api.telegram.org/bot' + idBot + '/sendDocument',
+			  files={'document': (ruta, open(ruta, 'rb'))},
+			  data={'chat_id': idGrupo, 'caption': 'imagen Oasys Norte'})
+"""
+
 def HoraFecha():
 	#global hora, minutos, segundos, dia, mes, ano, microsegundos, diasemana, semanaano, milliseg
 	
@@ -114,7 +151,7 @@ def buscar_url(archivo_log):
 	return urls
 
 
-def update_lista(Path_log_geckordp,linea):	
+def update_lista(Path_log_geckordp,linea,canal):	
 	# Buscar las URLs en el archivo de log
 	urls_encontradas = buscar_url(Path_log_geckordp)
 	# Mostrar las URLs encontradas
@@ -134,10 +171,11 @@ def update_lista(Path_log_geckordp,linea):
 				archivo.writelines(updated_content)
 			hora, minutos, segundos, dia, mes, ano = HoraFecha()
 			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
-			
+			enviarMensaje("Caputura url correctamente para canal: " + canal)
 			break
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
 			print(f"Error al guardar el archivo: {e}")  
+			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
 
 def main(url,path_file):
 
@@ -637,13 +675,13 @@ if __name__ == "__main__":
 #link canal original https://www.twitch.tv/canalshowsport
 	schedule.every().day.at("12:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("12:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20))
-	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53))
+	schedule.every().day.at("12:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
+	schedule.every().day.at("12:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
 
 	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20))
-	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53))
+	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
+	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
 
 # Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
@@ -656,8 +694,8 @@ if __name__ == "__main__":
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20)
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53)
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
 	try:
 		
 		while True:
