@@ -687,16 +687,10 @@ if __name__ == "__main__":
 	schedule.every().day.at("16:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("16:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
-"""
-	schedule.every().day.at("09:42").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("09:43").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("09:44").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
-	schedule.every().day.at("09:45").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
-"""
 
-# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
-# schedule.clear()  # Limpia la programacion actual
-# schedule.every(8).hours.do(mi_funcion)
+	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
+	# schedule.clear()  # Limpia la programacion actual
+	# schedule.every(8).hours.do(mi_funcion)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
