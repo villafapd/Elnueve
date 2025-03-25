@@ -200,7 +200,7 @@ def main(url,path_file):
 
 		# start firefox with specified profile
 		firefox_instance = Firefox.start(url, args.port, profile_name, auto_kill=True, wait=True) #["-headless"],
-		time.sleep(40)
+		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
 		client = RDPClient()
@@ -663,6 +663,7 @@ def main(url,path_file):
 		#client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
 		#client.remove_actor_listener(WATCHER.actor_id, on_target)
 		firefox_instance.kill()
+		enviarMensaje("Error en ejecución de función main: " + e )
 		#exit()	
 	
   
@@ -674,19 +675,19 @@ if __name__ == "__main__":
 #link canal original https://www.twitch.tv/elnueveok
 #link canal original https://www.twitch.tv/canalshowsport
 	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("00:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("00:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
-	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
+	schedule.every().day.at("00:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
+	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
 
 	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("08:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("08:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
-	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
+	schedule.every().day.at("08:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
+	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
 	schedule.every().day.at("16:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("16:11").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("16:12").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
-	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
+	schedule.every().day.at("16:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
+	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
 	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 	# schedule.clear()  # Limpia la programacion actual
