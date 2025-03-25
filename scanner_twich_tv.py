@@ -199,7 +199,7 @@ def main(url,path_file):
 		profile.set_required_configs()
 
 		# start firefox with specified profile
-		firefox_instance = Firefox.start(url, args.port, profile_name, auto_kill=True, wait=True) #["-headless"],
+		firefox_instance = Firefox.start(url, args.port, profile_name, ["-headless"], auto_kill=True, wait=True) #["-headless"],
 		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
