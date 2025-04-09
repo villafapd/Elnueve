@@ -658,12 +658,12 @@ def main(url,path_file):
 		firefox_instance.kill()
 	
 	except Exception as e:
-		print(e, "Reincio")
+		print(str(e), "Reincio")
 		client.disconnect()
 		#client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
 		#client.remove_actor_listener(WATCHER.actor_id, on_target)
 		firefox_instance.kill()
-		enviarMensaje("Error en ejecución de función main: " + e )
+		enviarMensaje("Error en ejecución de función main: " + str(e) )
 		#exit()	
 	
   
