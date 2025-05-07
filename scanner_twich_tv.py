@@ -694,7 +694,7 @@ if __name__ == "__main__":
 	# schedule.every(8).hours.do(mi_funcion)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
-	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveok","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	main("https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
