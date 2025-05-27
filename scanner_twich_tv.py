@@ -650,7 +650,7 @@ def main(url,path_file):
 			Events.Watcher.RESOURCES_AVAILABLE_ARRAY,
 			on_resource_available,
 		)
-		time.sleep(10)
+		time.sleep(15)
 		#input()
 		client.disconnect()
 		client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
@@ -674,17 +674,17 @@ if __name__ == "__main__":
 # Programar la funcion para que se ejecute cada 12 horas
 #link canal original https://www.twitch.tv/elnueveok
 #link canal original https://www.twitch.tv/canalshowsport
-	schedule.every().day.at("00:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
 	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
 
-	schedule.every().day.at("08:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("08:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
-	schedule.every().day.at("16:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("16:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("16:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
@@ -694,7 +694,7 @@ if __name__ == "__main__":
 	# schedule.every(8).hours.do(mi_funcion)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
-	main("https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
