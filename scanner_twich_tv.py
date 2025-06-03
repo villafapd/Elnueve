@@ -150,6 +150,15 @@ def buscar_url(archivo_log):
 	urls = re.findall(patron, log)    
 	return urls
 
+def buscar_url9mza(archivo_log):
+	# Leer el contenido del archivo
+	with open(archivo_log, 'r') as file:
+		log = file.read()    
+	# Definir el patron de la URL
+	patron = "https://unlimited\d+-saopaulo\.dps\.live/televidaar/televidaar\.smil/televidaar/livestream2/chunks\.m3u8\?nimblesessionid=\d+"
+	# Buscar todas las coincidencias del patr�n en el log
+	urls = re.findall(patron, log)    
+	return urls
 
 def update_lista(Path_log_geckordp,linea,canal):	
 	# Buscar las URLs en el archivo de log
@@ -176,6 +185,33 @@ def update_lista(Path_log_geckordp,linea,canal):
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
 			print(f"Error al guardar el archivo: {e}")  
 			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
+
+def update_lista_mza(Path_log_geckordp,linea,canal):	
+	# Buscar las URLs en el archivo de log
+	urls_encontradas = buscar_url9mza(Path_log_geckordp)
+	# Mostrar las URLs encontradas
+	for url in urls_encontradas:
+		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
+		# Abro el archivo de la lista de canales 
+		data = open(Path_ListaTv_DomoCasa).read()
+		# Dividimos el contenido en líneas
+		lines = data.split('\n')
+		# Comprobamos si hay al menos 27 líneas y actualizamos la línea 26
+		if len(lines) >= 26:        
+			lines[linea] = url # Actualizamos la línea
+			updated_content = '\n'.join(lines)   
+		try:
+			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
+				archivo.writelines(updated_content)
+			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
+			enviarMensaje("Caputura url correctamente para canal: " + canal)
+			break
+		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
+			print(f"Error al guardar el archivo: {e}")  
+			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
+
 
 def main(url,path_file):
 
@@ -650,7 +686,7 @@ def main(url,path_file):
 			Events.Watcher.RESOURCES_AVAILABLE_ARRAY,
 			on_resource_available,
 		)
-		time.sleep(15)
+		time.sleep(18)
 		#input()
 		client.disconnect()
 		client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
@@ -678,21 +714,29 @@ if __name__ == "__main__":
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
 	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
+	schedule.every().day.at("00:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
 	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("08:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
+	schedule.every().day.at("08:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza")) 
 
 	schedule.every().day.at("16:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("16:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
+	schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
 	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
+	main("https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
+	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve mza")
+	time.sleep(5)
+
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
