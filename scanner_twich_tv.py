@@ -235,7 +235,7 @@ def main(url,path_file):
 		profile.set_required_configs()
 
 		# start firefox with specified profile
-		firefox_instance = Firefox.start(url, args.port, profile_name, auto_kill=True, wait=True) #["-headless"],
+		firefox_instance = Firefox.start(url, args.port, profile_name, ["-headless"] ,auto_kill=True,  wait=True) #["-headless"]
 		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
@@ -686,7 +686,7 @@ def main(url,path_file):
 			Events.Watcher.RESOURCES_AVAILABLE_ARRAY,
 			on_resource_available,
 		)
-		time.sleep(18)
+		time.sleep(22)
 		#input()
 		client.disconnect()
 		client.remove_event_listener(WATCHER.actor_id, Events.Watcher.TARGET_AVAILABLE_FORM, on_target)
