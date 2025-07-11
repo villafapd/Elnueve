@@ -728,7 +728,7 @@ if __name__ == "__main__":
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
-	schedule.every(1).hours.do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
+	schedule.every(40).minutes.do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
 	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 	# schedule.clear()  # Limpia la programacion actual
