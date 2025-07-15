@@ -1,3 +1,4 @@
+#Simple ejemplo para capturar url de canales de tv
 #Usando geckordp se puede obtener la url de twich y llevarla a un reproductor de iptv
 #Se requiere de Firefox V 135 (ARM64)
 #Se requiere addons "Alternate player for twichtv" link:https://addons.mozilla.org/en-US/firefox/addon/twitch_5/
@@ -7,6 +8,7 @@
 # Para Carga del addons con el canal se debe usar el identificador unico del addons "Alternate Player for Twich"
 # 	about:debugging#/runtime/this-firefox
 # 		buscar "Internal UUID" en este caso "b06a910a-a14a-4f77-a09c-7a2a8c77e414" para mi navegador
+# Se envian notificaciones a telegram 
 
 import argparse
 import json
