@@ -792,7 +792,7 @@ if __name__ == "__main__":
 	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
-	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	""" hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve")
 	main("https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
 	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve mza")
@@ -805,7 +805,7 @@ if __name__ == "__main__":
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
+	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")"""
 	try:
 		
 		while True:
