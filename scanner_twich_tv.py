@@ -182,7 +182,7 @@ def buscar_url9mza(archivo_log):
 	with open(archivo_log, 'r') as file:
 		log = file.read()    
 	# Definir el patron de la URL
-	patron = "https://unlimited\d+-saopaulo\.dps\.live/televidaar/televidaar\.smil/televidaar/livestream2/chunks\.m3u8\?nimblesessionid=\d+"
+	patron = "https://unlimited\d+-saopaulo\.dps\.live/televidaar/televidaar\.smil/televidaar/livestream\d*/chunks\.m3u8\?nimblesessionid=\d+"
 	# Buscar todas las coincidencias del patr�n en el log
 	urls = re.findall(patron, log)    
 	return urls
@@ -784,8 +784,11 @@ if __name__ == "__main__":
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
-	schedule.every().day.at("12:55").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
-	schedule.every().day.at("13:55").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
+
+
+	schedule.every().hour.at(":50").do(partial(main, "https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
+	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El_Nueve_Mza"))
+
    
 	
 
