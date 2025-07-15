@@ -65,7 +65,7 @@ import re
 from functools import partial
 from geckordp.settings import GECKORDP
 import setproctitle
-
+import requests
 setproctitle.setproctitle("ScanTwichTv")
 Path_ListaTv_DomoCasa = "/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u" 
 GECKORDP.DEBUG = 1
@@ -73,13 +73,40 @@ GECKORDP.DEBUG_REQUEST = 1
 GECKORDP.DEBUG_RESPONSE = 1
 GECKORDP.LOG_FILE = "xyz.log" #: enabled
 
+# Abrir el archivo de texto en modo lectura
+with open("/home/villafapd/Documents/ConfigEspeciales/BotTelegram.txt", "r") as archivo:
+	# Leer las líneas del archivo
+	lineas = archivo.readlines()
+# Inicializar las variables
+USER = ""
+PASSWORD = ""
+idBot = ""
+idGrupo = ""
+idmio = ""
 
+
+# Procesar las lineas del archivo
+for linea in lineas:
+	if linea.startswith("idBot_CasaDanielBot"):
+		idBot = linea.split("=")[1].strip().strip("'")
+	elif linea.startswith("idGrupo"):
+		idGrupo = linea.split("=")[1].strip().strip("'")
+	elif linea.startswith("idmio"):
+		idmio = linea.split("=")[1].strip().strip("'") 
+	elif linea.startswith("USER"):
+		USER = linea.split("=")[1].strip().strip("'")
+	elif linea.startswith("PASSWORD"):
+		PASSWORD = linea.split("=")[1].strip().strip("'")
+	elif linea.startswith("token"):
+		TOKEN = linea.split("=")[1].strip().strip("'")
+	elif linea.startswith("gist_id"):
+		GIST_ID = linea.split("=")[1].strip().strip("'")
 
 
 
 def enviarMensaje(mensaje):
 	import requests
-
+	"""
 	# Abrir el archivo de texto en modo lectura
 	with open("/home/villafapd/Documents/ConfigEspeciales/BotTelegram.txt", "r") as archivo:
 		# Leer las líneas del archivo
@@ -98,10 +125,11 @@ def enviarMensaje(mensaje):
 			idGrupo = linea.split("=")[1].strip().strip("'")
 		elif linea.startswith("idmio"):
 			idmio = linea.split("=")[1].strip().strip("'")
-
+	"""
 	url = f'https://api.telegram.org/bot{idBot}/sendMessage'
 	requests.post(url, data={'chat_id': idmio, 'text': mensaje, 'parse_mode': 'HTML'})
 	print("Mensaje de Respuesta Telegram vía url api")
+ 
 """
 def enviarDocumento(ruta):
 	import requests
@@ -133,7 +161,6 @@ def borrar_contenido_log(file_log):
 	# Abrimos el archivo en modo 'w' para sobrescribirlo con un archivo vacio
 	with open(file_log, 'w') as f:
 		pass  # No es necesario escribir nada; simplemente abrimos y cerramos.
-
 
 def reporte_url_Log(url_capturada, path_file_log):	
 	f = open(path_file_log, 'a') # Abrimos nuestro fichero log en modo 'Añadir'. 
@@ -207,11 +234,40 @@ def update_lista_mza(Path_log_geckordp,linea,canal):
 			hora, minutos, segundos, dia, mes, ano = HoraFecha()
 			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
+
+			paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
+			update_data = {
+				"description": "ListaCanalesLocales",
+				"files": {
+					"ListaCanalesLocales.m3u": {
+						"content": paste_text
+					}
+				}
+			}
+
+			response = requests.patch(
+				f'https://api.github.com/gists/{GIST_ID}',
+				headers={
+					'Authorization': f'token {TOKEN}',
+					'Content-Type': 'application/json; charset=utf-8'
+				},
+				data=json.dumps(update_data).encode('utf-8')
+			)
+
+
+		#'Authorization': f'token {token}'},
+		#		data=json.dumps(update_data)
+		#	)
+
+			if response.status_code == 200:
+				print("Gist actualizado exitosamente!")
+			else:
+				print("Error al actualizar el Gist:", response.status_code)
+
 			break
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
 			print(f"Error al guardar el archivo: {e}")  
 			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
-
 
 def main(url,path_file):
 
@@ -712,8 +768,8 @@ if __name__ == "__main__":
 #link canal original https://www.twitch.tv/canalshowsport
 	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/elnueve.log",20,"El Nueve"))
-	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/showsports.log",53, "ShowSports"))
+	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20,"El Nueve"))
+	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	
 
 	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
