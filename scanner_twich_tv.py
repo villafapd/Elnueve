@@ -189,6 +189,17 @@ def buscar_url9mza(archivo_log):
 	urls = re.findall(patron, log)    
 	return urls
 
+def buscar_urlnettv(archivo_log):
+	# Leer el contenido del archivo
+	with open(archivo_log, 'r') as file:
+		log = file.read()    
+	# Definir el patron de la URL
+	# https://unlimited\d+-saopaulo\.dps\.live/nettv/nettv.smil/nettv/livestream1/chunks.m3u8?nimblesessionid=70311574
+	patron = "https://unlimited\d+-saopaulo\.dps\.live/nettv/nettv\.smil/nettv/livestream\d*/chunks\.m3u8\?nimblesessionid=\d+"
+	# Buscar todas las coincidencias del patr�n en el log
+	urls = re.findall(patron, log)    
+	return urls
+
 def update_lista(Path_log_geckordp,linea,canal):	
 	# Buscar las URLs en el archivo de log
 	urls_encontradas = buscar_url(Path_log_geckordp)
@@ -271,6 +282,64 @@ def update_lista_mza(Path_log_geckordp,linea,canal):
 			print(f"Error al guardar el archivo: {e}")  
 			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
 
+def update_lista_nettv(Path_log_geckordp,linea,canal):	
+	# Buscar las URLs en el archivo de log
+	urls_encontradas = buscar_urlnettv(Path_log_geckordp)
+	# Mostrar las URLs encontradas
+	for url in urls_encontradas:
+		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
+		# Abro el archivo de la lista de canales 
+		data = open(Path_ListaTv_DomoCasa).read()
+		# Dividimos el contenido en líneas
+		lines = data.split('\n')
+		# Comprobamos si hay al menos 27 líneas y actualizamos la línea 26
+		if len(lines) >= 26:        
+			lines[linea] = url # Actualizamos la línea
+			updated_content = '\n'.join(lines)   
+		try:
+			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
+				archivo.writelines(updated_content)
+			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
+			enviarMensaje("Caputura url correctamente para canal: " + canal)
+
+			paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
+			update_data = {
+				"description": "ListaCanalesLocales",
+				"files": {
+					"ListaCanalesLocales.m3u": {
+						"content": paste_text
+					}
+				}
+			}
+
+			response = requests.patch(
+				f'https://api.github.com/gists/{GIST_ID}',
+				headers={
+					'Authorization': f'token {TOKEN}',
+					'Content-Type': 'application/json; charset=utf-8'
+				},
+				data=json.dumps(update_data).encode('utf-8')
+			)
+
+
+		#'Authorization': f'token {token}'},
+		#		data=json.dumps(update_data)
+		#	)
+
+			if response.status_code == 200:
+				print("Gist actualizado exitosamente!")
+			else:
+				print("Error al actualizar el Gist:", response.status_code)
+
+			break
+		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
+			print(f"Error al guardar el archivo: {e}")  
+			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
+
+
+
 def main(url,path_file):
 
 	#GECKORDP.LOG_FILE = file #: enabled
@@ -293,7 +362,7 @@ def main(url,path_file):
 		profile.set_required_configs()
 
 		# start firefox with specified profile
-		firefox_instance = Firefox.start(url, args.port, profile_name, ["-headless"] ,auto_kill=True,  wait=True) #["-headless"]
+		firefox_instance = Firefox.start(url, args.port, profile_name, ["-headless"], auto_kill=True,  wait=True) #["-headless"]
 		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
@@ -787,6 +856,10 @@ if __name__ == "__main__":
 	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
 
 
+	#Se ejecuta al minuto 48 de cada hora
+	schedule.every().hour.at(":48").do(partial(main, "https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log"))
+ 	#Se ejecuta al minuto 50 de cada hora
+	schedule.every().hour.at(":50").do(partial(update_lista_nettv,"/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "Net Tv"))
 	#Se ejecuta al minuto 50 de cada hora
 	schedule.every().hour.at(":50").do(partial(main, "https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
  	#Se ejecuta al minuto 52 de cada hora
@@ -800,7 +873,11 @@ if __name__ == "__main__":
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
  
- 
+	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal NetTV")
+	main("https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log")
+	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "NetTv")
+	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
 	main("https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
@@ -816,6 +893,11 @@ if __name__ == "__main__":
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
+
+
+
+
+
 	try:
 		
 		while True:
