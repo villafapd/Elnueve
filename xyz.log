@@ -1,12 +1,12 @@
-2025-07-15 15:50:04,595 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
-2025-07-15 15:50:19,959 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
-2025-07-15 15:51:05,050 [DEBUG] [rdp_client.py:345 in connect] - 
-2025-07-15 15:51:05,059 [DEBUG] [rdp_client.py:366 in __connect] - Queue read task
-2025-07-15 15:51:05,061 [DEBUG] [rdp_client.py:370 in __connect] - Run IO loop
-2025-07-15 15:51:05,063 [DEBUG] [rdp_client.py:380 in __open_connection] - Try to open connection
-2025-07-15 15:51:05,090 [DEBUG] [rdp_client.py:395 in __open_connection] - Start listening
-2025-07-15 15:51:05,411 [DEBUG] [rdp_client.py:675 in __read] - message complete (316 == 316)
-2025-07-15 15:51:05,418 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:52:52,227 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
+2025-07-16 10:53:07,763 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
+2025-07-16 10:53:52,912 [DEBUG] [rdp_client.py:345 in connect] - 
+2025-07-16 10:53:52,943 [DEBUG] [rdp_client.py:366 in __connect] - Queue read task
+2025-07-16 10:53:52,948 [DEBUG] [rdp_client.py:370 in __connect] - Run IO loop
+2025-07-16 10:53:52,950 [DEBUG] [rdp_client.py:380 in __open_connection] - Try to open connection
+2025-07-16 10:53:53,047 [DEBUG] [rdp_client.py:395 in __open_connection] - Start listening
+2025-07-16 10:53:53,481 [DEBUG] [rdp_client.py:675 in __read] - message complete (316 == 316)
+2025-07-16 10:53:53,513 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "root",
   "applicationType": "browser",
@@ -21,15 +21,15 @@
     "useBulkTransferForPerformanceProfile": true
   }
 }
-2025-07-15 15:51:05,420 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:05,421 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:05,424 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:53,515 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:53,526 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:53,538 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "getRoot"
 }
-2025-07-15 15:51:05,443 [DEBUG] [rdp_client.py:675 in __read] - message complete (374 == 374)
-2025-07-15 15:51:05,445 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:53,597 [DEBUG] [rdp_client.py:675 in __read] - message complete (374 == 374)
+2025-07-16 10:53:53,608 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "preferenceActor": "server1.conn0.preferenceActor1",
   "addonsActor": "server1.conn0.addonsActor2",
@@ -40,15 +40,15 @@
   "screenshotActor": "server1.conn0.screenshotActor7",
   "from": "root"
 }
-2025-07-15 15:51:05,452 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:05,454 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:05,456 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:53,609 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:53,626 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:53,629 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listProcesses"
 }
-2025-07-15 15:51:05,509 [DEBUG] [rdp_client.py:675 in __read] - message complete (1159 == 1159)
-2025-07-15 15:51:05,537 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:53,845 [DEBUG] [rdp_client.py:675 in __read] - message complete (1159 == 1159)
+2025-07-16 10:53:53,874 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "processes": [
     {
@@ -63,7 +63,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor9",
-      "id": 1860114,
+      "id": 2286976,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -73,7 +73,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor10",
-      "id": 1860161,
+      "id": 2287064,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -83,7 +83,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor11",
-      "id": 1860234,
+      "id": 2287145,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -93,7 +93,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor12",
-      "id": 1860322,
+      "id": 2287194,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -103,7 +103,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor13",
-      "id": 1860324,
+      "id": 2287218,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -113,7 +113,7 @@
     },
     {
       "actor": "server1.conn0.processDescriptor14",
-      "id": 1860513,
+      "id": 2287386,
       "isParent": false,
       "isWindowlessParent": false,
       "traits": {
@@ -124,21 +124,21 @@
   ],
   "from": "root"
 }
-2025-07-15 15:51:05,554 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:05,566 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:05,575 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:53,891 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:53,922 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:53,942 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor8",
   "type": "getTarget"
 }
-2025-07-15 15:51:05,837 [DEBUG] [rdp_client.py:675 in __read] - message complete (1460 == 1460)
-2025-07-15 15:51:05,842 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:54,643 [DEBUG] [rdp_client.py:675 in __read] - message complete (1460 == 1460)
+2025-07-16 10:53:54,670 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.parentProcessTarget16",
     "targetType": "frame",
     "browsingContextID": 1,
-    "processID": 1859970,
+    "processID": 2286833,
     "innerWindowId": 2,
     "topInnerWindowId": 2,
     "isTopLevelTarget": true,
@@ -177,43 +177,15 @@
   },
   "from": "server1.conn0.processDescriptor8"
 }
-2025-07-15 15:51:05,845 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:05,853 [DEBUG] [rdp_client.py:675 in __read] - message complete (349 == 349)
-2025-07-15 15:51:05,854 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:05,859 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "frameUpdate",
-  "frames": [
-    {
-      "id": 1,
-      "isTopLevel": true,
-      "url": "chrome://browser/content/browser.xhtml",
-      "title": "En Vivo \u2014 Mozilla Firefox"
-    },
-    {
-      "id": 3,
-      "parentID": 1,
-      "isTopLevel": false,
-      "url": "about:blank",
-      "title": ""
-    },
-    {
-      "id": 7,
-      "isTopLevel": false,
-      "url": "chrome://extensions/content/dummy.xhtml",
-      "title": ""
-    }
-  ],
-  "from": "server1.conn0.parentProcessTarget16"
-}
-2025-07-15 15:51:05,866 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:05,873 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:54,703 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:54,705 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:54,728 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor9",
   "type": "getTarget"
 }
-2025-07-15 15:51:05,876 [DEBUG] [rdp_client.py:675 in __read] - message complete (349 == 349)
-2025-07-15 15:51:05,888 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:54,780 [DEBUG] [rdp_client.py:675 in __read] - message complete (349 == 349)
+2025-07-16 10:53:54,790 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -239,15 +211,43 @@
   ],
   "from": "server1.conn0.parentProcessTarget16"
 }
-2025-07-15 15:51:05,891 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:06,367 [DEBUG] [rdp_client.py:675 in __read] - message complete (529 == 529)
-2025-07-15 15:51:06,373 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:54,802 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:53:54,804 [DEBUG] [rdp_client.py:675 in __read] - message complete (349 == 349)
+2025-07-16 10:53:54,822 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 1,
+      "isTopLevel": true,
+      "url": "chrome://browser/content/browser.xhtml",
+      "title": "En Vivo \u2014 Mozilla Firefox"
+    },
+    {
+      "id": 3,
+      "parentID": 1,
+      "isTopLevel": false,
+      "url": "about:blank",
+      "title": ""
+    },
+    {
+      "id": 7,
+      "isTopLevel": false,
+      "url": "chrome://extensions/content/dummy.xhtml",
+      "title": ""
+    }
+  ],
+  "from": "server1.conn0.parentProcessTarget16"
+}
+2025-07-16 10:53:54,850 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:53:55,580 [DEBUG] [rdp_client.py:675 in __read] - message complete (529 == 529)
+2025-07-16 10:53:55,607 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process33/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860114,
+    "processID": 2286976,
     "remoteType": "webIsolated=https://elnueve.com",
     "consoleActor": "server1.conn0.content-process33/console2",
     "memoryActor": "server1.conn0.content-process33/memory4",
@@ -260,22 +260,22 @@
   },
   "from": "server1.conn0.processDescriptor9"
 }
-2025-07-15 15:51:06,380 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:06,385 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:06,389 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:55,624 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:55,633 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:55,638 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor10",
   "type": "getTarget"
 }
-2025-07-15 15:51:06,890 [DEBUG] [rdp_client.py:675 in __read] - message complete (529 == 529)
-2025-07-15 15:51:06,893 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:56,371 [DEBUG] [rdp_client.py:675 in __read] - message complete (508 == 508)
+2025-07-16 10:53:56,378 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process34/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860161,
-    "remoteType": "webIsolated=https://rudo.video",
+    "processID": 2287064,
+    "remoteType": "extension",
     "consoleActor": "server1.conn0.content-process34/console2",
     "memoryActor": "server1.conn0.content-process34/memory4",
     "threadActor": "server1.conn0.content-process34/thread3",
@@ -287,22 +287,22 @@
   },
   "from": "server1.conn0.processDescriptor10"
 }
-2025-07-15 15:51:06,894 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:06,900 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:06,902 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:56,391 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:56,399 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:56,442 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor11",
   "type": "getTarget"
 }
-2025-07-15 15:51:07,264 [DEBUG] [rdp_client.py:675 in __read] - message complete (508 == 508)
-2025-07-15 15:51:07,267 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:57,824 [DEBUG] [rdp_client.py:675 in __read] - message complete (529 == 529)
+2025-07-16 10:53:57,855 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process35/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860234,
-    "remoteType": "extension",
+    "processID": 2287145,
+    "remoteType": "webIsolated=https://rudo.video",
     "consoleActor": "server1.conn0.content-process35/console2",
     "memoryActor": "server1.conn0.content-process35/memory4",
     "threadActor": "server1.conn0.content-process35/thread3",
@@ -314,21 +314,21 @@
   },
   "from": "server1.conn0.processDescriptor11"
 }
-2025-07-15 15:51:07,268 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:07,269 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:07,271 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:57,879 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:57,883 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:57,893 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor12",
   "type": "getTarget"
 }
-2025-07-15 15:51:07,672 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
-2025-07-15 15:51:07,674 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:58,767 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:53:58,775 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process36/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860322,
+    "processID": 2287194,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process36/console2",
     "memoryActor": "server1.conn0.content-process36/memory4",
@@ -341,21 +341,21 @@
   },
   "from": "server1.conn0.processDescriptor12"
 }
-2025-07-15 15:51:07,675 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:07,677 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:07,678 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:58,793 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:58,800 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:58,804 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor13",
   "type": "getTarget"
 }
-2025-07-15 15:51:07,990 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
-2025-07-15 15:51:07,993 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:53:59,615 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:53:59,632 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process37/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860324,
+    "processID": 2287218,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process37/console2",
     "memoryActor": "server1.conn0.content-process37/memory4",
@@ -368,21 +368,21 @@
   },
   "from": "server1.conn0.processDescriptor13"
 }
-2025-07-15 15:51:07,997 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,000 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,002 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:53:59,636 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:53:59,655 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:53:59,663 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.processDescriptor14",
   "type": "getTarget"
 }
-2025-07-15 15:51:08,288 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
-2025-07-15 15:51:08,292 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:00,527 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:54:00,556 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "process": {
     "actor": "server1.conn0.content-process38/contentProcessTarget1",
     "targetType": "process",
     "isXpcShellTarget": false,
-    "processID": 1860513,
+    "processID": 2287386,
     "remoteType": "prealloc",
     "consoleActor": "server1.conn0.content-process38/console2",
     "memoryActor": "server1.conn0.content-process38/memory4",
@@ -395,15 +395,15 @@
   },
   "from": "server1.conn0.processDescriptor14"
 }
-2025-07-15 15:51:08,303 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,308 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,316 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:00,574 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:00,579 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:00,596 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listAddons"
 }
-2025-07-15 15:51:08,396 [DEBUG] [rdp_client.py:675 in __read] - message complete (6499 == 6499)
-2025-07-15 15:51:08,428 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:00,739 [DEBUG] [rdp_client.py:675 in __read] - message complete (6499 == 6499)
+2025-07-16 10:54:00,845 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "addons": [
     {
@@ -666,21 +666,21 @@
   ],
   "from": "root"
 }
-2025-07-15 15:51:08,436 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,451 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,454 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:00,860 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:00,878 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:00,894 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listWorkers"
 }
-2025-07-15 15:51:08,470 [DEBUG] [rdp_client.py:675 in __read] - message complete (238 == 238)
-2025-07-15 15:51:08,473 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:01,016 [DEBUG] [rdp_client.py:675 in __read] - message complete (238 == 238)
+2025-07-16 10:54:01,032 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "workers": [
     {
       "actor": "server1.conn0.workerDescriptor54",
       "threadActor": null,
-      "id": "158e6420-7c13-4653-93ad-464ce8a1c1de",
+      "id": "3bc06c6d-f567-4575-b9dd-3ed963cc89f2",
       "url": "resource://gre/modules/PageThumbs.worker.js",
       "origin": "[System Principal]",
       "traits": {},
@@ -689,15 +689,15 @@
   ],
   "from": "root"
 }
-2025-07-15 15:51:08,474 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,477 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,482 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:01,036 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:01,048 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:01,073 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "root",
   "type": "listTabs"
 }
-2025-07-15 15:51:08,500 [DEBUG] [rdp_client.py:675 in __read] - message complete (304 == 304)
-2025-07-15 15:51:08,503 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:01,221 [DEBUG] [rdp_client.py:675 in __read] - message complete (304 == 304)
+2025-07-16 10:54:01,237 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "tabs": [
     {
@@ -718,21 +718,21 @@
   ],
   "from": "root"
 }
-2025-07-15 15:51:08,505 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,506 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,508 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:01,253 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:01,264 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:01,277 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.tabDescriptor55",
   "type": "getTarget"
 }
-2025-07-15 15:51:08,746 [DEBUG] [rdp_client.py:675 in __read] - message complete (1586 == 1586)
-2025-07-15 15:51:08,764 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,188 [DEBUG] [rdp_client.py:675 in __read] - message complete (1586 == 1586)
+2025-07-16 10:54:02,222 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "frame": {
     "actor": "server1.conn0.child56/windowGlobalTarget2",
     "targetType": "frame",
     "browsingContextID": 3,
-    "processID": 1860114,
+    "processID": 2286976,
     "innerWindowId": 4294967298,
     "topInnerWindowId": 4294967298,
     "isTopLevelTarget": true,
@@ -771,45 +771,45 @@
   },
   "from": "server1.conn0.tabDescriptor55"
 }
-2025-07-15 15:51:08,766 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,772 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,774 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,225 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,230 [DEBUG] [rdp_client.py:675 in __read] - message complete (175 == 175)
+2025-07-16 10:54:02,233 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,238 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 6,
+      "isTopLevel": true,
+      "url": "https://www.elnueve.com/page/en-vivo/",
+      "title": "En Vivo"
+    }
+  ],
+  "from": "server1.conn0.child56/windowGlobalTarget2"
+}
+2025-07-16 10:54:02,240 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:02,243 [DEBUG] [rdp_client.py:675 in __read] - message complete (175 == 175)
+2025-07-16 10:54:02,261 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 6,
+      "isTopLevel": true,
+      "url": "https://www.elnueve.com/page/en-vivo/",
+      "title": "En Vivo"
+    }
+  ],
+  "from": "server1.conn0.child56/windowGlobalTarget2"
+}
+2025-07-16 10:54:02,269 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:02,286 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.parentAccessibilityActor6",
   "type": "bootstrap"
 }
-2025-07-15 15:51:08,776 [DEBUG] [rdp_client.py:675 in __read] - message complete (175 == 175)
-2025-07-15 15:51:08,781 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "frameUpdate",
-  "frames": [
-    {
-      "id": 6,
-      "isTopLevel": true,
-      "url": "https://www.elnueve.com/page/en-vivo/",
-      "title": "En Vivo"
-    }
-  ],
-  "from": "server1.conn0.child56/windowGlobalTarget2"
-}
-2025-07-15 15:51:08,786 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:08,829 [DEBUG] [rdp_client.py:675 in __read] - message complete (175 == 175)
-2025-07-15 15:51:08,837 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "frameUpdate",
-  "frames": [
-    {
-      "id": 6,
-      "isTopLevel": true,
-      "url": "https://www.elnueve.com/page/en-vivo/",
-      "title": "En Vivo"
-    }
-  ],
-  "from": "server1.conn0.child56/windowGlobalTarget2"
-}
-2025-07-15 15:51:08,839 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:08,843 [DEBUG] [rdp_client.py:675 in __read] - message complete (101 == 101)
-2025-07-15 15:51:08,847 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,328 [DEBUG] [rdp_client.py:675 in __read] - message complete (101 == 101)
+2025-07-16 10:54:02,345 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "state": {
     "canBeDisabled": true,
@@ -817,43 +817,43 @@
   },
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-07-15 15:51:08,850 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,854 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,857 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,347 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,369 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,380 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.parentAccessibilityActor6",
   "type": "enable"
 }
-2025-07-15 15:51:08,909 [DEBUG] [rdp_client.py:675 in __read] - message complete (100 == 100)
-2025-07-15 15:51:08,912 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,500 [DEBUG] [rdp_client.py:675 in __read] - message complete (100 == 100)
+2025-07-16 10:54:02,512 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "canBeDisabledChange",
   "canBeDisabled": true,
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-07-15 15:51:08,916 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:08,919 [DEBUG] [rdp_client.py:675 in __read] - message complete (50 == 50)
-2025-07-15 15:51:08,922 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,526 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:02,539 [DEBUG] [rdp_client.py:675 in __read] - message complete (50 == 50)
+2025-07-16 10:54:02,553 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.parentAccessibilityActor6"
 }
-2025-07-15 15:51:08,926 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:08,933 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:08,935 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,558 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,574 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,576 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/consoleActor3",
   "type": "startListeners",
   "listeners": []
 }
-2025-07-15 15:51:09,010 [DEBUG] [rdp_client.py:675 in __read] - message complete (68 == 68)
-2025-07-15 15:51:09,013 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,655 [DEBUG] [rdp_client.py:675 in __read] - message complete (68 == 68)
+2025-07-16 10:54:02,667 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "startedListeners": [],
   "from": "server1.conn0.child56/consoleActor3"
 }
-2025-07-15 15:51:09,020 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,022 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,029 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,669 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,677 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,688 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/thread1",
   "type": "attach",
@@ -870,22 +870,22 @@
     "eventBreakpoints": []
   }
 }
-2025-07-15 15:51:09,041 [DEBUG] [rdp_client.py:675 in __read] - message complete (40 == 40)
-2025-07-15 15:51:09,044 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,708 [DEBUG] [rdp_client.py:675 in __read] - message complete (40 == 40)
+2025-07-16 10:54:02,714 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.child56/thread1"
 }
-2025-07-15 15:51:09,047 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,053 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,057 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,721 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,728 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,743 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.tabDescriptor55",
   "type": "getWatcher",
   "isServerTargetSwitchingEnabled": true,
   "isPopupDebuggingEnabled": false
 }
-2025-07-15 15:51:09,128 [DEBUG] [rdp_client.py:675 in __read] - message complete (720 == 720)
-2025-07-15 15:51:09,137 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:02,828 [DEBUG] [rdp_client.py:675 in __read] - message complete (720 == 720)
+2025-07-16 10:54:02,834 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "actor": "server1.conn0.watcher58",
   "traits": {
@@ -924,9 +924,9 @@
   },
   "from": "server1.conn0.tabDescriptor55"
 }
-2025-07-15 15:51:09,142 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,149 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,155 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:02,837 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:02,841 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:02,844 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -936,21 +936,21 @@
     "document-event"
   ]
 }
-2025-07-15 15:51:09,484 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:09,485 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:03,203 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:03,218 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:09,486 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,487 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,495 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:03,228 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:03,250 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:03,273 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/inspectorActor4",
   "type": "getWalker",
   "options": {}
 }
-2025-07-15 15:51:09,713 [DEBUG] [rdp_client.py:675 in __read] - message complete (826 == 826)
-2025-07-15 15:51:09,717 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:03,640 [DEBUG] [rdp_client.py:675 in __read] - message complete (826 == 826)
+2025-07-16 10:54:03,661 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "walker": {
     "actor": "server1.conn0.child56/domwalker20",
@@ -991,16 +991,16 @@
   },
   "from": "server1.conn0.child56/inspectorActor4"
 }
-2025-07-15 15:51:09,719 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,721 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,727 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:03,682 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:03,696 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:03,708 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/domwalker20",
   "type": "document",
   "node": ""
 }
-2025-07-15 15:51:09,742 [DEBUG] [rdp_client.py:675 in __read] - message complete (688 == 688)
-2025-07-15 15:51:09,753 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:03,733 [DEBUG] [rdp_client.py:675 in __read] - message complete (688 == 688)
+2025-07-16 10:54:03,740 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "node": {
     "actor": "server1.conn0.child56/domnode19",
@@ -1034,17 +1034,17 @@
   },
   "from": "server1.conn0.child56/domwalker20"
 }
-2025-07-15 15:51:09,762 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,770 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,777 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:03,741 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:03,744 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:03,748 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/domwalker20",
   "type": "querySelectorAll",
   "node": "server1.conn0.child56/domnode19",
   "selector": "body h1"
 }
-2025-07-15 15:51:09,823 [DEBUG] [rdp_client.py:675 in __read] - message complete (110 == 110)
-2025-07-15 15:51:09,833 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:03,800 [DEBUG] [rdp_client.py:675 in __read] - message complete (110 == 110)
+2025-07-16 10:54:03,801 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "list": {
     "actor": "server1.conn0.child56/domnodelist21",
@@ -1052,28 +1052,28 @@
   },
   "from": "server1.conn0.child56/domwalker20"
 }
-2025-07-15 15:51:09,840 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,850 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,867 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:03,812 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:03,815 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:03,823 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/memoryActor6",
   "type": "attach"
 }
-2025-07-15 15:51:09,942 [DEBUG] [rdp_client.py:675 in __read] - message complete (63 == 63)
-2025-07-15 15:51:09,943 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:03,967 [DEBUG] [rdp_client.py:675 in __read] - message complete (63 == 63)
+2025-07-16 10:54:03,976 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "attached",
   "from": "server1.conn0.child56/memoryActor6"
 }
-2025-07-15 15:51:09,944 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:09,945 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:09,947 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:03,984 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:03,990 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:03,995 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "getTargetConfigurationActor"
 }
-2025-07-15 15:51:09,981 [DEBUG] [rdp_client.py:675 in __read] - message complete (639 == 639)
-2025-07-15 15:51:09,997 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,052 [DEBUG] [rdp_client.py:675 in __read] - message complete (639 == 639)
+2025-07-16 10:54:04,068 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "configuration": {
     "actor": "server1.conn0.target-configuration59",
@@ -1103,38 +1103,77 @@
   },
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:10,006 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:10,014 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:10,019 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:04,081 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:04,094 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:04,096 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "getThreadConfigurationActor"
 }
-2025-07-15 15:51:10,041 [DEBUG] [rdp_client.py:675 in __read] - message complete (99 == 99)
-2025-07-15 15:51:10,046 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,172 [DEBUG] [rdp_client.py:675 in __read] - message complete (99 == 99)
+2025-07-16 10:54:04,192 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "configuration": {
     "actor": "server1.conn0.thread-configuration60"
   },
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:10,052 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:10,068 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:10,076 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:04,196 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:04,203 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:04,218 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchTargets",
   "targetType": "frame"
 }
-2025-07-15 15:51:10,199 [DEBUG] [rdp_client.py:675 in __read] - message complete (1886 == 1886)
-2025-07-15 15:51:10,203 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,571 [DEBUG] [rdp_client.py:675 in __read] - message complete (798 == 798)
+2025-07-16 10:54:04,629 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent62",
+          "resourceId": 10737418287,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418287,
+          "startedDateTime": "2025-07-16T13:54:04.496Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674044496,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:04,631 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:04,648 [DEBUG] [rdp_client.py:675 in __read] - message complete (1886 == 1886)
+2025-07-16 10:54:04,697 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "target-available-form",
   "target": {
     "actor": "server1.conn0.watcher57.process2//windowGlobalTarget2",
     "targetType": "frame",
     "browsingContextID": 3,
-    "processID": 1860114,
+    "processID": 2286976,
     "followWindowGlobalLifeCycle": true,
     "innerWindowId": 4294967298,
     "topInnerWindowId": 4294967298,
@@ -1175,9 +1214,9 @@
   },
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:10,206 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][target-available-form] handled
-2025-07-15 15:51:10,253 [DEBUG] [rdp_client.py:675 in __read] - message complete (261 == 261)
-2025-07-15 15:51:10,257 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,705 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][target-available-form] handled
+2025-07-16 10:54:04,740 [DEBUG] [rdp_client.py:675 in __read] - message complete (261 == 261)
+2025-07-16 10:54:04,749 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1186,7 +1225,7 @@
       [
         {
           "name": "dom-loading",
-          "time": 1752605410895,
+          "time": 1752673977752,
           "url": "https://www.elnueve.com/page/en-vivo/",
           "newURI": null,
           "hasNativeConsoleAPI": null
@@ -1196,9 +1235,9 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,262 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:10,312 [DEBUG] [rdp_client.py:675 in __read] - message complete (369 == 369)
-2025-07-15 15:51:10,339 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,765 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:04,812 [DEBUG] [rdp_client.py:675 in __read] - message complete (369 == 369)
+2025-07-16 10:54:04,823 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1207,7 +1246,7 @@
       [
         {
           "name": "dom-interactive",
-          "time": 1752605420817,
+          "time": 1752673988942,
           "title": "En Vivo",
           "url": "https://www.elnueve.com/page/en-vivo/",
           "newURI": null,
@@ -1215,7 +1254,7 @@
         },
         {
           "name": "dom-complete",
-          "time": 1752605427455,
+          "time": 1752673996210,
           "newURI": null,
           "hasNativeConsoleAPI": true
         }
@@ -1224,9 +1263,9 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,364 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:10,396 [DEBUG] [rdp_client.py:675 in __read] - message complete (187 == 187)
-2025-07-15 15:51:10,407 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,859 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:04,883 [DEBUG] [rdp_client.py:675 in __read] - message complete (187 == 187)
+2025-07-16 10:54:04,894 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "frameUpdate",
   "frames": [
@@ -1239,18 +1278,18 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,411 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:10,677 [DEBUG] [rdp_client.py:675 in __read] - message complete (1941 == 1941)
-2025-07-15 15:51:10,687 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:04,903 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:05,554 [DEBUG] [rdp_client.py:675 in __read] - message complete (1942 == 1942)
+2025-07-16 10:54:05,605 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "target-available-form",
   "target": {
-    "actor": "server1.conn0.watcher57.process4//windowGlobalTarget2",
+    "actor": "server1.conn0.watcher57.process5//windowGlobalTarget2",
     "targetType": "frame",
     "browsingContextID": 4294967297,
-    "processID": 1860161,
+    "processID": 2287145,
     "followWindowGlobalLifeCycle": true,
-    "innerWindowId": 8589934593,
+    "innerWindowId": 10737418241,
     "parentInnerWindowId": 4294967298,
     "topInnerWindowId": 4294967298,
     "isTopLevelTarget": false,
@@ -1270,29 +1309,73 @@
     "title": "LIVE Canal 9 Televida",
     "url": "https://rudo.video/live/televidaar",
     "outerWindowID": 25,
-    "consoleActor": "server1.conn0.watcher57.process4//consoleActor3",
-    "inspectorActor": "server1.conn0.watcher57.process4//inspectorActor4",
-    "styleSheetsActor": "server1.conn0.watcher57.process4//styleSheetsActor5",
-    "memoryActor": "server1.conn0.watcher57.process4//memoryActor6",
-    "reflowActor": "server1.conn0.watcher57.process4//reflowActor7",
-    "cssPropertiesActor": "server1.conn0.watcher57.process4//cssPropertiesActor8",
-    "animationsActor": "server1.conn0.watcher57.process4//animationsActor9",
-    "responsiveActor": "server1.conn0.watcher57.process4//responsiveActor10",
-    "webExtensionInspectedWindowActor": "server1.conn0.watcher57.process4//webExtensionInspectedWindowActor11",
-    "accessibilityActor": "server1.conn0.watcher57.process4//accessibilityActor12",
-    "changesActor": "server1.conn0.watcher57.process4//changesActor13",
-    "manifestActor": "server1.conn0.watcher57.process4//manifestActor14",
-    "networkContentActor": "server1.conn0.watcher57.process4//networkContentActor15",
-    "screenshotContentActor": "server1.conn0.watcher57.process4//screenshotContentActor16",
-    "tracerActor": "server1.conn0.watcher57.process4//tracerActor17",
-    "objectsManagerActor": "server1.conn0.watcher57.process4//objectsManagerActor18",
-    "threadActor": "server1.conn0.watcher57.process4//thread1"
+    "consoleActor": "server1.conn0.watcher57.process5//consoleActor3",
+    "inspectorActor": "server1.conn0.watcher57.process5//inspectorActor4",
+    "styleSheetsActor": "server1.conn0.watcher57.process5//styleSheetsActor5",
+    "memoryActor": "server1.conn0.watcher57.process5//memoryActor6",
+    "reflowActor": "server1.conn0.watcher57.process5//reflowActor7",
+    "cssPropertiesActor": "server1.conn0.watcher57.process5//cssPropertiesActor8",
+    "animationsActor": "server1.conn0.watcher57.process5//animationsActor9",
+    "responsiveActor": "server1.conn0.watcher57.process5//responsiveActor10",
+    "webExtensionInspectedWindowActor": "server1.conn0.watcher57.process5//webExtensionInspectedWindowActor11",
+    "accessibilityActor": "server1.conn0.watcher57.process5//accessibilityActor12",
+    "changesActor": "server1.conn0.watcher57.process5//changesActor13",
+    "manifestActor": "server1.conn0.watcher57.process5//manifestActor14",
+    "networkContentActor": "server1.conn0.watcher57.process5//networkContentActor15",
+    "screenshotContentActor": "server1.conn0.watcher57.process5//screenshotContentActor16",
+    "tracerActor": "server1.conn0.watcher57.process5//tracerActor17",
+    "objectsManagerActor": "server1.conn0.watcher57.process5//objectsManagerActor18",
+    "threadActor": "server1.conn0.watcher57.process5//thread1"
   },
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:10,694 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][target-available-form] handled
-2025-07-15 15:51:10,703 [DEBUG] [rdp_client.py:675 in __read] - message complete (258 == 258)
-2025-07-15 15:51:10,712 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:05,606 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][target-available-form] handled
+2025-07-16 10:54:05,626 [DEBUG] [rdp_client.py:675 in __read] - message complete (775 == 775)
+2025-07-16 10:54:05,657 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418287,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 245,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "totalTime": 245,
+            "eventTimingsAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "contentSize": 637,
+            "transferredSize": 878,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:05,675 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:05,690 [DEBUG] [rdp_client.py:675 in __read] - message complete (258 == 258)
+2025-07-16 10:54:05,723 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1301,7 +1384,7 @@
       [
         {
           "name": "dom-loading",
-          "time": 1752605420763,
+          "time": 1752673988964,
           "url": "https://rudo.video/live/televidaar",
           "newURI": null,
           "hasNativeConsoleAPI": null
@@ -1309,11 +1392,11 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,714 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:10,719 [DEBUG] [rdp_client.py:675 in __read] - message complete (380 == 380)
-2025-07-15 15:51:10,726 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:05,741 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:05,763 [DEBUG] [rdp_client.py:675 in __read] - message complete (380 == 380)
+2025-07-16 10:54:05,800 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1322,7 +1405,7 @@
       [
         {
           "name": "dom-interactive",
-          "time": 1752605425308,
+          "time": 1752673993690,
           "title": "LIVE Canal 9 Televida",
           "url": "https://rudo.video/live/televidaar",
           "newURI": null,
@@ -1330,24 +1413,24 @@
         },
         {
           "name": "dom-complete",
-          "time": 1752605427454,
+          "time": 1752673996207,
           "newURI": null,
           "hasNativeConsoleAPI": true
         }
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,734 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:10,737 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:10,740 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:05,807 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:05,812 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:05,818 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:10,744 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:10,752 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:10,755 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:05,840 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:05,843 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:05,848 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -1355,8 +1438,70 @@
     "Cache"
   ]
 }
-2025-07-15 15:51:10,963 [DEBUG] [rdp_client.py:675 in __read] - message complete (383 == 383)
-2025-07-15 15:51:10,975 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,011 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:06,044 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418288,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:06,115 [DEBUG] [rdp_client.py:675 in __read] - message complete (812 == 812)
+2025-07-16 10:54:06,131 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent64",
+          "resourceId": 10737418288,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418288,
+          "startedDateTime": "2025-07-16T13:54:06.071Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674046071,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68570981_13714.ts?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:06,358 [DEBUG] [rdp_client.py:675 in __read] - message complete (383 == 383)
+2025-07-16 10:54:06,393 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1382,9 +1527,9 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:10,982 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
-2025-07-15 15:51:10,995 [DEBUG] [rdp_client.py:675 in __read] - message complete (378 == 378)
-2025-07-15 15:51:10,998 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,417 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
+2025-07-16 10:54:06,452 [DEBUG] [rdp_client.py:675 in __read] - message complete (378 == 378)
+2025-07-16 10:54:06,459 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1392,7 +1537,7 @@
       "Cache",
       [
         {
-          "actor": "server1.conn0.watcher57.process4//Cache19",
+          "actor": "server1.conn0.watcher57.process5//Cache19",
           "hosts": {
             "https://rudo.video": []
           },
@@ -1408,16 +1553,16 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:11,008 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,015 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,492 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:06,493 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,019 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,023 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,032 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:06,498 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:06,505 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:06,512 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -1425,8 +1570,8 @@
     "cookies"
   ]
 }
-2025-07-15 15:51:11,222 [DEBUG] [rdp_client.py:675 in __read] - message complete (396 == 396)
-2025-07-15 15:51:11,239 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,661 [DEBUG] [rdp_client.py:675 in __read] - message complete (396 == 396)
+2025-07-16 10:54:06,678 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1434,7 +1579,7 @@
       "cookies",
       [
         {
-          "actor": "server1.conn0.cookies61",
+          "actor": "server1.conn0.cookies65",
           "hosts": {
             "https://www.elnueve.com": [],
             "https://rudo.video": []
@@ -1454,67 +1599,28 @@
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,250 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:11,265 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,269 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,705 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:06,706 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:06,724 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,279 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,289 [DEBUG] [rdp_client.py:675 in __read] - message complete (795 == 795)
-2025-07-15 15:51:11,290 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,304 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "network-event",
-      [
-        {
-          "actor": "server1.conn0.netEvent63",
-          "resourceId": 8589934635,
-          "resourceType": "network-event",
-          "browsingContextID": 4294967297,
-          "cause": {
-            "loadingDocumentUri": "https://rudo.video/live/televidaar",
-            "type": "xhr"
-          },
-          "chromeContext": false,
-          "innerWindowId": 8589934593,
-          "isNavigationRequest": false,
-          "isThirdPartyTrackingResource": false,
-          "isXHR": true,
-          "method": "GET",
-          "priority": 0,
-          "private": false,
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934635,
-          "startedDateTime": "2025-07-15T18:51:11.242Z",
-          "securityFlags": 144,
-          "timeStamp": 1752605471242,
-          "timings": {},
-          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher58"
-}
-2025-07-15 15:51:11,310 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:11,320 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:06,726 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:06,739 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:06,750 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchTargets",
   "targetType": "frame"
 }
-2025-07-15 15:51:11,369 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,371 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:06,930 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:06,955 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,372 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,373 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,382 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:06,976 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:06,984 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:07,002 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -1522,8 +1628,8 @@
     "indexed-db"
   ]
 }
-2025-07-15 15:51:11,436 [DEBUG] [rdp_client.py:675 in __read] - message complete (407 == 407)
-2025-07-15 15:51:11,439 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,238 [DEBUG] [rdp_client.py:675 in __read] - message complete (407 == 407)
+2025-07-16 10:54:07,259 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1531,7 +1637,7 @@
       "indexed-db",
       [
         {
-          "actor": "server1.conn0.indexedDB64",
+          "actor": "server1.conn0.indexedDB66",
           "hosts": {
             "https://www.elnueve.com": [],
             "https://rudo.video": []
@@ -1551,15 +1657,15 @@
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,441 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:11,445 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,447 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,276 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:07,297 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:07,299 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,448 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,451 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,453 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:07,303 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:07,321 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:07,344 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -1567,8 +1673,8 @@
     "local-storage"
   ]
 }
-2025-07-15 15:51:11,508 [DEBUG] [rdp_client.py:675 in __read] - message complete (411 == 411)
-2025-07-15 15:51:11,522 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,564 [DEBUG] [rdp_client.py:675 in __read] - message complete (411 == 411)
+2025-07-16 10:54:07,574 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1594,9 +1700,9 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:11,530 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
-2025-07-15 15:51:11,550 [DEBUG] [rdp_client.py:675 in __read] - message complete (406 == 406)
-2025-07-15 15:51:11,559 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,594 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
+2025-07-16 10:54:07,623 [DEBUG] [rdp_client.py:675 in __read] - message complete (406 == 406)
+2025-07-16 10:54:07,650 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1604,7 +1710,7 @@
       "local-storage",
       [
         {
-          "actor": "server1.conn0.watcher57.process4//localStorage20",
+          "actor": "server1.conn0.watcher57.process5//localStorage20",
           "hosts": {
             "https://rudo.video": []
           },
@@ -1620,29 +1726,73 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:11,564 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,567 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,705 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:07,723 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,570 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,575 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,577 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:07,735 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:07,750 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:07,767 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchTargets",
   "targetType": "frame"
 }
-2025-07-15 15:51:11,630 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,632 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:07,846 [DEBUG] [rdp_client.py:675 in __read] - message complete (763 == 763)
+2025-07-16 10:54:07,894 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418288,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "video/m2ts",
+            "waitingTime": 488,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 1516,
+            "eventTimingsAvailable": true,
+            "contentSize": 780952,
+            "transferredSize": 781177,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:07,929 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:07,991 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:07,993 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,636 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,640 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,643 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:07,995 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:08,004 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:08,013 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.watcher58",
   "type": "watchResources",
@@ -1650,35 +1800,8 @@
     "session-storage"
   ]
 }
-2025-07-15 15:51:11,711 [DEBUG] [rdp_client.py:675 in __read] - message complete (414 == 414)
-2025-07-15 15:51:11,715 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
-{
-  "type": "resources-available-array",
-  "array": [
-    [
-      "session-storage",
-      [
-        {
-          "actor": "server1.conn0.watcher57.process4//sessionStorage21",
-          "hosts": {
-            "https://rudo.video": []
-          },
-          "traits": {
-            "supportsAddItem": true,
-            "supportsRemoveItem": true,
-            "supportsRemoveAll": true,
-            "supportsRemoveAllSessionCookies": false
-          },
-          "resourceId": "sessionStorage",
-          "resourceKey": "sessionStorage"
-        }
-      ]
-    ]
-  ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
-}
-2025-07-15 15:51:11,749 [DEBUG] [rdp_client.py:675 in __read] - message complete (419 == 419)
-2025-07-15 15:51:11,753 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,088 [DEBUG] [rdp_client.py:675 in __read] - message complete (419 == 419)
+2025-07-16 10:54:08,098 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1704,30 +1827,57 @@
   ],
   "from": "server1.conn0.watcher57.process2//windowGlobalTarget2"
 }
-2025-07-15 15:51:11,760 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
-2025-07-15 15:51:11,762 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
-2025-07-15 15:51:11,764 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,101 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher57.process2//windowGlobalTarget2][resources-available-array] handled
+2025-07-16 10:54:08,124 [DEBUG] [rdp_client.py:675 in __read] - message complete (414 == 414)
+2025-07-16 10:54:08,129 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "session-storage",
+      [
+        {
+          "actor": "server1.conn0.watcher57.process5//sessionStorage21",
+          "hosts": {
+            "https://rudo.video": []
+          },
+          "traits": {
+            "supportsAddItem": true,
+            "supportsRemoveItem": true,
+            "supportsRemoveAll": true,
+            "supportsRemoveAllSessionCookies": false
+          },
+          "resourceId": "sessionStorage",
+          "resourceKey": "sessionStorage"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:08,140 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:54:08,142 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:11,766 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,769 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,772 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:08,143 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:08,154 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:08,164 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/consoleActor3",
   "type": "evaluateJSAsync",
   "text": "\n\t\t\t(() => { \n\t\t\t\tlongString = '';\n\t\t\t\tfor (let i = 0; i < 10000; i++) {\n\t\t\t\t\tlongString += 'x';\n\t\t\t\t}\n\t\t\t\treturn longString; \n\t\t\t})();\n\t\t",
   "eager": false
 }
-2025-07-15 15:51:11,784 [DEBUG] [rdp_client.py:675 in __read] - message complete (79 == 79)
-2025-07-15 15:51:11,788 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,213 [DEBUG] [rdp_client.py:675 in __read] - message complete (78 == 78)
+2025-07-16 10:54:08,215 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
-  "resultID": "1752605471779.987-0",
+  "resultID": "1752674048191.12-0",
   "from": "server1.conn0.child56/consoleActor3"
 }
-2025-07-15 15:51:11,790 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:11,848 [DEBUG] [rdp_client.py:675 in __read] - message complete (362 == 362)
-2025-07-15 15:51:11,852 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,220 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:08,397 [DEBUG] [rdp_client.py:675 in __read] - message complete (362 == 362)
+2025-07-16 10:54:08,405 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "newSource",
   "source": {
@@ -1745,12 +1895,12 @@
   },
   "from": "server1.conn0.child56/thread1"
 }
-2025-07-15 15:51:11,857 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:11,873 [DEBUG] [rdp_client.py:675 in __read] - message complete (1478 == 1478)
-2025-07-15 15:51:11,881 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,409 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:08,416 [DEBUG] [rdp_client.py:675 in __read] - message complete (1476 == 1476)
+2025-07-16 10:54:08,421 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "evaluationResult",
-  "resultID": "1752605471779.987-0",
+  "resultID": "1752674048191.12-0",
   "hasException": false,
   "input": "\n\t\t\t(() => { \n\t\t\t\tlongString = '';\n\t\t\t\tfor (let i = 0; i < 10000; i++) {\n\t\t\t\t\tlongString += 'x';\n\t\t\t\t}\n\t\t\t\treturn longString; \n\t\t\t})();\n\t\t",
   "result": {
@@ -1759,28 +1909,28 @@
     "length": 10000,
     "initial": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   },
-  "startTime": 1752605471779.987,
-  "timestamp": 1752605471846.884,
+  "startTime": 1752674048191.12,
+  "timestamp": 1752674048390.202,
   "from": "server1.conn0.child56/consoleActor3"
 }
-2025-07-15 15:51:11,909 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.child56/consoleActor3][evaluationResult] handled
-2025-07-15 15:51:11,915 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:11,924 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:08,447 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.child56/consoleActor3][evaluationResult] handled
+2025-07-16 10:54:08,470 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:08,473 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
   "to": "server1.conn0.child56/longstractor24",
   "type": "substring",
   "start": 0,
   "end": 10000
 }
-2025-07-15 15:51:11,965 [DEBUG] [rdp_client.py:675 in __read] - message complete (10062 == 10062)
-2025-07-15 15:51:11,993 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,527 [DEBUG] [rdp_client.py:675 in __read] - message complete (10062 == 10062)
+2025-07-16 10:54:08,576 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "substring": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   "from": "server1.conn0.child56/longstractor24"
 }
-2025-07-15 15:51:12,007 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:16,271 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
-2025-07-15 15:51:16,280 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,586 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:08,757 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:08,780 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1788,7 +1938,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934636,
+          "resourceId": 10737418289,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
@@ -1801,10 +1951,10 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:16,303 [DEBUG] [rdp_client.py:675 in __read] - message complete (795 == 795)
-2025-07-15 15:51:16,310 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:08,889 [DEBUG] [rdp_client.py:675 in __read] - message complete (812 == 812)
+2025-07-16 10:54:08,918 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1812,8 +1962,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent65",
-          "resourceId": 8589934636,
+          "actor": "server1.conn0.netEvent68",
+          "resourceId": 10737418289,
           "resourceType": "network-event",
           "browsingContextID": 4294967297,
           "cause": {
@@ -1821,7 +1971,7 @@
             "type": "xhr"
           },
           "chromeContext": false,
-          "innerWindowId": 8589934593,
+          "innerWindowId": 10737418241,
           "isNavigationRequest": false,
           "isThirdPartyTrackingResource": false,
           "isXHR": true,
@@ -1829,27 +1979,194 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934636,
-          "startedDateTime": "2025-07-15T18:51:16.289Z",
+          "stacktraceResourceId": 10737418289,
+          "startedDateTime": "2025-07-16T13:54:08.837Z",
           "securityFlags": 144,
-          "timeStamp": 1752605476289,
+          "timeStamp": 1752674048837,
           "timings": {},
-          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510"
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68575981_13715.ts?nimblesessionid=69168811"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:16,316 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:16,319 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:16,323 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:08,929 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:08,947 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:08,964 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent65",
+  "to": "server1.conn0.netEvent68",
   "type": "getRequestHeaders"
 }
-2025-07-15 15:51:16,339 [DEBUG] [rdp_client.py:675 in __read] - message complete (1146 == 1146)
-2025-07-15 15:51:16,348 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:09,017 [DEBUG] [rdp_client.py:675 in __read] - message complete (1160 == 1160)
+2025-07-16 10:54:09,047 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "unlimited1-saopaulo.dps.live"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Origin",
+      "value": "https://rudo.video"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Referer",
+      "value": "https://rudo.video/"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "cross-site"
+    }
+  ],
+  "headersSize": 481,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/l_32953_68575981_13715.ts?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent68"
+}
+2025-07-16 10:54:09,081 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:10,271 [DEBUG] [rdp_client.py:675 in __read] - message complete (763 == 763)
+2025-07-16 10:54:10,279 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418289,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "video/m2ts",
+            "waitingTime": 248,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 1308,
+            "eventTimingsAvailable": true,
+            "contentSize": 966508,
+            "transferredSize": 966733,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:10,291 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:10,771 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:10,777 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418290,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:10,866 [DEBUG] [rdp_client.py:675 in __read] - message complete (798 == 798)
+2025-07-16 10:54:10,874 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent82",
+          "resourceId": 10737418290,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418290,
+          "startedDateTime": "2025-07-16T13:54:10.834Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674050834,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:10,905 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:10,911 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:10,934 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent82",
+  "type": "getRequestHeaders"
+}
+2025-07-16 10:54:10,963 [DEBUG] [rdp_client.py:675 in __read] - message complete (1146 == 1146)
+2025-07-16 10:54:10,991 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -1898,12 +2215,12 @@
     }
   ],
   "headersSize": 467,
-  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
-  "from": "server1.conn0.netEvent65"
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent82"
 }
-2025-07-15 15:51:16,354 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:16,986 [DEBUG] [rdp_client.py:675 in __read] - message complete (773 == 773)
-2025-07-15 15:51:17,002 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:11,009 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:11,218 [DEBUG] [rdp_client.py:675 in __read] - message complete (775 == 775)
+2025-07-16 10:54:11,246 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -1911,7 +2228,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934636,
+          "resourceId": 10737418290,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -1922,32 +2239,32 @@
             "remoteAddress": "67.159.33.115",
             "remotePort": 443,
             "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 242,
+            "waitingTime": 240,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
-            "totalTime": 244,
+            "totalTime": 248,
             "eventTimingsAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "contentSize": 280,
-            "transferredSize": 521,
+            "contentSize": 637,
+            "transferredSize": 878,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
           "browsingContextID": 4294967297,
-          "innerWindowId": 8589934593
+          "innerWindowId": 10737418241
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:17,013 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:21,992 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
-2025-07-15 15:51:21,996 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:11,247 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:11,384 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:11,398 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1955,7 +2272,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934637,
+          "resourceId": 10737418291,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
@@ -1968,10 +2285,10 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:22,013 [DEBUG] [rdp_client.py:675 in __read] - message complete (795 == 795)
-2025-07-15 15:51:22,019 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:11,474 [DEBUG] [rdp_client.py:675 in __read] - message complete (812 == 812)
+2025-07-16 10:54:11,481 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -1979,8 +2296,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent79",
-          "resourceId": 8589934637,
+          "actor": "server1.conn0.netEvent96",
+          "resourceId": 10737418291,
           "resourceType": "network-event",
           "browsingContextID": 4294967297,
           "cause": {
@@ -1988,7 +2305,7 @@
             "type": "xhr"
           },
           "chromeContext": false,
-          "innerWindowId": 8589934593,
+          "innerWindowId": 10737418241,
           "isNavigationRequest": false,
           "isThirdPartyTrackingResource": false,
           "isXHR": true,
@@ -1996,27 +2313,27 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934637,
-          "startedDateTime": "2025-07-15T18:51:22.004Z",
+          "stacktraceResourceId": 10737418291,
+          "startedDateTime": "2025-07-16T13:54:11.453Z",
           "securityFlags": 144,
-          "timeStamp": 1752605482004,
+          "timeStamp": 1752674051453,
           "timings": {},
-          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510"
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68580981_13716.ts?nimblesessionid=69168811"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:22,023 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:22,027 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:22,028 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:11,491 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:11,494 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:11,503 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent79",
+  "to": "server1.conn0.netEvent96",
   "type": "getRequestHeaders"
 }
-2025-07-15 15:51:22,036 [DEBUG] [rdp_client.py:675 in __read] - message complete (1179 == 1179)
-2025-07-15 15:51:22,042 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:11,536 [DEBUG] [rdp_client.py:675 in __read] - message complete (1160 == 1160)
+2025-07-16 10:54:11,545 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -2062,19 +2379,15 @@
     {
       "name": "Sec-Fetch-Site",
       "value": "cross-site"
-    },
-    {
-      "name": "TE",
-      "value": "trailers"
     }
   ],
-  "headersSize": 467,
-  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
-  "from": "server1.conn0.netEvent79"
+  "headersSize": 481,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/l_32953_68580981_13716.ts?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent96"
 }
-2025-07-15 15:51:22,048 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:22,297 [DEBUG] [rdp_client.py:675 in __read] - message complete (773 == 773)
-2025-07-15 15:51:22,306 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:11,552 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:12,825 [DEBUG] [rdp_client.py:675 in __read] - message complete (765 == 765)
+2025-07-16 10:54:12,843 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -2082,7 +2395,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934637,
+          "resourceId": 10737418291,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -2092,33 +2405,33 @@
             "earlyHintsStatus": "",
             "remoteAddress": "67.159.33.115",
             "remotePort": 443,
-            "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 241,
+            "mimeType": "video/m2ts",
+            "waitingTime": 247,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
-            "totalTime": 241,
-            "eventTimingsAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "contentSize": 385,
-            "transferredSize": 626,
+            "totalTime": 1335,
+            "eventTimingsAvailable": true,
+            "contentSize": 1010312,
+            "transferredSize": 1010538,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
           "browsingContextID": 4294967297,
-          "innerWindowId": 8589934593
+          "innerWindowId": 10737418241
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:22,321 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:25,857 [DEBUG] [rdp_client.py:675 in __read] - message complete (486 == 486)
-2025-07-15 15:51:25,861 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:12,852 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:15,483 [DEBUG] [rdp_client.py:675 in __read] - message complete (675 == 675)
+2025-07-16 10:54:15,501 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "garbage-collection",
   "data": {
@@ -2127,32 +2440,44 @@
     "gcCycleNumber": 4,
     "collections": [
       {
-        "startTimestamp": 76315.583946,
-        "endTimestamp": 76315.697555
+        "startTimestamp": 78778.27256000001,
+        "endTimestamp": 78779.289489
       },
       {
-        "startTimestamp": 76331.966212,
-        "endTimestamp": 76382.524187
+        "startTimestamp": 78795.710618,
+        "endTimestamp": 78845.42642300001
       },
       {
-        "startTimestamp": 76383.069862,
-        "endTimestamp": 76385.191007
+        "startTimestamp": 78845.749399,
+        "endTimestamp": 78895.417946
       },
       {
-        "startTimestamp": 76385.339875,
-        "endTimestamp": 76386.65531300001
+        "startTimestamp": 78895.617683,
+        "endTimestamp": 78923.18233899999
       },
       {
-        "startTimestamp": 76403.09815199999,
-        "endTimestamp": 76403.38088699999
+        "startTimestamp": 78923.436761,
+        "endTimestamp": 78952.891813
+      },
+      {
+        "startTimestamp": 78953.99174000001,
+        "endTimestamp": 78980.616115
+      },
+      {
+        "startTimestamp": 79002.18679200001,
+        "endTimestamp": 79002.296049
+      },
+      {
+        "startTimestamp": 79023.69847,
+        "endTimestamp": 79023.811986
       }
     ]
   },
   "from": "server1.conn0.child56/memoryActor6"
 }
-2025-07-15 15:51:25,867 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:27,312 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
-2025-07-15 15:51:27,315 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:15,546 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:16,226 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:16,244 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2160,7 +2485,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934638,
+          "resourceId": 10737418292,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
@@ -2173,10 +2498,10 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:27,344 [DEBUG] [rdp_client.py:675 in __read] - message complete (795 == 795)
-2025-07-15 15:51:27,362 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:16,434 [DEBUG] [rdp_client.py:675 in __read] - message complete (799 == 799)
+2025-07-16 10:54:16,445 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2184,8 +2509,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent94",
-          "resourceId": 8589934638,
+          "actor": "server1.conn0.netEvent110",
+          "resourceId": 10737418292,
           "resourceType": "network-event",
           "browsingContextID": 4294967297,
           "cause": {
@@ -2193,7 +2518,7 @@
             "type": "xhr"
           },
           "chromeContext": false,
-          "innerWindowId": 8589934593,
+          "innerWindowId": 10737418241,
           "isNavigationRequest": false,
           "isThirdPartyTrackingResource": false,
           "isXHR": true,
@@ -2201,27 +2526,27 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934638,
-          "startedDateTime": "2025-07-15T18:51:27.326Z",
+          "stacktraceResourceId": 10737418292,
+          "startedDateTime": "2025-07-16T13:54:16.391Z",
           "securityFlags": 144,
-          "timeStamp": 1752605487326,
+          "timeStamp": 1752674056391,
           "timings": {},
-          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510"
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:27,372 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:27,374 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:27,382 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:16,450 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:16,457 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:16,468 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent94",
+  "to": "server1.conn0.netEvent110",
   "type": "getRequestHeaders"
 }
-2025-07-15 15:51:27,402 [DEBUG] [rdp_client.py:675 in __read] - message complete (1179 == 1179)
-2025-07-15 15:51:27,423 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:16,489 [DEBUG] [rdp_client.py:675 in __read] - message complete (1180 == 1180)
+2025-07-16 10:54:16,508 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -2274,12 +2599,12 @@
     }
   ],
   "headersSize": 467,
-  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
-  "from": "server1.conn0.netEvent94"
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent110"
 }
-2025-07-15 15:51:27,425 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:27,641 [DEBUG] [rdp_client.py:675 in __read] - message complete (773 == 773)
-2025-07-15 15:51:27,654 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:16,515 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:16,754 [DEBUG] [rdp_client.py:675 in __read] - message complete (775 == 775)
+2025-07-16 10:54:16,767 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -2287,7 +2612,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934638,
+          "resourceId": 10737418292,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -2298,32 +2623,32 @@
             "remoteAddress": "67.159.33.115",
             "remotePort": 443,
             "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 239,
+            "waitingTime": 249,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
-            "totalTime": 239,
+            "totalTime": 249,
             "eventTimingsAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "contentSize": 490,
-            "transferredSize": 731,
+            "contentSize": 637,
+            "transferredSize": 878,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
           "browsingContextID": 4294967297,
-          "innerWindowId": 8589934593
+          "innerWindowId": 10737418241
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:27,662 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:32,658 [DEBUG] [rdp_client.py:675 in __read] - message complete (370 == 370)
-2025-07-15 15:51:32,661 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:16,772 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:16,873 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:16,891 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2331,7 +2656,7 @@
       "network-event-stacktrace",
       [
         {
-          "resourceId": 8589934639,
+          "resourceId": 10737418293,
           "stacktraceAvailable": true,
           "lastFrame": {
             "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
@@ -2344,10 +2669,10 @@
       ]
     ]
   ],
-  "from": "server1.conn0.watcher57.process4//windowGlobalTarget2"
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
 }
-2025-07-15 15:51:32,699 [DEBUG] [rdp_client.py:675 in __read] - message complete (796 == 796)
-2025-07-15 15:51:32,714 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:16,937 [DEBUG] [rdp_client.py:675 in __read] - message complete (813 == 813)
+2025-07-16 10:54:16,958 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-available-array",
   "array": [
@@ -2355,8 +2680,8 @@
       "network-event",
       [
         {
-          "actor": "server1.conn0.netEvent109",
-          "resourceId": 8589934639,
+          "actor": "server1.conn0.netEvent125",
+          "resourceId": 10737418293,
           "resourceType": "network-event",
           "browsingContextID": 4294967297,
           "cause": {
@@ -2364,7 +2689,7 @@
             "type": "xhr"
           },
           "chromeContext": false,
-          "innerWindowId": 8589934593,
+          "innerWindowId": 10737418241,
           "isNavigationRequest": false,
           "isThirdPartyTrackingResource": false,
           "isXHR": true,
@@ -2372,27 +2697,695 @@
           "priority": 0,
           "private": false,
           "referrerPolicy": "strict-origin-when-cross-origin",
-          "stacktraceResourceId": 8589934639,
-          "startedDateTime": "2025-07-15T18:51:32.693Z",
+          "stacktraceResourceId": 10737418293,
+          "startedDateTime": "2025-07-16T13:54:16.918Z",
           "securityFlags": 144,
-          "timeStamp": 1752605492693,
+          "timeStamp": 1752674056918,
           "timings": {},
-          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510"
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68585981_13717.ts?nimblesessionid=69168811"
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:32,716 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
-2025-07-15 15:51:32,720 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
-2025-07-15 15:51:32,724 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+2025-07-16 10:54:16,985 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:16,986 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:16,990 [INFO] [rdp_client.py:557 in __send] - REQUEST->
 {
-  "to": "server1.conn0.netEvent109",
+  "to": "server1.conn0.netEvent125",
   "type": "getRequestHeaders"
 }
-2025-07-15 15:51:32,750 [DEBUG] [rdp_client.py:675 in __read] - message complete (1180 == 1180)
-2025-07-15 15:51:32,755 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:17,016 [DEBUG] [rdp_client.py:675 in __read] - message complete (1161 == 1161)
+2025-07-16 10:54:17,038 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "unlimited1-saopaulo.dps.live"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Origin",
+      "value": "https://rudo.video"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Referer",
+      "value": "https://rudo.video/"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "cross-site"
+    }
+  ],
+  "headersSize": 481,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/l_32953_68585981_13717.ts?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent125"
+}
+2025-07-16 10:54:17,076 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:18,505 [DEBUG] [rdp_client.py:675 in __read] - message complete (763 == 763)
+2025-07-16 10:54:18,513 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418293,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "video/m2ts",
+            "waitingTime": 487,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 1515,
+            "eventTimingsAvailable": true,
+            "contentSize": 660444,
+            "transferredSize": 660669,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:18,532 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:21,812 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:21,814 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418294,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:21,903 [DEBUG] [rdp_client.py:675 in __read] - message complete (799 == 799)
+2025-07-16 10:54:21,923 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent139",
+          "resourceId": 10737418294,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418294,
+          "startedDateTime": "2025-07-16T13:54:21.860Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674061860,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:21,931 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:21,937 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:21,944 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent139",
+  "type": "getRequestHeaders"
+}
+2025-07-16 10:54:21,985 [DEBUG] [rdp_client.py:675 in __read] - message complete (1147 == 1147)
+2025-07-16 10:54:22,000 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "unlimited1-saopaulo.dps.live"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Origin",
+      "value": "https://rudo.video"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Referer",
+      "value": "https://rudo.video/"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "cross-site"
+    }
+  ],
+  "headersSize": 467,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent139"
+}
+2025-07-16 10:54:22,017 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:22,221 [DEBUG] [rdp_client.py:675 in __read] - message complete (775 == 775)
+2025-07-16 10:54:22,252 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418294,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 246,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "totalTime": 248,
+            "eventTimingsAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "contentSize": 637,
+            "transferredSize": 878,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:22,268 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:22,290 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:22,305 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418295,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:22,449 [DEBUG] [rdp_client.py:675 in __read] - message complete (813 == 813)
+2025-07-16 10:54:22,481 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent153",
+          "resourceId": 10737418295,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418295,
+          "startedDateTime": "2025-07-16T13:54:22.382Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674062382,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68590981_13718.ts?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:22,505 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:22,506 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:22,539 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent153",
+  "type": "getRequestHeaders"
+}
+2025-07-16 10:54:22,566 [DEBUG] [rdp_client.py:675 in __read] - message complete (1161 == 1161)
+2025-07-16 10:54:22,602 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "unlimited1-saopaulo.dps.live"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Origin",
+      "value": "https://rudo.video"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Referer",
+      "value": "https://rudo.video/"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "cross-site"
+    }
+  ],
+  "headersSize": 481,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/l_32953_68590981_13718.ts?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent153"
+}
+2025-07-16 10:54:22,604 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:24,027 [DEBUG] [rdp_client.py:675 in __read] - message complete (763 == 763)
+2025-07-16 10:54:24,042 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418295,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "video/m2ts",
+            "waitingTime": 486,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "totalTime": 1491,
+            "eventTimingsAvailable": true,
+            "contentSize": 601600,
+            "transferredSize": 601825,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:24,064 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:27,258 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:27,275 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418296,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:27,289 [DEBUG] [rdp_client.py:675 in __read] - message complete (799 == 799)
+2025-07-16 10:54:27,306 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent167",
+          "resourceId": 10737418296,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418296,
+          "startedDateTime": "2025-07-16T13:54:27.273Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674067273,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:27,318 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:27,331 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:27,346 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent167",
+  "type": "getRequestHeaders"
+}
+2025-07-16 10:54:27,370 [DEBUG] [rdp_client.py:675 in __read] - message complete (1147 == 1147)
+2025-07-16 10:54:27,381 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "headers": [
+    {
+      "name": "Host",
+      "value": "unlimited1-saopaulo.dps.live"
+    },
+    {
+      "name": "User-Agent",
+      "value": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
+    },
+    {
+      "name": "Accept",
+      "value": "*/*"
+    },
+    {
+      "name": "Accept-Language",
+      "value": "en-US,en;q=0.5"
+    },
+    {
+      "name": "Accept-Encoding",
+      "value": "gzip, deflate, br, zstd"
+    },
+    {
+      "name": "Origin",
+      "value": "https://rudo.video"
+    },
+    {
+      "name": "Connection",
+      "value": "keep-alive"
+    },
+    {
+      "name": "Referer",
+      "value": "https://rudo.video/"
+    },
+    {
+      "name": "Sec-Fetch-Dest",
+      "value": "empty"
+    },
+    {
+      "name": "Sec-Fetch-Mode",
+      "value": "cors"
+    },
+    {
+      "name": "Sec-Fetch-Site",
+      "value": "cross-site"
+    }
+  ],
+  "headersSize": 467,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent167"
+}
+2025-07-16 10:54:27,409 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:27,597 [DEBUG] [rdp_client.py:675 in __read] - message complete (775 == 775)
+2025-07-16 10:54:27,607 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-updated-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "resourceId": 10737418296,
+          "resourceUpdates": {
+            "requestCookiesAvailable": true,
+            "requestHeadersAvailable": true,
+            "httpVersion": "HTTP/2",
+            "status": "200",
+            "statusText": "",
+            "earlyHintsStatus": "",
+            "remoteAddress": "67.159.33.115",
+            "remotePort": 443,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "waitingTime": 249,
+            "isResolvedByTRR": false,
+            "responseHeadersAvailable": true,
+            "responseCookiesAvailable": true,
+            "responseStartAvailable": true,
+            "totalTime": 252,
+            "eventTimingsAvailable": true,
+            "securityState": "secure",
+            "isRacing": false,
+            "securityInfoAvailable": true,
+            "contentSize": 637,
+            "transferredSize": 878,
+            "blockedReason": 0,
+            "responseContentAvailable": true
+          },
+          "browsingContextID": 4294967297,
+          "innerWindowId": 10737418241
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:27,632 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:27,910 [DEBUG] [rdp_client.py:675 in __read] - message complete (371 == 371)
+2025-07-16 10:54:27,934 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event-stacktrace",
+      [
+        {
+          "resourceId": 10737418297,
+          "stacktraceAvailable": true,
+          "lastFrame": {
+            "filename": "https://rudo.video/public/dpsPlayer/8.20.0.n/video.js?v=20250710_V05",
+            "lineNumber": 8065,
+            "columnNumber": 9,
+            "functionName": "_createXHR",
+            "asyncCause": null
+          }
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher57.process5//windowGlobalTarget2"
+}
+2025-07-16 10:54:27,965 [DEBUG] [rdp_client.py:675 in __read] - message complete (813 == 813)
+2025-07-16 10:54:27,994 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent181",
+          "resourceId": 10737418297,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://rudo.video/live/televidaar",
+            "type": "xhr"
+          },
+          "chromeContext": false,
+          "innerWindowId": 10737418241,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 10737418297,
+          "startedDateTime": "2025-07-16T13:54:27.917Z",
+          "securityFlags": 144,
+          "timeStamp": 1752674067917,
+          "timings": {},
+          "url": "https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream1/l_32953_68595981_13719.ts?nimblesessionid=69168811"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:54:28,005 [DEBUG] [rdp_client.py:792 in __handle_events] - [server1.conn0.watcher58][resources-available-array] handled
+2025-07-16 10:54:28,007 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:54:28,024 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.netEvent181",
+  "type": "getRequestHeaders"
+}
+2025-07-16 10:54:28,081 [DEBUG] [rdp_client.py:675 in __read] - message complete (1194 == 1194)
+2025-07-16 10:54:28,106 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "headers": [
     {
@@ -2444,13 +3437,13 @@
       "value": "trailers"
     }
   ],
-  "headersSize": 467,
-  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/chunks.m3u8?nimblesessionid=66410510 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
-  "from": "server1.conn0.netEvent109"
+  "headersSize": 481,
+  "rawHeaders": "GET /televidaar/televidaar.smil/televidaar/livestream1/l_32953_68595981_13719.ts?nimblesessionid=69168811 HTTP/1.1\r\nHost: unlimited1-saopaulo.dps.live\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nOrigin: https://rudo.video\r\nConnection: keep-alive\r\nReferer: https://rudo.video/\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: cross-site\r\n\r\n",
+  "from": "server1.conn0.netEvent181"
 }
-2025-07-15 15:51:32,757 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
-2025-07-15 15:51:32,976 [DEBUG] [rdp_client.py:675 in __read] - message complete (773 == 773)
-2025-07-15 15:51:32,980 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+2025-07-16 10:54:28,155 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:54:29,782 [DEBUG] [rdp_client.py:675 in __read] - message complete (763 == 763)
+2025-07-16 10:54:29,812 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
 {
   "type": "resources-updated-array",
   "array": [
@@ -2458,7 +3451,7 @@
       "network-event",
       [
         {
-          "resourceId": 8589934639,
+          "resourceId": 10737418297,
           "resourceUpdates": {
             "requestCookiesAvailable": true,
             "requestHeadersAvailable": true,
@@ -2468,32 +3461,1147 @@
             "earlyHintsStatus": "",
             "remoteAddress": "67.159.33.115",
             "remotePort": 443,
-            "mimeType": "application/vnd.apple.mpegurl",
-            "waitingTime": 242,
+            "mimeType": "video/m2ts",
+            "waitingTime": 488,
             "isResolvedByTRR": false,
             "responseHeadersAvailable": true,
             "responseCookiesAvailable": true,
             "responseStartAvailable": true,
-            "totalTime": 242,
-            "eventTimingsAvailable": true,
             "securityState": "secure",
             "isRacing": false,
             "securityInfoAvailable": true,
-            "contentSize": 595,
-            "transferredSize": 836,
+            "totalTime": 1728,
+            "eventTimingsAvailable": true,
+            "contentSize": 923644,
+            "transferredSize": 923869,
             "blockedReason": 0,
             "responseContentAvailable": true
           },
           "browsingContextID": 4294967297,
-          "innerWindowId": 8589934593
+          "innerWindowId": 10737418241
         }
       ]
     ]
   ],
   "from": "server1.conn0.watcher58"
 }
-2025-07-15 15:51:32,982 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
-2025-07-15 15:51:33,795 [DEBUG] [rdp_client.py:413 in disconnect] - 
-2025-07-15 15:51:33,797 [DEBUG] [rdp_client.py:422 in __disconnect] - True
-2025-07-15 15:51:33,803 [DEBUG] [rdp_client.py:402 in __on_close_connection] - Stop listening
-2025-07-15 15:51:33,805 [DEBUG] [rdp_client.py:377 in __connect] - Read task cancelled: asyncio
+2025-07-16 10:54:29,825 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:54:30,234 [DEBUG] [rdp_client.py:413 in disconnect] - 
+2025-07-16 10:54:30,246 [DEBUG] [rdp_client.py:422 in __disconnect] - True
+2025-07-16 10:54:30,255 [DEBUG] [rdp_client.py:402 in __on_close_connection] - Stop listening
+2025-07-16 10:54:30,261 [DEBUG] [rdp_client.py:377 in __connect] - Read task cancelled: asyncio
+2025-07-16 10:54:38,366 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
+2025-07-16 10:54:53,722 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
+2025-07-16 10:55:39,006 [DEBUG] [rdp_client.py:345 in connect] - 
+2025-07-16 10:55:39,023 [DEBUG] [rdp_client.py:366 in __connect] - Queue read task
+2025-07-16 10:55:39,028 [DEBUG] [rdp_client.py:370 in __connect] - Run IO loop
+2025-07-16 10:55:39,031 [DEBUG] [rdp_client.py:380 in __open_connection] - Try to open connection
+2025-07-16 10:55:39,109 [DEBUG] [rdp_client.py:395 in __open_connection] - Start listening
+2025-07-16 10:55:39,755 [DEBUG] [rdp_client.py:675 in __read] - message complete (316 == 316)
+2025-07-16 10:55:39,803 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "from": "root",
+  "applicationType": "browser",
+  "testConnectionPrefix": "server1.conn0.",
+  "traits": {
+    "networkMonitor": true,
+    "resources": {
+      "extensions-backgroundscript-status": true
+    },
+    "workerConsoleApiMessagesDispatchedToMainThread": true,
+    "supportsEnableWindowGlobalThreadActors": true,
+    "useBulkTransferForPerformanceProfile": true
+  }
+}
+2025-07-16 10:55:39,838 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:39,851 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:39,865 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "root",
+  "type": "getRoot"
+}
+2025-07-16 10:55:39,911 [DEBUG] [rdp_client.py:675 in __read] - message complete (374 == 374)
+2025-07-16 10:55:39,958 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "preferenceActor": "server1.conn0.preferenceActor1",
+  "addonsActor": "server1.conn0.addonsActor2",
+  "deviceActor": "server1.conn0.deviceActor3",
+  "heapSnapshotFileActor": "server1.conn0.heapSnapshotFileActor4",
+  "perfActor": "server1.conn0.perfActor5",
+  "parentAccessibilityActor": "server1.conn0.parentAccessibilityActor6",
+  "screenshotActor": "server1.conn0.screenshotActor7",
+  "from": "root"
+}
+2025-07-16 10:55:39,960 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:39,979 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:39,988 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "root",
+  "type": "listProcesses"
+}
+2025-07-16 10:55:40,073 [DEBUG] [rdp_client.py:675 in __read] - message complete (1159 == 1159)
+2025-07-16 10:55:40,094 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "processes": [
+    {
+      "actor": "server1.conn0.processDescriptor8",
+      "id": 0,
+      "isParent": true,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": true,
+        "supportsReloadDescriptor": true
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor9",
+      "id": 2288643,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor10",
+      "id": 2288698,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor11",
+      "id": 2288701,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor12",
+      "id": 2288705,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor13",
+      "id": 2288828,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    },
+    {
+      "actor": "server1.conn0.processDescriptor14",
+      "id": 2289152,
+      "isParent": false,
+      "isWindowlessParent": false,
+      "traits": {
+        "watcher": false,
+        "supportsReloadDescriptor": false
+      }
+    }
+  ],
+  "from": "root"
+}
+2025-07-16 10:55:40,101 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:40,104 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:40,114 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor8",
+  "type": "getTarget"
+}
+2025-07-16 10:55:40,668 [DEBUG] [rdp_client.py:675 in __read] - message complete (1468 == 1468)
+2025-07-16 10:55:40,698 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.parentProcessTarget16",
+    "targetType": "frame",
+    "browsingContextID": 1,
+    "processID": 2288499,
+    "innerWindowId": 2,
+    "topInnerWindowId": 2,
+    "isTopLevelTarget": true,
+    "isPopup": false,
+    "isPrivate": false,
+    "isFallbackExtensionDocument": false,
+    "addonId": null,
+    "traits": {
+      "isBrowsingContext": true,
+      "supportsTopLevelTargetFlag": true,
+      "frames": true,
+      "logInPage": true,
+      "watchpoints": true,
+      "navigation": true
+    },
+    "title": "Vivo | El Nueve \u2014 Mozilla Firefox",
+    "url": "chrome://browser/content/browser.xhtml",
+    "outerWindowID": 1,
+    "consoleActor": "server1.conn0.consoleActor17",
+    "inspectorActor": "server1.conn0.inspectorActor18",
+    "styleSheetsActor": "server1.conn0.styleSheetsActor19",
+    "memoryActor": "server1.conn0.memoryActor20",
+    "reflowActor": "server1.conn0.reflowActor21",
+    "cssPropertiesActor": "server1.conn0.cssPropertiesActor22",
+    "animationsActor": "server1.conn0.animationsActor23",
+    "responsiveActor": "server1.conn0.responsiveActor24",
+    "webExtensionInspectedWindowActor": "server1.conn0.webExtensionInspectedWindowActor25",
+    "accessibilityActor": "server1.conn0.accessibilityActor26",
+    "changesActor": "server1.conn0.changesActor27",
+    "manifestActor": "server1.conn0.manifestActor28",
+    "networkContentActor": "server1.conn0.networkContentActor29",
+    "screenshotContentActor": "server1.conn0.screenshotContentActor30",
+    "tracerActor": "server1.conn0.tracerActor31",
+    "objectsManagerActor": "server1.conn0.objectsManagerActor32",
+    "threadActor": "server1.conn0.thread15"
+  },
+  "from": "server1.conn0.processDescriptor8"
+}
+2025-07-16 10:55:40,703 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:40,736 [DEBUG] [rdp_client.py:675 in __read] - message complete (357 == 357)
+2025-07-16 10:55:40,737 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:40,787 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 1,
+      "isTopLevel": true,
+      "url": "chrome://browser/content/browser.xhtml",
+      "title": "Vivo | El Nueve \u2014 Mozilla Firefox"
+    },
+    {
+      "id": 3,
+      "parentID": 1,
+      "isTopLevel": false,
+      "url": "about:blank",
+      "title": ""
+    },
+    {
+      "id": 7,
+      "isTopLevel": false,
+      "url": "chrome://extensions/content/dummy.xhtml",
+      "title": ""
+    }
+  ],
+  "from": "server1.conn0.parentProcessTarget16"
+}
+2025-07-16 10:55:40,793 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:40,825 [DEBUG] [rdp_client.py:675 in __read] - message complete (357 == 357)
+2025-07-16 10:55:40,856 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 1,
+      "isTopLevel": true,
+      "url": "chrome://browser/content/browser.xhtml",
+      "title": "Vivo | El Nueve \u2014 Mozilla Firefox"
+    },
+    {
+      "id": 3,
+      "parentID": 1,
+      "isTopLevel": false,
+      "url": "about:blank",
+      "title": ""
+    },
+    {
+      "id": 7,
+      "isTopLevel": false,
+      "url": "chrome://extensions/content/dummy.xhtml",
+      "title": ""
+    }
+  ],
+  "from": "server1.conn0.parentProcessTarget16"
+}
+2025-07-16 10:55:40,858 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:40,883 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor9",
+  "type": "getTarget"
+}
+2025-07-16 10:55:42,433 [DEBUG] [rdp_client.py:675 in __read] - message complete (532 == 532)
+2025-07-16 10:55:42,464 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process33/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2288643,
+    "remoteType": "webIsolated=https://elnueve.com.ar",
+    "consoleActor": "server1.conn0.content-process33/console2",
+    "memoryActor": "server1.conn0.content-process33/memory4",
+    "threadActor": "server1.conn0.content-process33/thread3",
+    "tracerActor": "server1.conn0.content-process33/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor9"
+}
+2025-07-16 10:55:42,471 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:42,490 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:42,496 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor10",
+  "type": "getTarget"
+}
+2025-07-16 10:55:43,726 [DEBUG] [rdp_client.py:675 in __read] - message complete (528 == 528)
+2025-07-16 10:55:43,732 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process34/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2288698,
+    "remoteType": "webIsolated=https://twitch.tv",
+    "consoleActor": "server1.conn0.content-process34/console2",
+    "memoryActor": "server1.conn0.content-process34/memory4",
+    "threadActor": "server1.conn0.content-process34/thread3",
+    "tracerActor": "server1.conn0.content-process34/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor10"
+}
+2025-07-16 10:55:43,736 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:43,741 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:43,751 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor11",
+  "type": "getTarget"
+}
+2025-07-16 10:55:44,622 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:55:44,629 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process35/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2288701,
+    "remoteType": "prealloc",
+    "consoleActor": "server1.conn0.content-process35/console2",
+    "memoryActor": "server1.conn0.content-process35/memory4",
+    "threadActor": "server1.conn0.content-process35/thread3",
+    "tracerActor": "server1.conn0.content-process35/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor11"
+}
+2025-07-16 10:55:44,635 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:44,639 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:44,643 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor12",
+  "type": "getTarget"
+}
+2025-07-16 10:55:45,640 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:55:45,668 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process36/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2288705,
+    "remoteType": "prealloc",
+    "consoleActor": "server1.conn0.content-process36/console2",
+    "memoryActor": "server1.conn0.content-process36/memory4",
+    "threadActor": "server1.conn0.content-process36/thread3",
+    "tracerActor": "server1.conn0.content-process36/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor12"
+}
+2025-07-16 10:55:45,671 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:45,676 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:45,681 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor13",
+  "type": "getTarget"
+}
+2025-07-16 10:55:46,298 [DEBUG] [rdp_client.py:675 in __read] - message complete (508 == 508)
+2025-07-16 10:55:46,301 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process37/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2288828,
+    "remoteType": "extension",
+    "consoleActor": "server1.conn0.content-process37/console2",
+    "memoryActor": "server1.conn0.content-process37/memory4",
+    "threadActor": "server1.conn0.content-process37/thread3",
+    "tracerActor": "server1.conn0.content-process37/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor13"
+}
+2025-07-16 10:55:46,306 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:46,312 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:46,319 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.processDescriptor14",
+  "type": "getTarget"
+}
+2025-07-16 10:55:47,983 [DEBUG] [rdp_client.py:675 in __read] - message complete (507 == 507)
+2025-07-16 10:55:48,017 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "process": {
+    "actor": "server1.conn0.content-process38/contentProcessTarget1",
+    "targetType": "process",
+    "isXpcShellTarget": false,
+    "processID": 2289152,
+    "remoteType": "prealloc",
+    "consoleActor": "server1.conn0.content-process38/console2",
+    "memoryActor": "server1.conn0.content-process38/memory4",
+    "threadActor": "server1.conn0.content-process38/thread3",
+    "tracerActor": "server1.conn0.content-process38/tracer5",
+    "traits": {
+      "networkMonitor": false,
+      "supportsTopLevelTargetFlag": false
+    }
+  },
+  "from": "server1.conn0.processDescriptor14"
+}
+2025-07-16 10:55:48,018 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:48,026 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:48,044 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "root",
+  "type": "listAddons"
+}
+2025-07-16 10:55:48,695 [DEBUG] [rdp_client.py:675 in __read] - message complete (6499 == 6499)
+2025-07-16 10:55:48,759 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "addons": [
+    {
+      "actor": "server1.conn0.webExtensionDescriptor39",
+      "debuggable": true,
+      "hidden": false,
+      "iconURL": "jar:file:///home/villafapd/.mozilla/firefox/34mr8l2h.geckordp/extensions/jid1-TSgSxBhncsPBWQ@jetpack.xpi!/icons/icon48.png",
+      "id": "jid1-TSgSxBhncsPBWQ@jetpack",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://ffa5ec78-5331-4266-8726-0b1a94cd4912/manifest.json",
+      "name": "h264ify",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor40",
+      "backgroundScriptStatus": "STOPPED",
+      "debuggable": true,
+      "hidden": false,
+      "iconURL": "jar:file:///home/villafapd/.mozilla/firefox/34mr8l2h.geckordp/extensions/uanaughtylist@raspberrypi.com.xpi!/icon.png",
+      "id": "uanaughtylist@raspberrypi.com",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://cd46e218-1449-4c2e-bb55-766002f9bbf1/manifest.json",
+      "name": "UANaughtyList",
+      "persistentBackgroundScript": false,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor41",
+      "debuggable": true,
+      "hidden": false,
+      "iconURL": "jar:file:///home/villafapd/.mozilla/firefox/34mr8l2h.geckordp/extensions/uBlock0@raymondhill.net.xpi!/img/ublock.svg",
+      "id": "uBlock0@raymondhill.net",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://a84c4b0e-6dc4-44aa-af83-2405a1684d68/manifest.json",
+      "name": "uBlock Origin",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "url": "https://addons.mozilla.org/firefox/downloads/file/4412673/ublock_origin-1.62.0.xpi",
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor42",
+      "hidden": false,
+      "iconURL": null,
+      "id": "langpack-es-AR@firefox.mozilla.org",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": null,
+      "name": "Language: Espa\u00f1ol (AR) (Spanish, Argentina)",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "url": "https://addons.mozilla.org/firefox/downloads/file/4428555/espanol_ar_language_pack-135.0.20250130.195129.xpi",
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor43",
+      "debuggable": true,
+      "hidden": false,
+      "iconURL": "jar:file:///home/villafapd/.mozilla/firefox/34mr8l2h.geckordp/extensions/twitch5@coolcmd.xpi!/manifest.svg",
+      "id": "twitch5@coolcmd",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/manifest.json",
+      "name": "Alternate Player for Twitch.tv",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "url": "https://addons.mozilla.org/firefox/downloads/file/4313555/twitch_5-2024.7.3.xpi",
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor44",
+      "debuggable": true,
+      "hidden": true,
+      "iconURL": null,
+      "id": "formautofill@mozilla.org",
+      "isSystem": true,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://18ca1038-11e5-43fa-89de-4bf04fde74bd/manifest.json",
+      "name": "Form Autofill",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor45",
+      "debuggable": true,
+      "hidden": true,
+      "iconURL": null,
+      "id": "pictureinpicture@mozilla.org",
+      "isSystem": true,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://1b6190e7-41b5-4551-b8e4-996cf666e734/manifest.json",
+      "name": "Picture-In-Picture",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor46",
+      "debuggable": true,
+      "hidden": true,
+      "iconURL": null,
+      "id": "addons-search-detection@mozilla.com",
+      "isSystem": true,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://15dd89b9-bedf-467e-805a-fa3cb26be11a/manifest.json",
+      "name": "Add-ons Search Detection",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor47",
+      "debuggable": true,
+      "hidden": true,
+      "iconURL": null,
+      "id": "webcompat@mozilla.org",
+      "isSystem": true,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://9a310967-e580-48bf-b3e8-4eafebbc122d/manifest.json",
+      "name": "Web Compatibility Interventions",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor48",
+      "debuggable": true,
+      "hidden": true,
+      "iconURL": null,
+      "id": "newtab@mozilla.org",
+      "isSystem": true,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://cbfe21cc-2e7f-4894-a884-81bde74efa9f/manifest.json",
+      "name": "New Tab",
+      "persistentBackgroundScript": true,
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor49",
+      "debuggable": true,
+      "hidden": false,
+      "iconURL": "resource://default-theme/icon.svg",
+      "id": "default-theme@mozilla.org",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": "moz-extension://4dd6f598-1920-44e0-9632-a176cf7e7b55/manifest.json",
+      "name": "System theme \u2014 auto",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor50",
+      "hidden": false,
+      "iconURL": "resource://builtin-themes/light/icon.svg",
+      "id": "firefox-compact-light@mozilla.org",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": null,
+      "name": "Light",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor51",
+      "hidden": false,
+      "iconURL": "resource://builtin-themes/dark/icon.svg",
+      "id": "firefox-compact-dark@mozilla.org",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": null,
+      "name": "Dark",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor52",
+      "hidden": false,
+      "iconURL": "resource://builtin-themes/alpenglow/icon.svg",
+      "id": "firefox-alpenglow@mozilla.org",
+      "isSystem": false,
+      "isWebExtension": true,
+      "manifestURL": null,
+      "name": "Firefox Alpenglow",
+      "temporarilyInstalled": false,
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    },
+    {
+      "actor": "server1.conn0.webExtensionDescriptor53",
+      "id": "gmp-gmpopenh264",
+      "manifestURL": null,
+      "name": "OpenH264 Video Codec provided by Cisco Systems, Inc.",
+      "traits": {
+        "supportsReloadDescriptor": true,
+        "watcher": true
+      },
+      "warnings": []
+    }
+  ],
+  "from": "root"
+}
+2025-07-16 10:55:48,771 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:48,777 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:48,800 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "root",
+  "type": "listWorkers"
+}
+2025-07-16 10:55:48,976 [DEBUG] [rdp_client.py:675 in __read] - message complete (238 == 238)
+2025-07-16 10:55:48,989 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "workers": [
+    {
+      "actor": "server1.conn0.workerDescriptor54",
+      "threadActor": null,
+      "id": "2456af79-ecd4-41ae-b131-2b8ea6f2cc85",
+      "url": "resource://gre/modules/PageThumbs.worker.js",
+      "origin": "[System Principal]",
+      "traits": {},
+      "type": 0
+    }
+  ],
+  "from": "root"
+}
+2025-07-16 10:55:48,998 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:49,009 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:49,013 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "root",
+  "type": "listTabs"
+}
+2025-07-16 10:55:49,407 [DEBUG] [rdp_client.py:675 in __read] - message complete (309 == 309)
+2025-07-16 10:55:49,408 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "tabs": [
+    {
+      "actor": "server1.conn0.tabDescriptor55",
+      "browserId": 2,
+      "browsingContextID": 3,
+      "isZombieTab": false,
+      "outerWindowID": 6,
+      "selected": true,
+      "title": "Vivo | El Nueve",
+      "traits": {
+        "watcher": true,
+        "supportsReloadDescriptor": true,
+        "supportsNavigation": true
+      },
+      "url": "https://www.elnueve.com.ar/en-vivo"
+    }
+  ],
+  "from": "root"
+}
+2025-07-16 10:55:49,413 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:49,416 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:49,420 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.tabDescriptor55",
+  "type": "getTarget"
+}
+2025-07-16 10:55:50,596 [DEBUG] [rdp_client.py:675 in __read] - message complete (1591 == 1591)
+2025-07-16 10:55:50,609 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "frame": {
+    "actor": "server1.conn0.child56/windowGlobalTarget2",
+    "targetType": "frame",
+    "browsingContextID": 3,
+    "processID": 2288643,
+    "innerWindowId": 4294967298,
+    "topInnerWindowId": 4294967298,
+    "isTopLevelTarget": true,
+    "isPopup": false,
+    "isPrivate": false,
+    "isFallbackExtensionDocument": false,
+    "addonId": null,
+    "traits": {
+      "isBrowsingContext": true,
+      "supportsTopLevelTargetFlag": true,
+      "frames": true,
+      "logInPage": true,
+      "watchpoints": true,
+      "navigation": true
+    },
+    "title": "Vivo | El Nueve",
+    "url": "https://www.elnueve.com.ar/en-vivo",
+    "outerWindowID": 6,
+    "consoleActor": "server1.conn0.child56/consoleActor3",
+    "inspectorActor": "server1.conn0.child56/inspectorActor4",
+    "styleSheetsActor": "server1.conn0.child56/styleSheetsActor5",
+    "memoryActor": "server1.conn0.child56/memoryActor6",
+    "reflowActor": "server1.conn0.child56/reflowActor7",
+    "cssPropertiesActor": "server1.conn0.child56/cssPropertiesActor8",
+    "animationsActor": "server1.conn0.child56/animationsActor9",
+    "responsiveActor": "server1.conn0.child56/responsiveActor10",
+    "webExtensionInspectedWindowActor": "server1.conn0.child56/webExtensionInspectedWindowActor11",
+    "accessibilityActor": "server1.conn0.child56/accessibilityActor12",
+    "changesActor": "server1.conn0.child56/changesActor13",
+    "manifestActor": "server1.conn0.child56/manifestActor14",
+    "networkContentActor": "server1.conn0.child56/networkContentActor15",
+    "screenshotContentActor": "server1.conn0.child56/screenshotContentActor16",
+    "tracerActor": "server1.conn0.child56/tracerActor17",
+    "objectsManagerActor": "server1.conn0.child56/objectsManagerActor18",
+    "threadActor": "server1.conn0.child56/thread1"
+  },
+  "from": "server1.conn0.tabDescriptor55"
+}
+2025-07-16 10:55:50,625 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:50,639 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:50,640 [DEBUG] [rdp_client.py:675 in __read] - message complete (180 == 180)
+2025-07-16 10:55:50,643 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 6,
+      "isTopLevel": true,
+      "url": "https://www.elnueve.com.ar/en-vivo",
+      "title": "Vivo | El Nueve"
+    }
+  ],
+  "from": "server1.conn0.child56/windowGlobalTarget2"
+}
+2025-07-16 10:55:50,646 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:50,664 [DEBUG] [rdp_client.py:675 in __read] - message complete (180 == 180)
+2025-07-16 10:55:50,674 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "frameUpdate",
+  "frames": [
+    {
+      "id": 6,
+      "isTopLevel": true,
+      "url": "https://www.elnueve.com.ar/en-vivo",
+      "title": "Vivo | El Nueve"
+    }
+  ],
+  "from": "server1.conn0.child56/windowGlobalTarget2"
+}
+2025-07-16 10:55:50,679 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:50,693 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.parentAccessibilityActor6",
+  "type": "bootstrap"
+}
+2025-07-16 10:55:50,891 [DEBUG] [rdp_client.py:675 in __read] - message complete (101 == 101)
+2025-07-16 10:55:51,346 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "state": {
+    "canBeDisabled": true,
+    "canBeEnabled": true
+  },
+  "from": "server1.conn0.parentAccessibilityActor6"
+}
+2025-07-16 10:55:51,350 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:51,356 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:51,373 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.parentAccessibilityActor6",
+  "type": "enable"
+}
+2025-07-16 10:55:51,650 [DEBUG] [rdp_client.py:675 in __read] - message complete (100 == 100)
+2025-07-16 10:55:51,755 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "canBeDisabledChange",
+  "canBeDisabled": true,
+  "from": "server1.conn0.parentAccessibilityActor6"
+}
+2025-07-16 10:55:51,757 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:51,764 [DEBUG] [rdp_client.py:675 in __read] - message complete (50 == 50)
+2025-07-16 10:55:51,772 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "from": "server1.conn0.parentAccessibilityActor6"
+}
+2025-07-16 10:55:51,775 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:51,785 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:51,790 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.child56/consoleActor3",
+  "type": "startListeners",
+  "listeners": []
+}
+2025-07-16 10:55:52,394 [DEBUG] [rdp_client.py:675 in __read] - message complete (68 == 68)
+2025-07-16 10:55:52,398 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "startedListeners": [],
+  "from": "server1.conn0.child56/consoleActor3"
+}
+2025-07-16 10:55:52,424 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:52,429 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:52,437 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.child56/thread1",
+  "type": "attach",
+  "options": {
+    "pauseOnExceptions": false,
+    "ignoreCaughtExceptions": true,
+    "shouldShowOverlay": false,
+    "shouldIncludeSavedFrames": true,
+    "shouldIncludeAsyncLiveFrames": false,
+    "skipBreakpoints": false,
+    "logEventBreakpoints": false,
+    "observeAsmJS": true,
+    "breakpoints": {},
+    "eventBreakpoints": []
+  }
+}
+2025-07-16 10:55:52,568 [DEBUG] [rdp_client.py:675 in __read] - message complete (40 == 40)
+2025-07-16 10:55:52,580 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "from": "server1.conn0.child56/thread1"
+}
+2025-07-16 10:55:52,588 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:52,593 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:52,598 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.tabDescriptor55",
+  "type": "getWatcher",
+  "isServerTargetSwitchingEnabled": true,
+  "isPopupDebuggingEnabled": false
+}
+2025-07-16 10:55:52,763 [DEBUG] [rdp_client.py:675 in __read] - message complete (720 == 720)
+2025-07-16 10:55:52,774 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "actor": "server1.conn0.watcher58",
+  "traits": {
+    "frame": true,
+    "process": true,
+    "worker": true,
+    "service_worker": true,
+    "shared_worker": false,
+    "content_script": true,
+    "resources": {
+      "console-message": true,
+      "css-change": true,
+      "css-message": true,
+      "css-registered-properties": true,
+      "document-event": true,
+      "Cache": true,
+      "cookies": true,
+      "error-message": true,
+      "extension-storage": true,
+      "indexed-db": true,
+      "local-storage": true,
+      "session-storage": true,
+      "platform-message": true,
+      "network-event": true,
+      "network-event-stacktrace": true,
+      "reflow": true,
+      "stylesheet": true,
+      "source": true,
+      "thread-state": true,
+      "server-sent-event": true,
+      "websocket": true,
+      "jstracer-trace": true,
+      "jstracer-state": true,
+      "last-private-context-exit": true
+    }
+  },
+  "from": "server1.conn0.tabDescriptor55"
+}
+2025-07-16 10:55:52,785 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:52,796 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:52,808 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.watcher58",
+  "type": "watchResources",
+  "resourceTypes": [
+    "network-event",
+    "network-event-stacktrace",
+    "document-event"
+  ]
+}
+2025-07-16 10:55:53,573 [DEBUG] [rdp_client.py:675 in __read] - message complete (1490 == 1490)
+2025-07-16 10:55:53,635 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent60",
+          "resourceId": 243,
+          "resourceType": "network-event",
+          "browsingContextID": 3,
+          "cause": {
+            "loadingDocumentUri": "https://player.twitch.tv/?channel=elnueveenvivo&parent=www.elnueve.com.ar",
+            "type": "fetch"
+          },
+          "chromeContext": false,
+          "innerWindowId": 4294967298,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 243,
+          "startedDateTime": "2025-07-16T13:55:53.414Z",
+          "securityFlags": 80,
+          "timeStamp": 1752674153414,
+          "timings": {},
+          "url": "https://889f5150103c.j.cloudfront.hls.ttvnw.net/v1/segment/CoUD5SBz7q52-aR4mRcUXoHzLutFOY3ISXx8w_9YnAijReFKj55tK1mmzOhpZs1Hrc-eot3tbn6TsyD1R7cAfsv-RJODkAlgfx_NnNuvQoZCjwnQp5_XxwwBU-3UYeF4tcXQ0U8ZibHg3Z9xqXBq_hnA-HdAJdx4oxp5MKOsxEoUPm5BOBKAQrHgB6y0cJSCaNJ2SjDmgGSKXdDGxmRtiX_wf7eQmKaZukK6RgO5yodZs829meEnFhDzgxxGVHa_nxaSa8dVKgrwy3m7QvcRSzhqh1asEiHCQ7y8FjudYaLTDbvrKUA4V9c602tUZSGdn-lye3ctNXs9IVFgFC6S0vIs9Y5FbXHvfC64xMTaqp0pfD1iymTBLq6eACmwRBGUsQTEN-Feeet20xb27XHF57Ssf7GnyNDBnSy1hZU6ckwRFVJ9NljbBHZ0onkuFmukwPgdUK9B2ZfqW8P9i7Dnt_ZlheXE9N_mBctXju4nv2ANrV0v7kQcAlsODJMq7lePWcJBJ1lx5JoaDD42jJYkhbRIpthMaiABKgl1cy1lYXN0LTIw4Aw.ts?dna=CmA2fLoc_15e6BgRaoD9EupaSBgE8jfF6z0RsC9jKdgln1LFL5Exg9uCyYP2nQMwrwDzAkXP4XGekUw-dhwhEZm5WDGP7U0ncMNo7Cr7aLcCN-ejDoDxNK1hBEg1z9JJz4caDCtBH5EkUfHj_7xtlSABKgl1cy1lYXN0LTIw4Aw"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:55:53,678 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:53,692 [DEBUG] [rdp_client.py:675 in __read] - message complete (754 == 754)
+2025-07-16 10:55:53,798 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent61",
+          "resourceId": 8589934726,
+          "resourceType": "network-event",
+          "browsingContextID": 4294967297,
+          "cause": {
+            "loadingDocumentUri": "https://player.twitch.tv/?channel=elnueveenvivo&parent=www.elnueve.com.ar",
+            "type": "fetch"
+          },
+          "chromeContext": false,
+          "innerWindowId": 8589934593,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "POST",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 8589934726,
+          "startedDateTime": "2025-07-16T13:55:53.573Z",
+          "securityFlags": 80,
+          "timeStamp": 1752674153573,
+          "timings": {},
+          "url": "https://gql.twitch.tv/gql#origin=twilight"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:55:53,841 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:53,856 [DEBUG] [rdp_client.py:675 in __read] - message complete (1490 == 1490)
+2025-07-16 10:55:53,914 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent62",
+          "resourceId": 245,
+          "resourceType": "network-event",
+          "browsingContextID": 3,
+          "cause": {
+            "loadingDocumentUri": "https://player.twitch.tv/?channel=elnueveenvivo&parent=www.elnueve.com.ar",
+            "type": "fetch"
+          },
+          "chromeContext": false,
+          "innerWindowId": 4294967298,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 245,
+          "startedDateTime": "2025-07-16T13:55:53.634Z",
+          "securityFlags": 80,
+          "timeStamp": 1752674153634,
+          "timings": {},
+          "url": "https://889f5150103c.j.cloudfront.hls.ttvnw.net/v1/segment/CoUDb-9uBBKGwhGk2HcoPIPpOyhDrbST8M9ezijM4y3q3n6Osg68FyFXAtiveB9yyMA8LQ6CP4lI56P5YgqnCWvIlDexyQ0e0aeMtFVopVKKGtvItWcUitrVff4wKxvEu0NWH3nUW7Mtf-lLmBVwjMiIdNnvZRub3tVAOXybdpk1H1qHQ3N-QPq6e1aGO_RbnSdc_wyK1KTVxrNSmlQHrX_YfdRtT9JYTc_0MWzP5upwIa1eO6YcCx7KPzpUN_gvnyKpNilwQD69r-TqIs1zkQFp2JHkPNg9EtnQyUmniA6xs_gUVx2vH9ONOIYJOi4U6yLwzdN9KeVHF4cwikGcqsSI2ltRZXWJSyc8YZpNi673fl7gBIqc35kWYD1MHVBU3a9LY5PJlF80I_8Mke_MdprqU9lihUICTjnbhIv6l4nsYhcY6-XBxkEvrOo29-4KeQMCIcaCHK5YOS6k9k-pCxRsqnoE-N6u7538ntCwa-pkzZXheJSC14zAUZfY2i691aV3_mLrSzwaDEn7RRoVpbADB-XyXiABKgl1cy1lYXN0LTIw4Aw.ts?dna=CmA2fLoc_15e6BgRaoD9EupaSBgE8jfF6z0RsC9jKdgln1LFL5Exg9uCyYP2nQMwrwDzAkXP4XGekUw-dhwhEZm5WDGP7U0ncMNo7Cr7aLcCN-ejDoDxNK1hBEg1z9JJz4caDCtBH5EkUfHj_7xtlSABKgl1cy1lYXN0LTIw4Aw"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:55:54,018 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:54,072 [DEBUG] [rdp_client.py:675 in __read] - message complete (34 == 34)
+2025-07-16 10:55:54,073 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:55:54,078 [DEBUG] [rdp_client.py:839 in __handle_single_request] - response valid, set result
+2025-07-16 10:55:54,085 [DEBUG] [rdp_client.py:675 in __read] - message complete (1881 == 1881)
+2025-07-16 10:55:54,085 [DEBUG] [rdp_client.py:531 in __sync_send_receive] - 
+2025-07-16 10:55:54,090 [INFO] [rdp_client.py:869 in __print_response] - RESPONSE<-
+{
+  "type": "resources-available-array",
+  "array": [
+    [
+      "network-event",
+      [
+        {
+          "actor": "server1.conn0.netEvent63",
+          "resourceId": 246,
+          "resourceType": "network-event",
+          "browsingContextID": 3,
+          "cause": {
+            "loadingDocumentUri": "https://player.twitch.tv/?channel=elnueveenvivo&parent=www.elnueve.com.ar",
+            "type": "fetch"
+          },
+          "chromeContext": false,
+          "innerWindowId": 4294967298,
+          "isNavigationRequest": false,
+          "isThirdPartyTrackingResource": false,
+          "isXHR": true,
+          "method": "GET",
+          "priority": 0,
+          "private": false,
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "stacktraceResourceId": 246,
+          "startedDateTime": "2025-07-16T13:55:53.779Z",
+          "securityFlags": 80,
+          "timeStamp": 1752674153779,
+          "timings": {},
+          "url": "https://sae13.playlist.ttvnw.net/v1/playlist/CrcGD_HeaiDgY8Q7RmhAxDvSRZcEU4LdnT4mQBR9pJP3NPU80C85mXAz52gvPml68ybklPfnzlNnfRBQecVtl-OHV1pYuJr_9qtc8jC_R-byTIUcXDE9Varm2-YRR__q76elScYVeaOCMocbz0i3v_YzAxhAgopVPcKC-46voTcMnIDYIXNIk_gtQO1MMSCA3RaYDT-WMFmplo2mF_FnuwhSBTnA6u0jgcdsO6IOpw2KYZZ1EnCUXygxTq8xG8vlGNgqTVOUg7YT5qriwT1kB9LF4pcahYQmvFqnlqSv0cRr3sR3jycfhHwN6cylGtR0RyaU13p6z9Gcc8ICg9_fSt0boE2aDz6joSEvIEsLHx3TorCxQ_V5rPZvAf4p7aykuC6IuBk6DhpSSB5BpDilSLR_6wDSnwsQRpw68_0Xi71cnxmIPvFQHWA0RL3ceV3JHxOV3GbBKY1uoh6hk0Bcbqi6E_7D_3fchoV3ZH-sG9IUlQ3Bx6GAFIE8fiVtr0_p36-v5ClIUS9zY9OPDBGv60CXmhZB_J7FyI4Bb6Rkei6KkR44llaJeonGQHTd53OThXimsoefJC3thmCcc5efvDw_I_F12nTGcZsA3Or0CoLARyxuY8osxuIneK9GFWRT0LiSPH6teUVem_ThQE22FzK0H8Ys6j0AutHb1CaXLdQSc_4mQ7UtN9rRAtcYk8crV_BMq-lSbjokzDS-HDsLel2XHr9etEewuYfSIXPKiZ7gHXvu2dJiSfxqHC8d-rllP2GpoKAYaLFz3yRDCfqPKnbe-ddN560ppDUYQOqfuLxgiB-M7Xl2LUo4bn-x81sQFA68RkfTQWltcNODOn0n-d3D4t0GYYylNY3DVNGuB49ZXVoyRNCpPPpKp5GmmJLDPqKVrBBBNDryMEhl1j1_DJj2wqo4xv0ZQdcAHo1oF5eiebnQayQ4bb4raC1kGqCJGbLnzxw9-KHpqcaBXXgjQ8gw2OA1uoX4GHIPkLEnL6px7stGIyrbYWFCUiU2HOdM3K6rG6Hxe4SgtbgZSdDO56oORak4sLhV7Mx6AJ9XiNg7i33UyTVGqf89IpZx47NdEVX35RvpEeennxoMbbYHz9AhCeA2mwn3IAEqCXVzLWVhc3QtMjDgDA.m3u8"
+        }
+      ]
+    ]
+  ],
+  "from": "server1.conn0.watcher58"
+}
+2025-07-16 10:55:54,097 [DEBUG] [rdp_client.py:799 in __handle_events] - unhandled event received
+2025-07-16 10:55:54,102 [INFO] [rdp_client.py:557 in __send] - REQUEST->
+{
+  "to": "server1.conn0.child56/inspectorActor4",
+  "type": "getWalker",
+  "options": {}
+}
+2025-07-16 10:55:57,094 [ERROR] [rdp_client.py:545 in __sync_send_receive] - Timeout on request:
+{'to': 'server1.conn0.child56/inspectorActor4', 'type': 'getWalker', 'options': {}}
+2025-07-16 10:55:57,167 [DEBUG] [rdp_client.py:413 in disconnect] - 
+2025-07-16 10:55:57,176 [DEBUG] [rdp_client.py:422 in __disconnect] - True
+2025-07-16 10:55:57,182 [DEBUG] [rdp_client.py:402 in __on_close_connection] - Stop listening
+2025-07-16 10:55:57,186 [DEBUG] [rdp_client.py:377 in __connect] - Read task cancelled: asyncio
+2025-07-16 10:56:54,377 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
+2025-07-16 10:57:09,892 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
