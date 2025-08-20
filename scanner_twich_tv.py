@@ -68,7 +68,7 @@ from functools import partial
 from geckordp.settings import GECKORDP
 import setproctitle
 import requests
-setproctitle.setproctitle("ScanTwichTv")
+setproctitle.setproctitle("ServerDomo-ScanTwichTv")
 Path_ListaTv_DomoCasa = "/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u" 
 GECKORDP.DEBUG = 1
 GECKORDP.DEBUG_REQUEST = 1
