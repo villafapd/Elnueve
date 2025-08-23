@@ -837,13 +837,13 @@ if __name__ == "__main__":
 # Programar la funcion para que se ejecute cada 12 horas
 #link canal original https://www.twitch.tv/elnueveok
 #link canal original https://www.twitch.tv/canalshowsport
-	schedule.every().day.at("00:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("00:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20,"El Nueve"))
 	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	
 
-	schedule.every().day.at("08:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("08:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
@@ -886,7 +886,7 @@ if __name__ == "__main__":
 	#https://www.elnueve.com.ar/en-vivo
 	#moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Buenos Aires")
-	main("https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
