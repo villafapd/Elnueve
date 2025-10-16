@@ -861,7 +861,7 @@ if __name__ == "__main__":
  	#Se ejecuta al minuto 50 de cada hora
 	schedule.every().hour.at(":50").do(partial(update_lista_nettv,"/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "Net Tv"))
 	#Se ejecuta al minuto 50 de cada hora
-	schedule.every().hour.at(":50").do(partial(main, "https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
+	schedule.every().hour.at(":50").do(partial(main, "https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
  	#Se ejecuta al minuto 52 de cada hora
 	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El_Nueve_Mza"))
 
@@ -881,7 +881,7 @@ if __name__ == "__main__":
 	
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
-	main("https://www.elnueve.com/page/en-vivo/","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
+	main("https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
 	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve mza")
 	
 	time.sleep(5)
@@ -895,6 +895,8 @@ if __name__ == "__main__":
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
+ 
+ #moz-extension://6128415c-f941-4c50-bd92-403ef6ec4f0d/player/index.html#https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream2/chunks.m3u8?nimblesessionid=184830419
 	
 
 
