@@ -362,7 +362,7 @@ def main(url,path_file):
 		profile.set_required_configs()
 
 		# start firefox with specified profile
-		firefox_instance = Firefox.start(url, args.port, profile_name,["-headless"],  auto_kill=True,  wait=True) #["-headless"],
+		firefox_instance = Firefox.start(url, args.port, profile_name,  auto_kill=True,  wait=True) #["-headless"],
 		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
@@ -843,14 +843,14 @@ if __name__ == "__main__":
 	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	
 
-	schedule.every().day.at("08:10").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("08:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("08:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	schedule.every().day.at("08:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
 
 	schedule.every().day.at("16:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
-	schedule.every().day.at("16:12").do(partial(main,"moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
+	schedule.every().day.at("16:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
@@ -887,13 +887,14 @@ if __name__ == "__main__":
 	time.sleep(5)
 	#https://www.elnueve.com.ar/en-vivo
 	#moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo
+	#moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Buenos Aires")
-	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
-	main("moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
+	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
  
  #moz-extension://6128415c-f941-4c50-bd92-403ef6ec4f0d/player/index.html#https://unlimited1-saopaulo.dps.live/televidaar/televidaar.smil/televidaar/livestream2/chunks.m3u8?nimblesessionid=184830419
