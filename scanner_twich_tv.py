@@ -10,6 +10,13 @@
 # 		buscar "Internal UUID" en este caso "b06a910a-a14a-4f77-a09c-7a2a8c77e414" para mi navegador
 # Se envian notificaciones a telegram 
 
+
+#from ListaTv.CanalesTvAire import update_url_tv
+#from ListaTv.EventoYT import update_url_yt
+#import threading
+#from ClaseHoraFecha import HorayFecha
+#import mariadb
+
 import argparse
 import json
 from concurrent.futures import Future
@@ -104,7 +111,28 @@ for linea in lineas:
 	elif linea.startswith("gist_id"):
 		GIST_ID = linea.split("=")[1].strip().strip("'")
 
-
+def HoraFecha(EventoParar_HoraPc):
+	#global hora, minutos, segundos, dia, mes, ano, microsegundos, diasemana, semanaano, milliseg
+	while not EventoParar_HoraPc.is_set():
+		ahora = datetime.now()#.time()
+		date = datetime.now().today()
+		hora_actual = ahora.strftime("%H:%M:%S")
+		horayfecha.hora_inicio = hora_actual.endswith("00:00")
+		horayfecha.milliseg = int(round(time.time() * 1000))
+		horayfecha.hora = ahora.hour
+		horayfecha.hora = f"{horayfecha.hora:02d}"
+		horayfecha.minutos = ahora.minute
+		horayfecha.minutos = f"{horayfecha.minutos:02d}"
+		horayfecha.segundos = ahora.second
+		horayfecha.segundos = f"{horayfecha.segundos:02d}"
+		horayfecha.diasemana = str(ahora.weekday()) # Lunes = 0 - Sunday = 6
+		horayfecha.semanaano = str(ahora.isocalendar().week)
+		horayfecha.microsegundos = ahora.microsecond
+		horayfecha.dia = date.day
+		horayfecha.dia = f"{horayfecha.dia:02d}"
+		horayfecha.mes = date.month
+		horayfecha.mes = f"{horayfecha.mes:02d}"
+		horayfecha.ano = str(date.year)
 
 def enviarMensaje(mensaje):
 	import requests
@@ -337,8 +365,12 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
 			print(f"Error al guardar el archivo: {e}")  
 			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
-
-
+"""
+def update_listatv(EventoParar_updatelistatv,token,gist_id):
+	while not EventoParar_updatelistatv.is_set():
+		if horayfecha.hora_inicio:
+			update_url_tv(token, gist_id)
+"""
 
 def main(url,path_file):
 
@@ -833,10 +865,19 @@ def main(url,path_file):
 
 
 if __name__ == "__main__":
-	
-# Programar la funcion para que se ejecute cada 12 horas
-#link canal original https://www.twitch.tv/elnueveok
-#link canal original https://www.twitch.tv/canalshowsport
+    """
+	#Clase Tipo de datos Hora y Fecha
+	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
+ 
+  
+	EventoParar_updatelistatv = threading.Event()
+	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
+	Listatv.start()
+ 	"""
+
+	# Programar la funcion para que se ejecute cada 12 horas
+	#link canal original https://www.twitch.tv/elnueveok
+	#link canal original https://www.twitch.tv/canalshowsport
 	schedule.every().day.at("00:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20,"El Nueve"))
@@ -909,5 +950,6 @@ if __name__ == "__main__":
 			schedule.run_pending()
 			time.sleep(5)
 	except KeyboardInterrupt:
+		#EventoParar_updatelistatv.set()
 		print("Programa interrumpido. Limpiando recursos...") 
  
