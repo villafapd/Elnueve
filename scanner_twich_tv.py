@@ -865,7 +865,7 @@ def main(url,path_file):
 
 
 if __name__ == "__main__":
-    """
+	"""
 	#Clase Tipo de datos Hora y Fecha
 	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
  
@@ -873,7 +873,7 @@ if __name__ == "__main__":
 	EventoParar_updatelistatv = threading.Event()
 	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
 	Listatv.start()
- 	"""
+	"""
 
 	# Programar la funcion para que se ejecute cada 12 horas
 	#link canal original https://www.twitch.tv/elnueveok
