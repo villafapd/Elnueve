@@ -1,3 +1,6 @@
+#para instalar deno 
+# curl -fsSL https://deno.land/install.sh | sh
+
 
 def get_youtube_live_hls_url(video_url: str, nombre_canal, resolution) -> str:
 	import sys
@@ -11,7 +14,8 @@ def get_youtube_live_hls_url(video_url: str, nombre_canal, resolution) -> str:
 	ydl_opts = {
 		"quiet": True,
 		"skip_download": True,
-		"force_generic_extractor": False
+		"force_generic_extractor": False,
+		"--js-runtimes node": True,
 	}
 
 	try:
@@ -99,7 +103,7 @@ def yt_to_m3u8(yt_url_base, nombre_canal):
 def update_url_tv (token, gist_id):
 	import requests
 	import json
-	from ALR_Casa import print_terminal
+	
 	TNNOTICIAS = '1'
 	CANAL7MZA = '2'
 	CANAL26 = '3'
@@ -111,35 +115,35 @@ def update_url_tv (token, gist_id):
  
 	url_TN = yt_url_base(TNNOTICIAS)
 	print_tn, hls_url_TN = get_youtube_live_hls_url(url_TN,'TN','1080')
-	print_terminal(print_tn)
+	print(print_tn)
 
 	url_C7Mza = yt_url_base(CANAL7MZA)
 	print_C7Mza, hls_url_C7Mza = get_youtube_live_hls_url(url_C7Mza,'Canal 7 Mendoza', '1080')
-	print_terminal(print_C7Mza)	
+	print(print_C7Mza)	
 
 	url_canal26 = yt_url_base(CANAL26)	
 	print_Canal26, hls_url_Canal26 = get_youtube_live_hls_url(url_canal26, 'Canal 26', '1080')
-	print_terminal(print_Canal26)	
+	print(print_Canal26)	
 
 	url_lanacion = yt_url_base(LANANCION)
 	print_lanacion, hls_url_lanacion = get_youtube_live_hls_url(url_lanacion, 'La Nacion +', '1080')
-	print_terminal(print_lanacion)
+	print(print_lanacion)
 
 	url_rtve = yt_url_base(RTVE)
 	print_RTVE, hls_url_RTVE = get_youtube_live_hls_url(url_rtve, 'RTVE', '1080')
-	print_terminal(print_RTVE)  	
+	print(print_RTVE)  	
 
 	url_france24 = yt_url_base(FRANCE24)
 	print_France24, hls_url_France24 = get_youtube_live_hls_url(url_france24, 'France 24', '1080')
-	print_terminal(print_France24) 
+	print(print_France24) 
 
 	url_telefenoti = yt_url_base(TELEFENOT)
 	print_TelefeNoti, hls_url_TelefeNoti = get_youtube_live_hls_url(url_telefenoti, 'Telefe Noticias', '1080')
-	print_terminal(print_TelefeNoti)
+	print(print_TelefeNoti)
 
 	url_america24 = yt_url_base(AMERICA24)
 	print_am24, hls_url_am24 = get_youtube_live_hls_url(url_america24, 'America 24', '1080')
-	print_terminal(print_am24)
+	print(print_am24)
 
 
 	 #Abro el archivo de la lista de canales 
@@ -167,9 +171,9 @@ def update_url_tv (token, gist_id):
 	try:
 		with open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u', 'w') as archivo:
 			archivo.writelines(updated_content)
-		print_terminal("Lista de canales actualizada y guardada correctamente.")
+		print("Lista de canales actualizada y guardada correctamente.")
 	except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
-		print_terminal(f"Error al guardar el archivo: {e}")
+		print(f"Error al guardar el archivo: {e}")
 
 
 	paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
@@ -197,8 +201,8 @@ def update_url_tv (token, gist_id):
 #	)
 
 	if response.status_code == 200:
-		print_terminal("Gist actualizado exitosamente!")
+		print("Gist actualizado exitosamente!")
 	else:
-		print_terminal("Error al actualizar el Gist:", response.status_code)
+		print(f"Error al actualizar el Gist: {response.status_code}")
 
 #update_url_tv()
