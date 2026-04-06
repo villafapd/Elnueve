@@ -908,8 +908,8 @@ if __name__ == "__main__":
 
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canales YouTube") 
-	update_listatv(EventoParar_updatelistatv,TOKEN,GIST_ID)
-
+	update_url_tv(TOKEN,GIST_ID)
+ 
     # Se ejecuta cada 10 segundos
 	#schedule.every(10).seconds.do(partial(update_lista, "/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log", 53, "ShowSports"))
 		
