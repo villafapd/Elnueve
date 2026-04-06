@@ -11,11 +11,11 @@
 # Se envian notificaciones a telegram 
 
 
-#from ListaTv.CanalesTvAire import update_url_tv
-#from ListaTv.EventoYT import update_url_yt
-#import threading
-#from ClaseHoraFecha import HorayFecha
-#import mariadb
+from ListaTv.CanalesTvAire import update_url_tv
+from ListaTv.EventoYT import update_url_yt
+import threading
+from ClaseHoraFecha import HorayFecha
+import mariadb
 
 import argparse
 import json
@@ -365,12 +365,12 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 		except Exception as e: # Captura excepciones más generales para un mejor manejo de errores
 			print(f"Error al guardar el archivo: {e}")  
 			enviarMensaje("Error al guardar el archivo: " + e + " -> Canal: " + canal)
-"""
+
 def update_listatv(EventoParar_updatelistatv,token,gist_id):
 	while not EventoParar_updatelistatv.is_set():
 		if horayfecha.hora_inicio:
 			update_url_tv(token, gist_id)
-"""
+
 def main(url,path_file):
 
 	#GECKORDP.LOG_FILE = file #: enabled
@@ -864,7 +864,7 @@ def main(url,path_file):
 
 
 if __name__ == "__main__":
-	"""	
+	
 	#Clase Tipo de datos Hora y Fecha
 	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
  
@@ -873,28 +873,28 @@ if __name__ == "__main__":
 	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
 	Listatv.start()
 	
-	"""
+	
 
 	# Programar la funcion para que se ejecute cada 12 horas
 	#link canal original https://www.twitch.tv/elnueveok
 	#link canal original https://www.twitch.tv/canalshowsport
-	schedule.every().day.at("00:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	#schedule.every().day.at("00:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("00:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20,"El Nueve"))
+	#schedule.every().day.at("00:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20,"El Nueve"))
 	schedule.every().day.at("00:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 	
 
-	schedule.every().day.at("08:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	#schedule.every().day.at("08:10").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("08:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
+	#schedule.every().day.at("08:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("08:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
 
 
-	schedule.every().day.at("16:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
+	#schedule.every().day.at("16:10").do(partial(main,"https://www.elnueve.com.ar/en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log"))
 	schedule.every().day.at("16:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
-	schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
+	#schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
-	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve Mza"))
+	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El Nueve Mza"))
 
 
 	#Se ejecuta al minuto 48 de cada hora
@@ -904,7 +904,7 @@ if __name__ == "__main__":
 	#Se ejecuta al minuto 50 de cada hora
 	schedule.every().hour.at(":50").do(partial(main, "https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
  	#Se ejecuta al minuto 52 de cada hora
-	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El_Nueve_Mza"))
+	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El_Nueve_Mza"))
 
     # Se ejecuta cada 10 segundos
 	#schedule.every(10).seconds.do(partial(update_lista, "/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log", 53, "ShowSports"))
@@ -923,16 +923,16 @@ if __name__ == "__main__":
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
 	main("https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
-	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",2, "El Nueve mza")
+	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El Nueve mza")
 	
 	time.sleep(5)
 	#https://www.elnueve.com.ar/en-vivo
 	#moz-extension://b06a910a-a14a-4f77-a09c-7a2a8c77e414/player.html?channel=elnueveenvivo
 	#moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo
-	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Buenos Aires")
-	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
-	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
-	time.sleep(5)
+	#print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Buenos Aires")
+	#main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
+	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
+	#time.sleep(5)
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")

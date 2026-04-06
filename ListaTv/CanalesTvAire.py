@@ -112,6 +112,10 @@ def update_url_tv (token, gist_id):
 	FRANCE24 = '6'
 	TELEFENOT = '7'
 	AMERICA24 = '8'
+	ELNUEVEBSAS = '9'
+	LANACIONRADIO='10'
+	RADIONIHUIL='11'
+	TVPUBLICA= '16'
  
 	url_TN = yt_url_base(TNNOTICIAS)
 	print_tn, hls_url_TN = get_youtube_live_hls_url(url_TN,'TN','1080')
@@ -145,6 +149,9 @@ def update_url_tv (token, gist_id):
 	print_am24, hls_url_am24 = get_youtube_live_hls_url(url_america24, 'America 24', '1080')
 	print(print_am24)
 
+	url_elnueve_bsas = yt_url_base(ELNUEVEBSAS)
+	print_elnuevebsas, hls_url_elnuevebsas = get_youtube_live_hls_url(url_elnueve_bsas, 'El Nueve Buenos Aires', '1080')
+	print(print_elnuevebsas)
 
 	 #Abro el archivo de la lista de canales 
 	data = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
@@ -168,6 +175,8 @@ def update_url_tv (token, gist_id):
 		updated_content = '\n'.join(lines)   
 		lines[184] = hls_url_TelefeNoti  # Actualizamos la línea
 		updated_content = '\n'.join(lines)  
+		lines[20] = hls_url_elnuevebsas  # Actualizamos la línea
+		updated_content = '\n'.join(lines) 
 	try:
 		with open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u', 'w') as archivo:
 			archivo.writelines(updated_content)
