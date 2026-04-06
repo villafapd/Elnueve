@@ -894,7 +894,7 @@ if __name__ == "__main__":
 	schedule.every().day.at("16:12").do(partial(main,"moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log"))
 	#schedule.every().day.at("16:13").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve"))
 	schedule.every().day.at("16:14").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports"))
-	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El Nueve Mza"))
+	#schedule.every().day.at("16:15").do(partial(update_lista,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El Nueve Mza"))
 
 
 	#Se ejecuta al minuto 48 de cada hora
@@ -904,7 +904,7 @@ if __name__ == "__main__":
 	#Se ejecuta al minuto 50 de cada hora
 	schedule.every().hour.at(":50").do(partial(main, "https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log"))
  	#Se ejecuta al minuto 52 de cada hora
-	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El_Nueve_Mza"))
+	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El_Nueve_Mza"))
 
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canales YouTube") 
@@ -927,7 +927,7 @@ if __name__ == "__main__":
 	hora, minutos, segundos, dia, mes, ano = HoraFecha()
 	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
 	main("https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
-	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El Nueve mza")
+	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El Nueve mza")
 	
 	time.sleep(5)
 	#https://www.elnueve.com.ar/en-vivo
