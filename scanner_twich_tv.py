@@ -906,6 +906,10 @@ if __name__ == "__main__":
  	#Se ejecuta al minuto 52 de cada hora
 	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",80, "El_Nueve_Mza"))
 
+	hora, minutos, segundos, dia, mes, ano = HoraFecha()
+	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canales YouTube") 
+	update_listatv()
+
     # Se ejecuta cada 10 segundos
 	#schedule.every(10).seconds.do(partial(update_lista, "/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log", 53, "ShowSports"))
 		
