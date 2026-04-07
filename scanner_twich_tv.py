@@ -296,8 +296,8 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 	urls_encontradas = buscar_urlnettv(Path_log_geckordp)
 	# Mostrar las URLs encontradas
 	for url in urls_encontradas:
-		hora, minutos, segundos, dia, mes, ano = HorayFecha()
-		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
+		
+		print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + url)
 		# Abro el archivo de la lista de canales 
 		data = open(Path_ListaTv_DomoCasa).read()
 		# Dividimos el contenido en líneas
@@ -309,8 +309,8 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 		try:
 			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
 				archivo.writelines(updated_content)
-			hora, minutos, segundos, dia, mes, ano = HorayFecha()
-			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
+			
+			print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 
 			paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
@@ -848,17 +848,21 @@ if __name__ == "__main__":
 	
 	#Clase Tipo de datos Hora y Fecha
 	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
- 
+
+	#Inicio Hilos
+	#------------------------------------------------------------------------------------
 	EventoParar_HoraPc = threading.Event()
 	HoraPC =  threading.Thread(target=HoraFecha, name='HoraFecha', args=(EventoParar_HoraPc,))
 	HoraPC.start() #/.stop
-  
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Inicio Hilo Hora y Fecha")
 	EventoParar_updatelistatv = threading.Event()
 	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
 	Listatv.start()
-	
-	
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Inicio Hilo update_listatv")
 
+
+	#Schedule
+	#------------------------------------------------------------------------------------
 	# Programar la funcion para que se ejecute cada 12 horas
 	#link canal original https://www.twitch.tv/elnueveok
 	#link canal original https://www.twitch.tv/canalshowsport
