@@ -168,25 +168,6 @@ def enviarDocumento(ruta):
 			  data={'chat_id': idGrupo, 'caption': 'imagen Oasys Norte'})
 """
 
-def HoraFecha():
-	#global hora, minutos, segundos, dia, mes, ano, microsegundos, diasemana, semanaano, milliseg
-	
-	ahora = datetime.now()#.time()
-	date = datetime.now().today()
-	hora_actual = ahora.strftime("%H:%M:%S")
-	hora = ahora.hour
-	hora = f"{hora:02d}"
-	minutos = ahora.minute
-	minutos = f"{minutos:02d}"
-	segundos = ahora.second
-	segundos = f"{segundos:02d}"
-	dia = date.day
-	dia = f"{dia:02d}"
-	mes = date.month
-	mes = f"{mes:02d}"
-	ano = str(date.year)
-	return hora, minutos, segundos, dia, mes, ano
-
 def borrar_contenido_log(file_log):
 	# Abrimos el archivo en modo 'w' para sobrescribirlo con un archivo vacio
 	with open(file_log, 'w') as f:
@@ -233,7 +214,7 @@ def update_lista(Path_log_geckordp,linea,canal):
 	urls_encontradas = buscar_url(Path_log_geckordp)
 	# Mostrar las URLs encontradas
 	for url in urls_encontradas:
-		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		hora, minutos, segundos, dia, mes, ano = HorayFecha()
 		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
 		# Abro el archivo de la lista de canales 
 		data = open(Path_ListaTv_DomoCasa).read()
@@ -246,7 +227,7 @@ def update_lista(Path_log_geckordp,linea,canal):
 		try:
 			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
 				archivo.writelines(updated_content)
-			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			hora, minutos, segundos, dia, mes, ano = HorayFecha()
 			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 			break
@@ -259,7 +240,7 @@ def update_lista_mza(Path_log_geckordp,linea,canal):
 	urls_encontradas = buscar_url9mza(Path_log_geckordp)
 	# Mostrar las URLs encontradas
 	for url in urls_encontradas:
-		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		hora, minutos, segundos, dia, mes, ano = HorayFecha()
 		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
 		# Abro el archivo de la lista de canales 
 		data = open(Path_ListaTv_DomoCasa).read()
@@ -272,7 +253,7 @@ def update_lista_mza(Path_log_geckordp,linea,canal):
 		try:
 			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
 				archivo.writelines(updated_content)
-			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			hora, minutos, segundos, dia, mes, ano = HorayFecha()
 			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 
@@ -315,7 +296,7 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 	urls_encontradas = buscar_urlnettv(Path_log_geckordp)
 	# Mostrar las URLs encontradas
 	for url in urls_encontradas:
-		hora, minutos, segundos, dia, mes, ano = HoraFecha()
+		hora, minutos, segundos, dia, mes, ano = HorayFecha()
 		print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + url)
 		# Abro el archivo de la lista de canales 
 		data = open(Path_ListaTv_DomoCasa).read()
@@ -328,7 +309,7 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 		try:
 			with open(Path_ListaTv_DomoCasa, 'w') as archivo:
 				archivo.writelines(updated_content)
-			hora, minutos, segundos, dia, mes, ano = HoraFecha()
+			hora, minutos, segundos, dia, mes, ano = HorayFecha()
 			print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 
@@ -909,8 +890,8 @@ if __name__ == "__main__":
  	#Se ejecuta al minuto 52 de cada hora
 	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El_Nueve_Mza"))
 
-	hora, minutos, segundos, dia, mes, ano = HoraFecha()
-	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canales YouTube") 
+	
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canales YouTube") 
 	update_url_tv(TOKEN,GIST_ID)
  
     # Se ejecuta cada 10 segundos
@@ -921,14 +902,14 @@ if __name__ == "__main__":
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
 	
-	hora, minutos, segundos, dia, mes, ano = HoraFecha()
-	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal NetTV")
+	
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal NetTV")
 	main("https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log")
 	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "NetTv")
 	time.sleep(5)
 	
-	hora, minutos, segundos, dia, mes, ano = HoraFecha()
-	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
+	
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
 	main("https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
 	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El Nueve mza")
 	
@@ -940,8 +921,8 @@ if __name__ == "__main__":
 	#main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=elnueveenvivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log")
 	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	#time.sleep(5)
-	hora, minutos, segundos, dia, mes, ano = HoraFecha()
-	print("Hora:" + hora + ":" + minutos + ":" + segundos + "--->" + "Fecha:" + dia + "-" + mes+ "-" + ano + "--> " + "Escaneando Canal Show Sports")
+
+	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
  

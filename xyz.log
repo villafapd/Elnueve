@@ -1,2 +1,0 @@
-2026-04-06 16:30:22,178 [ERROR] [profile.py:323 in clone] - profile with name 'geckordp' already exists
-2026-04-06 16:30:58,268 [DEBUG] [utils.py:68 in wait_process_loaded] - expired=True
