@@ -868,6 +868,9 @@ if __name__ == "__main__":
 	#Clase Tipo de datos Hora y Fecha
 	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
  
+	EventoParar_HoraPc = threading.Event()
+	HoraPC =  threading.Thread(target=HoraFecha, name='HoraFecha', args=(EventoParar_HoraPc,))
+	HoraPC.start() #/.stop
   
 	EventoParar_updatelistatv = threading.Event()
 	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
@@ -954,6 +957,7 @@ if __name__ == "__main__":
 			schedule.run_pending()
 			time.sleep(5)
 	except KeyboardInterrupt:
-		#EventoParar_updatelistatv.set()
+		EventoParar_updatelistatv.set()
+		EventoParar_HoraPc.set()
 		print("Programa interrumpido. Limpiando recursos...") 
  
