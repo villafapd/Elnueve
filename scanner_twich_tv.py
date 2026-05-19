@@ -257,7 +257,7 @@ def update_lista_mza(Path_log_geckordp,linea,canal):
 			print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 
-			paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
+			paste_text = open('/home/villafapd/Documents/PythonProjects/Elnueve/ListaTv/listaCanaleslocal.m3u').read()
 			update_data = {
 				"description": "ListaCanalesLocales",
 				"files": {
@@ -313,7 +313,7 @@ def update_lista_nettv(Path_log_geckordp,linea,canal):
 			print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Lista de canales actualizada y guardada correctamente.")
 			enviarMensaje("Caputura url correctamente para canal: " + canal)
 
-			paste_text = open('/home/villafapd/Documents/PythonProjects/MiCasaDomo/ListaTv/listaCanaleslocal.m3u').read()
+			paste_text = open('/home/villafapd/Documents/PythonProjects/Elnueve/ListaTv/listaCanaleslocal.m3u').read()
 			update_data = {
 				"description": "ListaCanalesLocales",
 				"files": {
@@ -854,11 +854,11 @@ if __name__ == "__main__":
 	EventoParar_HoraPc = threading.Event()
 	HoraPC =  threading.Thread(target=HoraFecha, name='HoraFecha', args=(EventoParar_HoraPc,))
 	HoraPC.start() #/.stop
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Inicio Hilo Hora y Fecha")
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "---> " + "Inicio Hilo Hora y Fecha")
 	EventoParar_updatelistatv = threading.Event()
 	Listatv = threading.Thread(target=update_listatv, name='update_listatv', args=(EventoParar_updatelistatv,TOKEN,GIST_ID,))
 	Listatv.start()
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "---> " + "Inicio Hilo update_listatv")
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "---> " + "Inicio Hilo update_listatv")
 
 
 	#Schedule
@@ -895,7 +895,7 @@ if __name__ == "__main__":
 	schedule.every().hour.at(":52").do(partial(update_lista_mza,"/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El_Nueve_Mza"))
 
 	
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canales YouTube") 
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canales YouTube")
 	update_url_tv(TOKEN,GIST_ID)
  
     # Se ejecuta cada 10 segundos
@@ -906,14 +906,13 @@ if __name__ == "__main__":
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
 	
-	
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal NetTV")
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
 	main("https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log")
 	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "NetTv")
 	time.sleep(5)
 	
 	
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal El Nueve de Mendoza")
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal El Nueve de Mendoza")
 	main("https://rudo.video/live/televidaar","/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log")
 	update_lista_mza("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve_mza.log",180, "El Nueve mza")
 	
@@ -926,7 +925,7 @@ if __name__ == "__main__":
 	#update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_elnueve.log",20, "El Nueve")
 	#time.sleep(5)
 
-	print("Hora:" + horayfecha.hora + ":" + horayfecha.minutos + ":" + horayfecha.segundos + "--->" + "Fecha:" + horayfecha.dia + "-" + horayfecha.mes+ "-" + horayfecha.ano + "--> " + "Escaneando Canal Show Sports")
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal Show Sports")
 	main("moz-extension://4ae602e9-86f8-4179-b620-dac18b1bffd1/player.html?channel=canalshowsport","/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log")
 	update_lista("/home/villafapd/Documents/PythonProjects/Elnueve/url_showsports.log",53, "ShowSports")
  
