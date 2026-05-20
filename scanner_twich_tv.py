@@ -905,7 +905,12 @@ if __name__ == "__main__":
 	# Para cambiar la frecuencia a 8 horas, puedes actualizar la programacion
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
-	
+
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
+	main("https://pelisjuanita.com/tv/telefe","/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log")
+	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log",11, "Telefe")
+	time.sleep(5)
+
 	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
 	main("https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log")
 	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log",26, "NetTv")
