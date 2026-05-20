@@ -374,7 +374,7 @@ def main(url,path_file):
 		profile.set_required_configs()
 
 		# start firefox with specified profile
-		firefox_instance = Firefox.start(url, args.port, profile_name, ["-headless"],  auto_kill=True,  wait=True) #["-headless"],
+		firefox_instance = Firefox.start(url, args.port, profile_name,  auto_kill=True,  wait=True) #["-headless"],
 		time.sleep(45) #Raspberry ocupada en otros procesos
 		# RDPClient
 		###################################################
@@ -848,7 +848,12 @@ if __name__ == "__main__":
 	
 	#Clase Tipo de datos Hora y Fecha
 	horayfecha = HorayFecha(hora=0,minutos=0, segundos=0, dia=1, mes= 1, ano= 23,  microsegundos=0 , diasemana=0, semanaano=0, milliseg=0, hora_inicio=False)
-
+	"""
+	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
+	main("https://pelisjuanita.com/tv/telefe","/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log")
+	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log",11, "Telefe")
+	time.sleep(5)
+	"""
 	#Inicio Hilos
 	#------------------------------------------------------------------------------------
 	EventoParar_HoraPc = threading.Event()
@@ -906,10 +911,7 @@ if __name__ == "__main__":
 	# schedule.clear()  # Limpia la programacion actual
 	# schedule.every(8).hours.do(mi_funcion)
 
-	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
-	main("https://pelisjuanita.com/tv/telefe","/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log")
-	update_lista_nettv("/home/villafapd/Documents/PythonProjects/Elnueve/url_telefe.log",11, "Telefe")
-	time.sleep(5)
+
 
 	print("Hora:" + str(horayfecha.hora) + ":" + str(horayfecha.minutos) + ":" + str(horayfecha.segundos) + "--->" + "Fecha:" + str(horayfecha.dia) + "-" + str(horayfecha.mes) + "-" + str(horayfecha.ano) + "--> " + "Escaneando Canal NetTV")
 	main("https://www.canalnet.tv/page/senal-en-vivo","/home/villafapd/Documents/PythonProjects/Elnueve/url_nettv.log")
